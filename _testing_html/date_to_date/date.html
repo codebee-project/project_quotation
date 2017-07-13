@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Date</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-datepicker/css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <!-- <script src="assets/js/jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+    </head>
+
+<body>
+
+<div class="col-xs-6">
+<div id="sandbox-container">
+    <div class="input-group date">
+      <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+    </div>
+</div>
+<div class="input-daterange input-group" id="datepicker">
+    <input type="text" class="input-sm form-control" name="start" />
+    <span class="input-group-addon">to</span>
+    <input type="text" class="input-sm form-control" name="end" />
+</div>
+</div>
+
+<script type="text/javascript">
+$('.input-group').datepicker({
+    format: "dd/mm/yyyy",
+    todayBtn: "linked",
+    todayHighlight: true
+});
+
+$('#sandbox-container .input-daterange').datepicker({
+    format: "dd/mm/yyyy",
+    todayBtn: "linked",
+    multidateSeparator: "ture",
+    todayHighlight: true
+});
+
+</script>
+
+</body>
+
+</html>

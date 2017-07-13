@@ -1,0 +1,47 @@
+<html>
+
+<head>
+	<title>Autotext</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+
+<body>
+
+<div class="input_fields_wrap">
+    <div class="container">
+        <input type="email" class="form-control in-block control-input" id="exampleInputEmail1" placeholder="Email">
+        <i id="add-email" class="fa fa-plus-circle control-icon-plus"></i>
+    </div>
+</div>
+
+</body>
+
+    <script src="assets/js/jquery/jquery.js"></script>
+
+<script type='text/javascript'>
+
+$(document).ready(function() {
+    var max_fields      = 5; //maximum input boxes allowed
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $("#add-email"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div class="container"><input id="email'+x+'" type="email" class="form-control in-block control-input" id="exampleInputEmail1" placeholder="Email"> <i id="close-email" class="fa fa-times control-icon-close" aria-hidden="true"></i></div>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click","#close-email", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+
+</script>
+</html>
