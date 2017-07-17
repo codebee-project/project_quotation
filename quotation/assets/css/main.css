@@ -39,27 +39,30 @@ body{
 .inner-addon {
   position: relative;
 }
-
 /* style glyph */
 .inner-addon .fa {
   position: absolute;
   padding: 10px;
   pointer-events: none;
 }
-
 /* align glyph */
 .left-addon .fa  { left:  0px;}
 .right-addon .fa { right: 0px;}
-
 /* add padding  */
 .left-addon input  { padding-left:  30px; }
 .right-addon input { padding-right: 30px; }
+
+.test{
+    height: 660px;
+    display: flex;
+    align-items: center;
+}
+/* end user input box icon */
 
 /*------------------- login ---------------------*/
 .box-login{
     overflow: hidden;
 	margin:auto;
-	margin-top:100px;
 	height:478px;
 	background-color:#FFF;
 	border-radius: 2px;
