@@ -5,14 +5,56 @@
 <title>login</title>
 	<link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
 </head>
 <body class="bg">
+
+<div class="test">
 	<div class="col-md-12 text-center">
         <div class="col-md-offset-4 col-md-4 box-login">
-            <div class="">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
+            <div class="mr-box-input">
+            	<div class="col-md-12 mr-logo">
+                	<img alt="logo" src="assets/img/logo.png" />
+                </div>
+                <div class="col-md-12 mr-text-login">
+                	<span class="text-login">You already have an account? Sign in here.</span>
+                </div>
+                <div class="col-md-12 mr-form-input">
+                    <form>
+                    <!-- user -->
+                        <div class="mr-text-login inner-addon left-addon">
+					      <i class="fa fa-user"></i>      
+					      <input type="text" class="form-control" placeholder="Username" />
+					    </div>
+					<!-- pass -->
+					    <div class="mr-bot-pass inner-addon left-addon">
+					      <i class="fa fa-lock"></i>      
+					      <input type="text" class="form-control" placeholder="Password" />
+					    </div>
+					<!-- forgot -->
+	                    <div class="form-group text-l">
+	                    	<a href="#"><span class="text-forgot">Forgot password?</span></a>
+	                    </div>
+	                <!-- sign in -->
+                    	<button type="submit" class="btn btn-login">Sign in</button>
+                    </form>
+                <!-- or -->
+                   <div class="col-md-12 text-or">
+                        <span>or</span>
+                   </div>
+                <!-- connect facebook -->
+                   <div class="form-group">
+               			<button class="btn btn-fb">Connect With Facebook</button>
+                   </div>
+               </div>
+            <!-- next > register -->
+               <div class="col-md-12">
+                 	<span>Don't have an account? </span><a href="#"><span class="text-forgot">REGISTER NOW ></span></a>
+               </div>              
             </div>
         </div>
      </div>
+</div>
+
 </body>
 </html>
