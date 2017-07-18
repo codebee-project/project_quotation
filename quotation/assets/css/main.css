@@ -49,7 +49,9 @@ body{
 .color-light-gray{
 	color: #8a8787;
 }
-
+.color-white{
+	color: #fff;
+}
 /*---------------------user input box icon-------------------*/
 /* enable absolute positioning */
 i{
@@ -228,4 +230,13 @@ label {
 .mr-form-input-forgot {
     padding-left: 20% !important;
     padding-right: 20% !important;
+}
+
+/*--------------------------- navbar ------------------------*/
+
+.logo-navbar{
+	margin-top: -8px;
+}
+.font-sidebar{
+	font-size: 16px;
 }
