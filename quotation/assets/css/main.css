@@ -232,6 +232,76 @@ label {
     padding-right: 20% !important;
 }
 
+/*----------------------------edit_profile-----------------------------*/
+
+.menu-header-profile{
+	font-size: 20px;
+	color: #686868;
+	padding-bottom: 15px !important;
+}
+.box-profile{
+    overflow: hidden;
+	margin:auto;
+	background-color:#ebebeb;
+	border-radius: 2px;
+	box-shadow: 1px 1px 5px 0px #c6c5c5;
+}
+.pd-box{
+	padding-top: 0px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.input-profile{
+	width: 85% !important;
+}
+.mr-form-profile{
+	margin-top: 20px;
+}
+.btn-profile{
+    color: #fff;
+    background-color: #b22121;
+    font-size: 20px !important;
+	border: #b22121 solid 1px !important;
+	box-shadow: 0.5px 0.5px 2px 0px #989797;
+}
+.mr-btn-profile{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.mr-img-file{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.btn-edit{
+    color: #fff;
+    background-color: #b22121;
+    font-size: 12px !important;
+	border: #b22121 solid 1px !important;
+	box-shadow: 0.5px 0.5px 2px 0px #989797;
+}
+.mr-img-btn{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.menu-header-pass{
+	font-size: 20px;
+	color: #686868;
+	padding-bottom: 15px !important;
+	margin-top: 40px !important;
+}
+.mr-newPass{
+	margin-bottom: 0px !important;
+}
+.mr-descript{
+	margin-top: 0px !important;
+}
+.btn-pass{
+    color: #fff;
+    background-color: #b22121;
+    font-size: 20px !important;
+	border: #b22121 solid 1px !important;
+	box-shadow: 0.5px 0.5px 2px 0px #989797;
+}
 /*--------------------------- navbar ------------------------*/
 
 .logo-navbar{
@@ -239,4 +309,9 @@ label {
 }
 .font-sidebar{
 	font-size: 16px;
+}
+
+
+.bg-test{
+	background-color: #000;
 }

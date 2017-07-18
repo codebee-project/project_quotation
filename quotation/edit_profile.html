@@ -5,9 +5,6 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="Dashboard">
-  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
   <!-- Custom styles for this template -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -21,7 +18,7 @@
 </head>
 
 <body>
- 
+
 <section id="container" >
   <header class="header black-bg">
     <div class="sidebar-toggle-box">
@@ -104,17 +101,114 @@
       </div>
   </aside>
 
-<!--footer start-->
-<footer class="site-footer">
-    <div class="text-center">
-        2017&copy; codebee
-        <a href="edit_profile.html#" class="go-top">
-            <i class="fa fa-angle-up"></i>
-        </a>
+<!-- main-content start -->
+<!-- profile-content start -->
+  <section id="main-content">
+    <section id="edit_profile">
+    <div class="wrapper font-regular menu-header-profile">
+    <span> > Edit Profile</span>
     </div>
-</footer>
-<!--footer end-->
 
+    <div class="pd-box">
+    <div class="col-md-12 box-profile">
+      <!-- start img file -->
+        <div class="col-md-offset-4 col-md-4 text-center mr-img-file">
+          <img src="assets/img/profile.png" alt="profile">
+        </div>
+        <div class="col-md-offset-4 col-md-4 text-center mr-img-btn">
+          <button type="button" class="btn btn-edit font-regular">Edit photo</button>
+        </div>
+      <!-- end img file -->
+      <!-- start form profile -->
+      <div class="col-md-12">
+        <form class="form-horizontal">
+          <div class="form-group mr-form-profile">
+            <span for="sp_email" class="col-sm-3 control-label font-regular">Email Address</span>
+            <div class="col-sm-9">
+              <input type="email" class="form-control input-profile" id="ip_email" placeholder="Email address" disabled="disabled">
+            </div>
+          </div>
+          <div class="form-group mr-form-profile">
+            <span id="sp_name" class="col-sm-3 control-label font-regular">Name</span>
+            <div class="col-sm-9">
+              <input type="text" class="form-control input-profile" id="ip_name" placeholder="Name">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- end form profile -->
+      <!-- start button profile -->
+        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+          <button type="button" class="btn btn-profile">Save change</button>
+        </div>
+      <!-- end button profile -->
+    </div>
+    </div>
+<!-- profile-content end -->
+
+<!-- password-content start -->
+    <section id="edit_profile">
+    <div class="wrapper font-regular menu-header-pass">
+    <span> > Change password</span>
+    </div>
+
+    <div class="pd-box">
+    <div class="col-md-12 box-profile">
+      <!-- start form profile -->
+      <div class="col-md-12">
+        <form class="form-horizontal">
+          <div class="form-group mr-form-profile">
+            <span id="sp_curPass" class="col-sm-3 control-label font-regular">Current Password</span>
+            <div class="col-sm-9">
+              <input type="password" class="form-control input-profile" id="ip_curPass" placeholder="Please enter current password">
+            </div>
+          </div>
+          <div class="form-group mr-form-profile mr-newPass">
+            <span id="sp_newPass" class="col-sm-3 control-label">New Password</span>
+            <div class="col-sm-9">
+              <input type="password" class="form-control input-profile" id="ip_newPass" placeholder="Please enter new password">
+            </div>
+          </div>
+          <div class="form-group mr-descript">
+          <div class="col-sm-3">
+          </div>
+          <div class="col-sm-9">
+            <span class="color-light-gray">Please enter your password over 8 characters.</span>
+          </div>
+          </div>
+          <div class="form-group mr-form-profile">
+            <span id="sp_conPass" class="col-sm-3 control-label">Confirm New Password</span>
+            <div class="col-sm-9">
+              <input type="password" class="form-control input-profile" id="ip_newPass" placeholder="Please enter confirm new password">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- end form profile -->
+      <!-- start button profile -->
+        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+          <button type="button" class="btn btn-pass">Save change</button>
+        </div>
+      <!-- end button profile -->
+    </div>
+<!-- password-content end -->
+    </section>
+
+  <!--footer start-->
+  <div class="col-md-12 mr-footer no-padding">
+      <footer class="site-footer">
+          <div class="text-center">
+              2017&copy; codebee
+              <a href="edit_profile.html#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+  </div>
+  <!--footer end-->
+<!-- main-content end -->
+
+  </section>
 </section>
 
 </body>

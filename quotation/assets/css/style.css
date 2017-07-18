@@ -29,7 +29,7 @@ a, a:hover, a:focus {
 }
 ::selection {
 
-    background: #68dff0;
+    background: #d8322b;
     color: #fff;
 }
 ::-moz-selection {
@@ -457,10 +457,10 @@ ul.sidebar-menu li a.active i {
 
 .wrapper {
     display: inline-block;
-    margin-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     padding-top: 0px;
     width: 100%;
 }
@@ -812,4 +812,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     height: 20px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
+}
+.mr-footer{
+    margin-top: 40px;
 }
