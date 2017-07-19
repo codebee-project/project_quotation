@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CODEBEE</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style-responsive.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!--external css-->
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- datepicker -->
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/bootstrap-datepicker3.css">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+</head>
+
+<body>
+
+<section id="container" >
+  <header class="header black-bg">
+    <div class="sidebar-toggle-box">
+      <div class="fa fa-bars tooltips color-white" data-placement="right" data-original-title="Toggle Navigation"></div>
+    </div>
+    <!--logo start-->
+    <a href="index.html" class="logo"><b><img src="assets/img/logo_navbar.png" class="logo-navbar"></b></a>
+    <div class="top-menu">
+      <ul class="nav pull-right top-menu">
+        <li>
+          <a class="EN active" href="#">EN</a>
+          <a class="TH" href="#">TH</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+      <!--header end-->
+ 
+  <aside>
+      <div id="sidebar"  class="nav-collapse">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu" id="nav-accordion">
+            <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
+            <h5 class="centered font-sidebar">Taneeya</h5>
+          <!-- nav-menu start -->
+            <li class="sub-menu mt">
+                <a class="" href="javascript:;">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a class="active" href="javascript:;" >
+                    <i class="fa fa-file-text"></i>
+                    <span>Quotation</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-file-text"></i>
+                    <span>Invoice</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-building"></i>
+                    <span>Company</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                  <i class="fa fa-users"></i>
+                  <span>Management User</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-cog"></i>
+                    <span>Website Setting</span>
+                </a>
+                <ul class="sub" style="overflow: hidden; display: block;">
+                    <li><a href="add_quotation_type.html">Quotation Type</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="login.html">
+                  <i class="fa fa-sign-out"></i>
+                  <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+            <!-- nav-menu end -->
+          <!-- sidebar menu end-->
+      </div>
+  </aside>
+
+<!-- main-content start -->
+
+<!-- add_quotation-content start -->
+  <section id="main-content">
+    
+    <section id="edit_profile">
+
+        <div class="wrapper font-regular edit-quo-navigator">
+          <div class="dis-inblock bg-white-gray"><span>You are here : </span></div>
+          <span>Quotation > </span>
+          <span class="color-dark-red">Add Quotation</span>
+
+          <!-- /////////// -->
+        <div class="pd-header font-regular header-edit-quo no-padding">
+          <span>> Add Quotation</span>
+        </div>
+        <div class="">
+          <!-- start form add_quotation -->
+          <div class="col-md-12 no-padding">
+            <form class="form">
+
+              <div class="form-group mr-form-profile col-md-12 no-padding">
+                <span id="sp_date" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Date
+                  <span class="color-dark-red">*</span>
+                </span>
+                <div id="sandbox-container col-sm-9">
+                  <div class="col-md-9 no-padding">
+                    <div class="input-group date no-padding">
+                      <input type="text" class="form-control input-datepicker" placeholder="dd/mm/yyyy">
+                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3"></div>
+                </div>
+              </div>
+
+              <div class="form-group mr-form-profile col-md-12 no-padding">
+                <span id="sp_quoNo" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Quotation No
+                  <span class="color-dark-red">*</span>
+                </span>
+                <div class="col-sm-9 no-padding">
+                  <input type="text" class="form-control" id="ip_quoNo" placeholder="Please enter quotation no">
+                </div>
+              </div>
+
+              <div class="form-group mr-form-profile col-md-12 no-padding">
+                <span id="sp_quoFile" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Path File Quotation
+                  <span class="color-dark-red">*</span>
+                </span>
+                <div class="col-sm-9 no-padding">
+                  <button type="button" class="btn btn-edit font-regular">
+                  <span class=""><i class="fa fa-file-text color-light-gray2"></i></span>
+                  Choose file</button>
+                </div>
+              </div>
+
+              <div class="form-group mr-form-profile col-md-12 no-padding">
+                <span id="sp_quoType" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Quotation Type
+                  <span class="color-dark-red">*</span>
+                </span>
+                <div class="col-sm-9 no-padding">
+                  <select id="sl_quoType" class="form-control pd-select-quo">
+                    <option selected="">-Select-</option>
+                    <option>Website</option>
+                    <option>Mobile Application</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group mr-form-profile col-md-12 no-padding">
+                <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Company Name
+                  <span class="color-dark-red">*</span>
+                </span>
+                <div class="col-sm-9 no-padding">
+                  <input type="text" class="form-control" id="ip_comName" placeholder="Please enter company name">
+                </div>
+              </div>
+
+              <div class="form-group mr-form-profile col-md-12 no-padding">
+                <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding">Working Status</span>
+                <div class="col-sm-9 no-padding">
+                  <label class="radio-inline rdo-edit">
+                    <input type="radio" name="inlineRadioOptions" id="ip_success" value="success"> Success
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="ip_inprocess" value="inprocess"> Inprocess
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="ip_wait" value="wait"> Wait
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group mr-form-profile col-md-12 no-padding">
+                <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding">Description</span>
+                <div class="col-sm-9 no-padding">
+                  <textarea class="form-control" placeholder="Enter description" rows="3"></textarea>
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <!-- end form add_quotation -->
+          <!-- start button add_quotation -->
+            <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+              <button type="button" class="btn btn-pass btn-quo">Save</button>
+            </div>
+          <!-- end button add_quotation -->
+        </div>
+<!-- add_quotation-content end -->
+    </section>
+
+  <!--footer start-->
+  <div class="col-md-12 mr-footer no-padding">
+      <footer class="site-footer">
+          <div class="text-center">
+              2017&copy; codebee
+              <a href="edit_quotation.html#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+  </div>
+  <!--footer end-->
+<!-- main-content end -->
+
+  </section>
+</section>
+
+</body>
+
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery/jquery-1.9.1.min.js"></script>
+  <script src="assets/js/jquery/jquery.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!--common script for all pages-->
+  <script class="include" type="text/javascript" src="assets/js/jquery/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="assets/js/jquery/jquery.scrollTo.min.js"></script>
+  <script src="assets/js/jquery/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="assets/js/common-scripts.js"></script> 
+
+  <!-- datepicker -->
+  <script src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+  <script src="assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+
+</html>

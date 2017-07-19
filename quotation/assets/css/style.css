@@ -268,6 +268,7 @@ ul.top-menu > li > .TH {
     height: 100%;
     position: fixed;
     background: #282828;
+    z-index: 1;
 }
 
 #sidebar h5 {
@@ -814,5 +815,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     -webkit-border-radius: 50%;
 }
 .mr-footer{
-    margin-top: 40px;
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
 }

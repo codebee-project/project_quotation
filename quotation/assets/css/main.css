@@ -31,9 +31,9 @@ body{
 	height:auto;
 }
 .text-l{
-	text-align:left;
+	text-align:left !important;
 }
-.no-padding{
+.no-padding-lr{
 	padding-left:0px !important;
 	padding-right:0px !important;
 }
@@ -43,14 +43,28 @@ body{
 .font-regular{
 	font-family:'promptregular' !important;
 }
+.dis-inblock{
+	display: inline-block !important;
+}
+/*--------------bg color------------*/
+.bg-white-gray{
+	background: #ebebeb;
+}
+/*----------color--------*/
 .color-dark-gray{
 	color: #383737;
 }
 .color-light-gray{
 	color: #8a8787;
 }
+.color-light-gray2{
+	color: #bfbfbf;
+}
 .color-white{
 	color: #fff;
+}
+.color-dark-red{
+	color: #b22121;
 }
 /*---------------------user input box icon-------------------*/
 /* enable absolute positioning */
@@ -245,6 +259,8 @@ label {
 	background-color:#ebebeb;
 	border-radius: 2px;
 	box-shadow: 1px 1px 5px 0px #c6c5c5;
+	padding-top: 2%;
+	padding-bottom:2%;
 }
 .pd-box{
 	padding-top: 0px;
@@ -252,10 +268,7 @@ label {
 	padding-right: 40px;
 }
 .input-profile{
-	width: 85% !important;
-}
-.mr-form-profile{
-	margin-top: 20px;
+	width: 100% !important;
 }
 .btn-profile{
     color: #fff;
@@ -264,19 +277,22 @@ label {
 	border: #b22121 solid 1px !important;
 	box-shadow: 0.5px 0.5px 2px 0px #989797;
 }
-.mr-btn-profile{
-	margin-top: 5px;
-	margin-bottom: 20px;
-}
 .mr-img-file{
 	margin-top: 20px;
 	margin-bottom: 5px;
 }
 .btn-edit{
-    color: #fff;
-    background-color: #b22121;
+    color: #959595;
+    background-color: #fff;
     font-size: 12px !important;
-	border: #b22121 solid 1px !important;
+	border: #959595 solid 1px !important;
+	box-shadow: 0.5px 0.5px 2px 0px #989797;
+}
+.btn-edit:hover{
+    color: #fff !important;
+    background-color: #959595;
+    font-size: 12px !important;
+	border: #959595 solid 1px !important;
 	box-shadow: 0.5px 0.5px 2px 0px #989797;
 }
 .mr-img-btn{
@@ -302,6 +318,82 @@ label {
 	border: #b22121 solid 1px !important;
 	box-shadow: 0.5px 0.5px 2px 0px #989797;
 }
+
+/* ---------------------------- edit quotation-------------------------------*/
+
+.header-edit-quo{
+	font-size: 20px;
+	color: #686868;
+	padding-bottom: 15px !important;
+}
+.edit-quo-navigator{
+	font-size: 14px;
+	color: #686868;
+	padding-bottom: 15px !important;
+}
+.pd-header{
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.datepicker-edit-quo{
+	padding-left: 15px;
+}
+.input-datepicker{
+}
+.input-quo-edit{
+	width: 88.5% !important;
+}
+.pd-select-quo{
+	padding-top: 3px !important;
+}
+.mr-edit-quo{
+	margin-bottom: 0px !important;
+}
+.sp-quo-edit{
+    padding: 7px;
+}
+.rdo-edit{
+	margin-top: 0;
+    margin-left: 10px;
+}
+
+/*----------------------add_quotation---------------------*/
+.btn-quo{
+	width: 50%;
+}
+
+/*-------------------------add_quo_type-------------------*/
+.btn-quo-type{
+	width: 50%;
+}
+
+/*----------------------------add_contact---------------------------*/
+.control-input{
+	width: 88.4% !important;
+}
+.control-icon-plus{
+	font-size: 20px !important;
+	color: green;
+}
+.control-icon-close{
+	font-size: 20px !important;
+	color: red;
+}
+.control-pd-icon-plus{	
+	padding: 7px !important;
+	cursor: pointer;
+
+}
+.control-pd-icon-close{
+	padding: 7px !important;
+	padding-left: 13px !important;
+	cursor: pointer;
+}
+.mr-div-gen{
+	margin-top: 15px !important;
+}
+
 /*--------------------------- navbar ------------------------*/
 
 .logo-navbar{
@@ -314,4 +406,11 @@ label {
 
 .bg-test{
 	background-color: #000;
+}
+
+/*color-checkwork*/
+.class-checkwork{
+	/*finish	b5ffb5*/
+	/*inprocess f8ff6a*/
+	/*wait		ffad6a*/
 }

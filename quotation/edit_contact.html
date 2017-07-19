@@ -10,11 +10,13 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style-responsive.css" rel="stylesheet">
-
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <!--external css-->
   <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- datepicker -->
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/bootstrap-datepicker3.css">
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
 </head>
 
 <body>
@@ -45,19 +47,19 @@
             <h5 class="centered font-sidebar">Taneeya</h5>
           <!-- nav-menu start -->
             <li class="sub-menu mt">
-                <a class="" href="#">
+                <a class="" href="dashboard.html">
                     <i class="fa fa-bar-chart-o"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a class="" href="javascript:;" >
                     <i class="fa fa-file-text"></i>
                     <span>Quotation</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="javascript:;">
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
@@ -69,7 +71,7 @@
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a class="active" href="javascript:;">
                     <i class="fa fa-address-book"></i>
                     <span>Contact</span>
                 </a>
@@ -81,7 +83,7 @@
               </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="javascript:;">
                     <i class="fa fa-cog"></i>
                     <span>Website Setting</span>
                 </a>
@@ -102,97 +104,78 @@
   </aside>
 
 <!-- main-content start -->
-<!-- profile-content start -->
+
+<!-- add_quotation_type-content start -->
   <section id="main-content">
+    
     <section id="edit_profile">
-    <div class="wrapper font-regular menu-header-profile">
-    <span> > Edit Profile</span>
-    </div>
 
-    <div class="pd-box">
-    <div class="col-md-12 box-profile">
-      <!-- start img file -->
-        <div class="col-md-offset-4 col-md-4 text-center mr-img-file">
-          <img src="assets/img/profile.png" alt="profile">
-        </div>
-        <div class="col-md-offset-4 col-md-4 text-center mr-img-btn">
-          <button type="button" class="btn btn-edit font-regular">Edit photo</button>
-        </div>
-      <!-- end img file -->
-      <!-- start form profile -->
       <div class="col-md-12">
-        <form class="form-horizontal">
-          <div class="form-group mr-form-profile">
-            <span for="sp_email" class="col-sm-3 control-label font-regular text-l">Email Address</span>
-            <div class="col-sm-9">
-              <input type="email" class="form-control " id="ip_email" placeholder="Email address" disabled="disabled" value="example@gmail.com">
-            </div>
-          </div>
-          <div class="form-group mr-form-profile">
-            <span id="sp_name" class="col-sm-3 control-label font-regular text-l">Name</span>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="ip_name" placeholder="Name">
-            </div>
-          </div>
-        </form>
-      </div>
-      <!-- end form profile -->
-      <!-- start button profile -->
-        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
-          <button type="button" class="btn btn-profile">Save change</button>
+        <div class="wrapper font-regular edit-quo-navigator">
+          <div class="dis-inblock bg-white-gray"><span>You are here : </span></div>
+          <span>Contact > </span>
+          <span class="color-dark-red">Edit Contact</span>
         </div>
-      <!-- end button profile -->
-    </div>
-    </div>
-  </section>
-<!-- profile-content end -->
-
-<!-- password-content start -->
-    <section id="edit_profile">
-    <div class="wrapper font-regular menu-header-pass">
-    <span> > Change Password</span>
-    </div>
-
-    <div class="pd-box">
-    <div class="col-md-12 box-profile">
-      <!-- start form profile -->
-      <div class="col-md-12">
-        <form class="form-horizontal">
-          <div class="form-group mr-form-profile">
-            <span id="sp_curPass" class="col-sm-3 control-label font-regular text-l">Current Password</span>
-            <div class="col-sm-9">
-              <input type="password" class="form-control" id="ip_curPass" placeholder="Please enter current password">
-            </div>
-          </div>
-          <div class="form-group mr-form-profile mr-newPass">
-            <span id="sp_newPass" class="col-sm-3 control-label text-l font-regular">New Password</span>
-            <div class="col-sm-9">
-              <input type="password" class="form-control" id="ip_newPass" placeholder="Please enter new password">
-            </div>
-          </div>
-          <div class="form-group mr-descript">
-          <div class="col-sm-3">
-          </div>
-          <div class="col-sm-9">
-            <span class="color-light-gray">Please enter your password over 8 characters.</span>
-          </div>
-          </div>
-          <div class="form-group mr-form-profile">
-            <span id="sp_conPass" class="col-sm-3 control-label text-l font-regular">Confirm New Password</span>
-            <div class="col-sm-9">
-              <input type="password" class="form-control" id="ip_newPass" placeholder="Please enter confirm new password">
-            </div>
-          </div>
-        </form>
       </div>
-      <!-- end form profile -->
-      <!-- start button profile -->
-        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
-          <button type="button" class="btn btn-pass">Save change</button>
-        </div>
-      <!-- end button profile -->
-    </div>
-<!-- password-content end -->
+      <div class="pd-header font-regular header-edit-quo">
+      <span>> Edit Contact</span>
+      </div>
+      <div class="pd-box">
+        <!-- start form add_invoice -->
+        <div class="col-md-12">
+          <form class="form">
+
+            <div class="form-group mr-form-profile col-md-12">
+              <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit">Company Name
+                <span class="color-dark-red">*</span>
+              </span>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="ip_comName" placeholder="Please enter company name" value="codebee">
+              </div>
+            </div>
+
+            <div class="form-group mr-form-profile col-md-12">
+              <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit">Contact Name
+                <span class="color-dark-red">*</span>
+              </span>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="ip_conName" placeholder="Please enter contact name" value="John Smith">
+              </div>
+            </div>
+
+          <!-- genauto input email start  -->
+            <div class="form-group mr-form-profile col-md-12">
+              <span id="sp_email" class="col-sm-3 control-label font-regular sp-quo-edit">Email</span>
+              <div class="input_fields_wrap col-sm-9">
+                <div class="col-md-12 dis-inblock no-padding">
+                  <input type="email" class="form-control dis-inblock control-input" id="exampleInputEmail1" placeholder="Please enter email address" value="smith.js@gmail.com">
+                  <i id="add-email" class="fa fa-plus-circle control-icon-plus control-pd-icon-plus"></i>
+                </div>
+              </div>
+            </div>
+          <!-- genauto input email end  -->
+
+          <!-- genauto input email start  -->
+            <div class="form-group mr-form-profile col-md-12">
+              <span id="sp_telephone" class="col-sm-3 control-label font-regular sp-quo-edit">Telephone</span>
+              <div class="input_field_wrap col-sm-9">
+                <div class="col-md-12 dis-inblock no-padding">
+                  <input type="Telephone" class="form-control dis-inblock control-input" id="exampleInputTel1" placeholder="Please enter telephone number" value="091-1150292">
+                  <i id="add-tel" class="fa fa-plus-circle control-icon-plus control-pd-icon-plus"></i>
+                </div>
+              </div>
+            </div>
+          <!-- genauto input email end  -->
+        <!-- end form add_invoice -->
+
+        <!-- start button add_quotation_type -->
+          <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+            <button type="button" class="btn btn-pass btn-quo-type">Save</button>
+          </div>
+        <!-- end button add_quotation_type -->
+      </div>
+
+  <!-- add_quotation_type-content end -->
     </section>
 
   <!--footer start-->
@@ -200,7 +183,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2017&copy; codebee
-              <a href="edit_profile.html#" class="go-top">
+              <a href="edit_quotation.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
@@ -208,12 +191,13 @@
   </div>
   <!--footer end-->
 <!-- main-content end -->
-
+  </section>
 </section>
 
 </body>
 
   <!-- js placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery/jquery-1.9.1.min.js"></script>
   <script src="assets/js/jquery/jquery.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 
@@ -223,4 +207,11 @@
   <script src="assets/js/jquery/jquery.nicescroll.js" type="text/javascript"></script>
   <script src="assets/js/common-scripts.js"></script> 
 
+  <!-- datepicker -->
+  <script src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+  <script src="assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+
+  <!-- genauto -->
+  <script src="assets/js/genauto/genauto.js"></script>
 </html>
