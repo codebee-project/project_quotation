@@ -487,6 +487,24 @@ svg text{
     padding-bottom: 1% !important;
 	margin-bottom:2%;
 }
+.btn-view-file{
+    color: #686868;
+    background-color: #fff;
+    font-size: 16px !important;
+    border: #e2e1e1 solid 1px !important;
+    box-shadow: 0.5px 0.5px 1px 0px #989797;
+    padding-top: 1% !important;
+    padding-bottom: 1% !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+}
+.btn-view-file:hover{
+    color: #fff !important;
+    background-color: #959595;
+    font-size: 16px !important;
+	border: #959595 solid 1px !important;
+	box-shadow: 0.5px 0.5px 1px 0px #989797;
+}
 
 /*data table*/
 table.dataTable thead th {
@@ -514,7 +532,7 @@ table.dataTable thead th.sorting_desc:after {
     content: "\f0dd";
 }
 th { 
-	font-size: 18px;
+	font-size: 16px;
 	color:#686868;
 }
 td { 
@@ -612,19 +630,17 @@ td {
 /* ---------------------------- edit quotation-------------------------------*/
 
 .header-edit-quo{
-	font-size: 20px;
+	font-size: 23px;
 	color: #686868;
-	padding-bottom: 15px !important;
+	margin-bottom:2%;
 }
 .edit-quo-navigator{
 	font-size: 14px;
 	color: #686868;
 	padding-bottom: 15px !important;
 }
-.pd-header{
-	padding-top: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
+.mr-header{
+	margin-top: 2% !important;
 }
 .datepicker-edit-quo{
 	padding-left: 15px;
@@ -689,6 +705,144 @@ td {
 	margin-top: 15px !important;
 }
 
+/*------------ search --------------*/
+.mr-search{
+	margin-top: 2%;
+    margin-bottom: 1%;
+}
+.SearchButton{
+    background-color:#fff;
+    border: 1px solid #ccc;
+}
+.SearchButton:hover{
+    background-color:#fff;
+	border: 1px solid #ccc;
+}
+
+
+/*----------- btn add ------------*/
+.btn-add{
+	width:100%;
+	color: #fff;
+    background-color: #187f10;
+    font-size: 17px !important;
+	border: #187f10 solid 1px !important;
+	box-shadow: 0.5px 0.5px 2px 0px #989797;
+	padding-top: 2% !important;
+    padding-bottom: 2% !important;
+}
+.btn-add:hover{
+	width:100%;
+	color: #187f10 !important;
+    background-color: #fff;
+    font-size: 17px !important;
+	border: #187f10 solid 1px !important;
+	box-shadow: 0.5px 0.5px 2px 0px #989797;
+	padding-top: 2% !important;
+    padding-bottom: 2% !important;
+	font-family: 'promptlight' !important;
+}
+.btn-add i{
+	color:#fff;
+	margin-right:2%;
+}
+.btn-add:hover i{
+	color:#187f10;
+	margin-right:2%;
+}
+
+
+/*------------ status (on/off) ----------------*/
+.btn-primary:hover {
+    color: #fff !important;
+    border: none !important;
+}
+.btn-default:hover {
+    color: #333 !important;
+    background-color: #e6e6e6 !important;
+    border-color: #adadad !important;
+}
+
+/*------------ quotation list -------------------*/
+.btn-view{
+	background-color:#e57700;
+	color:#fff;
+	width:100%;
+	border: #e57700 solid 1px !important;
+	margin-bottom:2% !important;
+}
+.btn-view:hover{
+	background-color:#fff;
+	color:#e57700 !important;
+	width:100%;
+	border: #e57700 solid 1px !important;
+	margin-bottom:2% !important;
+}
+.btn-edit-quo{
+	background-color:#24394e;
+	color:#fff;
+	width:100%;
+	border: #24394e solid 1px !important;
+	margin-bottom:2% !important;
+}
+.btn-edit-quo:hover{
+	background-color:#fff;
+	color:#24394e !important;
+	width:100%;
+	border: #24394e solid 1px !important;
+	margin-bottom:2% !important;
+}
+.btn-add-con{
+	background-color:#019062;
+	color:#fff;
+	width:100%;
+	border: #019062 solid 1px !important;
+	margin-bottom:2% !important;
+}
+.btn-add-con:hover{
+	background-color:#fff;
+	color:#019062 !important;
+	width:100%;
+	border: #019062 solid 1px !important;
+	margin-bottom:2% !important;
+}
+.btn-add-inv{
+	background-color:#0072a7;
+	color:#fff;
+	width:100%;
+	border: #0072a7 solid 1px !important;
+	margin-bottom:2% !important;
+}
+.btn-add-inv:hover{
+	background-color:#fff;
+	color:#0072a7 !important;
+	width:100%;
+	border: #0072a7 solid 1px !important;
+	margin-bottom:2% !important;
+}
+.th-font-size{
+	font-size:14px;
+}
+.td-font-size{
+	font-size:13px;
+}
+.tr-color-suc{
+	background-color:#d0f5c0 !important;
+}
+.tr-color-in{
+	background-color:#d9edf7 !important;
+}
+.tr-color-wa{
+	background-color:#f2dede !important;
+}
+.tr-color-off{
+	background-color:#b6b6b6 !important;
+}
+.width-td-status{
+	width:12%;
+}
+
+
 /*--------------------------- navbar ------------------------*/
 
 .logo-navbar{
@@ -702,4 +856,6 @@ td {
 .bg-test{
 	background-color: #000;
 }
+
+
 
