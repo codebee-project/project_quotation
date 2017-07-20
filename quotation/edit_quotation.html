@@ -5,18 +5,16 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Custom styles for this template -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/style-responsive.css" rel="stylesheet">
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <!--external css-->
-  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <!-- datepicker -->
-  <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/bootstrap-datepicker3.css">
-  <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+  
+	<link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    
+    <!-- css this page -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker3.css">
 </head>
 
 <body>
@@ -110,27 +108,24 @@
     
     <section id="edit_profile">
 
-      <div class="col-md-12">
         <div class="wrapper font-regular edit-quo-navigator">
           <div class="dis-inblock bg-white-gray"><span>You are here : </span></div>
           <span>Quotation > </span>
           <span class="color-dark-red">Edit Quotation</span>
-        </div>
-      </div>
-      <div class="pd-header font-regular header-edit-quo">
+      <div class="pd-header font-regular header-edit-quo no-padding-lr">
       <span>> Edit Quotation</span>
       </div>
-      <div class="pd-box">
+      <div class="">
         <!-- start form edit_quotation -->
-        <div class="col-md-12">
+        <div class="col-md-12 no-padding-lr">
           <form class="form">
 
-            <div class="form-group mr-form-profile col-md-12">
-              <span id="sp_date" class="col-sm-3 control-label font-regular sp-quo-edit">Date
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_date" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Date
                 <span class="color-dark-red">*</span>
               </span>
-              <div id="sandbox-container col-sm-9">
-                <div class="col-md-9">
+              <div id="sandbox-container col-sm-9 no-padding-lr">
+                <div class="col-md-9 no-padding-lr">
                   <div class="input-group date">
                     <input type="text" class="form-control input-datepicker" placeholder="dd/mm/yyyy" value="19/07/2017">
                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
@@ -140,31 +135,31 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12">
-              <span id="sp_quoNo" class="col-sm-3 control-label font-regular sp-quo-edit">Quotation No
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_quoNo" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Quotation No
                 <span class="color-dark-red">*</span>
               </span>
-              <div class="col-sm-9">
+              <div class="col-sm-9 no-padding-lr">
                 <input type="text" class="form-control" id="ip_quoNo" placeholder="Please enter quotation no" value="Quo-10006">
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12">
-              <span id="sp_quoFile" class="col-sm-3 control-label font-regular sp-quo-edit">Path File Quotation
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_quoFile" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Path File Quotation
                 <span class="color-dark-red">*</span>
               </span>
-              <div class="col-sm-9">
+              <div class="col-sm-9 no-padding-lr">
                 <button type="button" class="btn btn-edit font-regular">
                 <span class=""><i class="fa fa-file-text color-light-gray2"></i></span>
                 Choose file</button>
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12">
-              <span id="sp_quoType" class="col-sm-3 control-label font-regular sp-quo-edit">Quotation Type
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_quoType" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Quotation Type
                 <span class="color-dark-red">*</span>
               </span>
-              <div class="col-sm-9">
+              <div class="col-sm-9 no-padding-lr">
                 <select id="sl_quoType" class="form-control pd-select-quo">
                   <option>-Select-</option>
                   <option selected="">Website</option>
@@ -173,18 +168,18 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12">
-              <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit">Company Name
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Company Name
                 <span class="color-dark-red">*</span>
               </span>
-              <div class="col-sm-9">
+              <div class="col-sm-9 no-padding-lr">
                 <input type="text" class="form-control" id="ip_comName" placeholder="Please enter company name" value="codebee">
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12">
-              <span id="sp_newPass" class="col-sm-3 control-label font-regular">Working Status</span>
-              <div class="col-sm-9">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding-lr">Working Status</span>
+              <div class="col-sm-9 no-padding-lr">
                 <label class="radio-inline rdo-edit">
                   <input type="radio" name="inlineRadioOptions" id="ip_success" value="success" checked> Success
                 </label>
@@ -197,9 +192,9 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12">
-              <span id="sp_newPass" class="col-sm-3 control-label font-regular">Description</span>
-              <div class="col-sm-9">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding-lr">Description</span>
+              <div class="col-sm-9 no-padding-lr">
                 <textarea class="form-control" placeholder="Enter description" rows="3"></textarea>
               </div>
             </div>
@@ -212,6 +207,7 @@
             <button type="button" class="btn btn-pass">Save change</button>
           </div>
         <!-- end button edit_quotation -->
+      </div>
       </div>
 <!-- edit_quotation-content end -->
     </section>
@@ -235,20 +231,19 @@
 
 </body>
 
-  <!-- js placed at the end of the document so the pages load faster -->
-  <script src="assets/js/jquery/jquery-1.9.1.min.js"></script>
-  <script src="assets/js/jquery/jquery.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
-  <!--common script for all pages-->
-  <script class="include" type="text/javascript" src="assets/js/jquery/jquery.dcjqaccordion.2.7.js"></script>
-  <script src="assets/js/jquery/jquery.scrollTo.min.js"></script>
-  <script src="assets/js/jquery/jquery.nicescroll.js" type="text/javascript"></script>
-  <script src="assets/js/common-scripts.js"></script> 
 
-  <!-- datepicker -->
-  <script src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-  <script src="assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-  <script src="assets/js/datepicker.js"></script>
+    <!--common script for all pages-->
+	<script src="assets/js/raphael-min.js"></script>
+    <script src="assets/js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
 
 </html>
