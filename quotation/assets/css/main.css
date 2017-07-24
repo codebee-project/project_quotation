@@ -120,6 +120,10 @@ i{
     align-items: center;
 }
 /*------------------- login ---------------------*/
+.n-pad{
+}
+.font-responsive{
+}
 .box-login{
     overflow: hidden;
 	margin:auto;
@@ -278,6 +282,9 @@ label {
 }
 .font-sidebar{
 	font-size: 16px;
+}
+.index-sidebar{
+	z-index: 2;
 }
 
 /*------------------ dashboard -----------------------*/
@@ -685,6 +692,10 @@ td {
 }
 
 /*----------------------------add_contact---------------------------*/
+.w-input{
+}
+.f-edit-profile{
+}
 .control-input{
 	width: 94% !important;
 }

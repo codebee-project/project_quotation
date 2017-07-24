@@ -1,0 +1,334 @@
+/*iphone 5 or max width 320px*/
+@media screen and (min-width: 320px) and (max-width: 320px){
+
+/*-------------------------------- login register and forgot password responsive --------------------------------*/
+.screen-center{
+    height: 568px;
+}
+.btn-login {
+    font-size: 15px !important;
+}
+.btn-fb{
+    font-size: 15px !important;
+}
+.form-control {
+    font-size: 15px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/*login*/
+
+.font-responsive{
+	font-size: 13px;
+}
+/*register*/
+.text-descrip {
+    font-size: 14px;
+}
+/*forgot-password*/
+.text-regis {
+    font-size: 29px;
+}
+.text-login {
+    font-size: 14px;
+}
+.btn-send-mail {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 84.5% !important;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 360px){
+
+/*-------------------------------- login register and forgot password responsive --------------------------------*/
+.screen-center{
+    height: 568px;
+}
+.btn-login {
+    font-size: 15px !important;
+}
+.btn-fb{
+    font-size: 15px !important;
+}
+.form-control {
+    font-size: 15px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/*login*/
+
+.font-responsive{
+	font-size: 13px;
+}
+/*register*/
+.text-descrip {
+    font-size: 14px;
+}
+/*forgot-password*/
+.text-regis {
+    font-size: 29px;
+}
+.text-login {
+    font-size: 14px;
+}
+.btn-send-mail {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 84.5% !important;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+}
+
+/*iphone 6 or min width 375px*/
+@media screen and (min-width: 375px) and (max-width: 375px) {
+
+/*-------------------------------- login responsive --------------------------------*/
+.screen-center{
+    height: 667px;
+}
+.btn-login {
+    font-size: 17px !important;
+}
+.btn-fb{
+    font-size: 17px !important;
+}
+.form-control {
+    font-size: 17px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.font-responsive{
+	font-size: 15px !important;
+}
+
+
+/*forgot-password*/
+.text-regis {
+    font-size: 35px;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 88.5% !important;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+}
+
+/*iphone 6plus or min width 375px*/
+@media screen and (min-width: 412px) and (max-width: 414px) {
+
+/*-------------------------------- login responsive --------------------------------*/
+.screen-center{
+    height: 736px;
+}
+.btn-login {
+    font-size: 18px !important;
+}
+.btn-fb{
+    font-size: 18px !important;
+}
+.form-control {
+    font-size: 18px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.font-responsive{
+	font-size: 16px !important;
+}
+
+/*forgot-password*/
+.text-regis {
+    font-size: 40px;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 89.5% !important;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+}
+
+/*iphone 6plus or min width 375px*/
+@media screen and (min-width: 768px) and (max-width: 768px) {
+
+/*-------------------------------- login responsive --------------------------------*/
+.screen-center{
+    height: 1024px;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 88.5% !important;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+}
+
+/*iphone 6plus or min width 375px*/
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+
+/*-------------------------------- login responsive --------------------------------*/
+.screen-center{
+    height: 1366px;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+}

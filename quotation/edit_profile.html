@@ -9,6 +9,7 @@
   <!-- Custom styles for this template -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main_responsive.css" rel="stylesheet">
   <link href="assets/css/style-responsive.css" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
@@ -38,7 +39,7 @@
       <!--header end-->
  
  <aside>
-      <div id="sidebar"  class="nav-collapse">
+      <div id="sidebar"  class="nav-collapse index-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
@@ -123,7 +124,7 @@
         </div>
       <!-- end img file -->
       <!-- start form profile -->
-      <div class="col-md-12">
+      <div class="col-md-12 n-pad">
         <form class="form-horizontal">
           <div class="form-group mr-form-profile">
             <span for="sp_email" class="col-sm-3 control-label font-regular text-l">Email Address</span>
@@ -138,7 +139,7 @@
             </div>
           </div>
           
-        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile n-pad">
           <button type="button" class="btn btn-profile btn-quo-type">Save change</button>
         </div>
         </form>
@@ -158,7 +159,7 @@
     <div class="pd-box">
     <div class="col-md-12 box-profile mr-box-editpro font-18 font-regular color-dark-gray-h">
       <!-- start form profile -->
-      <div class="col-md-12">
+      <div class="col-md-12 n-pad">
         <form class="form-horizontal">
           <div class="form-group mr-form-profile">
             <span id="sp_curPass" class="col-sm-3 control-label font-regular text-l">Current Password</span>
@@ -176,7 +177,7 @@
           <div class="col-sm-3">
           </div>
           <div class="col-sm-9">
-            <span class="color-light-gray font-17 font-light">Please enter your password over 8 characters.</span>
+            <span class="color-light-gray font-17 font-light f-edit-profile">Please enter your password over 8 characters.</span>
           </div>
           </div>
           <div class="form-group mr-form-profile">
@@ -186,7 +187,7 @@
             </div>
           </div>
           
-        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile n-pad">
           <button type="button" class="btn btn-pass btn-quo-type btn-quo-type">Save change</button>
         </div>
         </form>
@@ -203,7 +204,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2017&copy; codebee
-              <a href="edit_profile.html#" class="go-top">
+              <a href="#" id="back-to-top" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
@@ -222,13 +223,15 @@
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
-
     <!--common script for all pages-->
-	<script src="assets/js/raphael-min.js"></script>
+    <script src="assets/js/raphael-min.js"></script>
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
     <script src="assets/js/bootstrap-datepicker.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- back to top -->
+    <script src="assets/js/backtotop.js"></script>
 
 </html>

@@ -1,59 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>login</title>
-	<link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <title>login</title>
+<!-- meta tag -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- link css tag -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main_responsive.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body class="bg">
-	
-    <div class="screen-center">
-	<div class="col-md-12 text-center">
-        <div class="col-md-offset-4 col-md-4 box-login">
-            <div class="mr-box-input">
-            	<div class="col-md-12 mr-logo">
-                	<img alt="logo" src="assets/img/logo.png" />
-                </div>
-                <div class="col-md-12 mr-text-login">
-                	<span class="text-login color-dark-gray">You already have an account? Sign in here.</span>
-                </div>
-                <div class="col-md-12 mr-form-input">
-                    <form>
-                    <!-- email -->
-                        <div class="mr-text-login inner-addon left-addon">
-					      <i class="fa fa-user fa-lg"></i>      
-					      <input type="email" id="log_email" class="form-control" placeholder="Email address" />
-					    </div>
-					<!-- pass -->
-					    <div class="mr-bot-pass inner-addon left-addon">
-					      <i class="fa fa-lock fa-lg"></i>      
-					      <input type="password" id="log_pass" class="form-control" placeholder="Password" />
-					    </div>
-					<!-- forgot -->
-	                    <div class="form-group text-l">
-	                    	<a href="forgot.html"><span class="text-forgot">Forgot password?</span></a>
-	                    </div>
-	                <!-- sign in -->
-                    	<button type="submit" class="btn btn-login font-regular">Sign in</button>
-                    </form>
-                <!-- or -->
-                   <div class="col-md-12 text-or">
-                        <span class="color-light-gray">or</span>
-                   </div>
-                <!-- connect facebook -->
-                   <div class="form-group">
-               			<a class="btn btn-fb font-regular">Connect With Facebook</a>
-                   </div>
-               </div>
-            <!-- next > register -->
-               <div class="col-md-12 mr-bot-text-regis font-regular">
-                 	<span class="color-dark-gray">Don't have an account? </span><a href="register.html"><span class="text-forgot">REGISTER NOW ></span></a>
-               </div>              
+
+<div class="screen-center">
+  <div class="col-xs-12 text-center">
+    <div class="col-md-offset-4 col-md-4 box-login">
+      <div class="mr-box-input">
+        <div class="col-md-12 mr-logo n-pad">
+          <img alt="logo" src="assets/img/logo.png" />
+        </div>
+        <div class="col-md-12 mr-text-login n-pad">
+          <span class="text-login color-dark-gray">You already have an account? Sign in here.</span>
+        </div>
+          <div class="col-md-12 mr-form-input n-pad">
+            <form>
+          <!-- email -->
+              <div class="mr-text-login inner-addon left-addon">
+                <i class="fa fa-user fa-lg"></i>      
+                <input type="email" id="log_email" class="form-control" placeholder="Email address" />
+              </div>
+          <!-- pass -->
+              <div class="mr-bot-pass inner-addon left-addon">
+                <i class="fa fa-lock fa-lg"></i>      
+                <input type="password" id="log_pass" class="form-control" placeholder="Password" />
+              </div>
+          <!-- forgot -->
+              <div class="form-group text-l font-responsive">
+                <a href="forgot.html"><span class="text-forgot">Forgot password?</span></a>
+              </div>
+          <!-- sign in -->
+              <a href="#" class="btn btn-login font-regular">Sign in</a>
+            </form>
+          <!-- or -->
+            <div class="col-md-12 text-or">
+              <span class="color-light-gray">or</span>
+            </div>
+          <!-- connect facebook -->
+            <div class="form-group">
+              <a class="btn btn-fb font-regular">Connect With Facebook</a>
             </div>
         </div>
-     </div>
+      <!-- next > register -->
+        <div class="col-md-12 mr-bot-text-regis font-regular n-pad font-responsive">
+            <span class="color-dark-gray">Don't have an account? </span><a href="register.html"><span class="text-forgot">REGISTER NOW ></span></a>
+        </div>              
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>

@@ -9,7 +9,7 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-           $(wrapper).append('<div class="col-md-12 dis-inblock no-padding mr-div-gen"><input id="email_'+x+'" type="email" class="form-control dis-inblock control-input" id="exampleInputEmail1" placeholder="Please enter email address"><i id="close-email" class="fa fa-times control-icon-close control-pd-icon-close"></i></div>');
+           $(wrapper).append('<div class="col-md-12 dis-inblock no-padding mr-div-gen w-input"><input id="email_'+x+'" type="email" class="form-control dis-inblock control-input" id="exampleInputEmail1" placeholder="Please enter email address"><i id="close-email" class="fa fa-times control-icon-close control-pd-icon-close"></i></div>');
         }
     });
     
@@ -28,7 +28,7 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-           $(wrapper).append('<div class="col-md-12 dis-inblock no-padding mr-div-gen"><input id="email_'+x+'" type="Telephone" class="form-control dis-inblock control-input" id="exampleInputTel1" placeholder="Please enter telephone number"><i id="close-tel" class="fa fa-times control-icon-close control-pd-icon-close"></i></div>');
+           $(wrapper).append('<div class="col-md-12 dis-inblock no-padding mr-div-gen w-input"><input id="email_'+x+'" type="Telephone" class="form-control dis-inblock control-input" id="exampleInputTel1" placeholder="Please enter telephone number"><i id="close-tel" class="fa fa-times control-icon-close control-pd-icon-close"></i></div>');
         }
     });
     
