@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CODEBEE</title>
+  <title>Edit profile</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
   </header>
       <!--header end-->
  
-  <aside>
+ <aside>
       <div id="sidebar"  class="nav-collapse">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
@@ -45,43 +45,43 @@
             <h5 class="centered font-sidebar">Taneeya</h5>
           <!-- nav-menu start -->
             <li class="sub-menu mt">
-                <a class="" href="#">
+                <a class="" href="dashboard.html">
                     <i class="fa fa-bar-chart-o"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a class="" href="quotation_list.html" >
                     <i class="fa fa-file-text"></i>
                     <span>Quotation</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a class="" href="invoice_list.html">
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="company_list.html">
                     <i class="fa fa-building"></i>
                     <span>Company</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="contact_list.html" >
                     <i class="fa fa-address-book"></i>
                     <span>Contact</span>
                 </a>
             </li>
             <li class="sub-menu">
-              <a href="javascript:;">
+              <a href="management_user.html">
                   <i class="fa fa-users"></i>
                   <span>Management User</span>
               </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="javascript:;">
                     <i class="fa fa-cog"></i>
                     <span>Website Setting</span>
                 </a>
@@ -110,13 +110,16 @@
     </div>
 
     <div class="pd-box">
-    <div class="col-md-12 box-profile">
+    <div class="col-md-12 box-profile font-18 font-regular color-dark-gray-h">
       <!-- start img file -->
         <div class="col-md-offset-4 col-md-4 text-center mr-img-file">
           <img src="assets/img/profile.png" alt="profile">
         </div>
         <div class="col-md-offset-4 col-md-4 text-center mr-img-btn">
-          <button type="button" class="btn btn-edit font-regular">Edit photo</button>
+          <label for="upload-file" class="btn-edit font-light">
+          	<span class="">Edit photo</span>
+          </label>
+          <input type="file" name="photo" id="upload-file" />
         </div>
       <!-- end img file -->
       <!-- start form profile -->
@@ -134,14 +137,13 @@
               <input type="text" class="form-control" id="ip_name" placeholder="Name">
             </div>
           </div>
+          
+        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+          <button type="button" class="btn btn-profile btn-quo-type">Save change</button>
+        </div>
         </form>
       </div>
       <!-- end form profile -->
-      <!-- start button profile -->
-        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
-          <button type="button" class="btn btn-profile">Save change</button>
-        </div>
-      <!-- end button profile -->
     </div>
     </div>
   </section>
@@ -154,7 +156,7 @@
     </div>
 
     <div class="pd-box">
-    <div class="col-md-12 box-profile">
+    <div class="col-md-12 box-profile mr-box-editpro font-18 font-regular color-dark-gray-h">
       <!-- start form profile -->
       <div class="col-md-12">
         <form class="form-horizontal">
@@ -174,7 +176,7 @@
           <div class="col-sm-3">
           </div>
           <div class="col-sm-9">
-            <span class="color-light-gray">Please enter your password over 8 characters.</span>
+            <span class="color-light-gray font-17 font-light">Please enter your password over 8 characters.</span>
           </div>
           </div>
           <div class="form-group mr-form-profile">
@@ -183,15 +185,14 @@
               <input type="password" class="form-control" id="ip_newPass" placeholder="Please enter confirm new password">
             </div>
           </div>
+          
+        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+          <button type="button" class="btn btn-pass btn-quo-type btn-quo-type">Save change</button>
+        </div>
         </form>
       </div>
       </div>
       <!-- end form profile -->
-      <!-- start button profile -->
-        <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
-          <button type="button" class="btn btn-pass">Save change</button>
-        </div>
-      <!-- end button profile -->
     </div>
     </section>
 <!-- password-content end -->

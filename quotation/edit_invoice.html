@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CODEBEE</title>
+  <title>Edit invoice</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,31 +52,31 @@
                 </a>
             </li>
             <li class="sub-menu">
-                <a class="" href="javascript:;" >
+                <a class="" href="quotation_list.html" >
                     <i class="fa fa-file-text"></i>
                     <span>Quotation</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a class="active" href="javascript:;">
+                <a class="active" href="invoice_list.html">
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="company_list.html">
                     <i class="fa fa-building"></i>
                     <span>Company</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="contact_list.html" >
                     <i class="fa fa-address-book"></i>
                     <span>Contact</span>
                 </a>
             </li>
             <li class="sub-menu">
-              <a href="javascript:;">
+              <a href="management_user.html">
                   <i class="fa fa-users"></i>
                   <span>Management User</span>
               </a>
@@ -101,7 +101,6 @@
           <!-- sidebar menu end-->
       </div>
   </aside>
-
 <!-- main-content start -->
 
 <!-- add_quotation_type-content start -->
@@ -110,13 +109,16 @@
     <section id="edit_profile">
 
         <div class="wrapper font-regular edit-quo-navigator">
-          <div class="dis-inblock bg-white-gray"><span>You are here : </span></div>
-          <span>Invoice > </span>
-          <span class="color-dark-red">Edit Invoice</span>
-      <div class="pd-header font-regular header-edit-quo no-padding-lr">
-      <span>> Edit Invoice</span>
-      </div>
-      <div class="">
+          <div class="dis-inblock bg-white-gray">
+          	  <span>You are here : </span>
+          </div>
+              <span><a href="invoice_list.html" class="color-dark-gray-h">Invoice</a></span>
+              <i class="fa fa-angle-right"></i>
+          	  <span class="color-dark-red">Edit Invoice</span>
+          <div class="mr-header font-regular header-edit-quo no-padding-lr">
+                <span><i class="fa fa-angle-right"></i> Edit Invoice</span>
+          </div>
+          
         <!-- start form add_invoice -->
         <div class="col-md-12 no-padding-lr">
           <form class="form">
@@ -135,10 +137,12 @@
                 <span class="color-dark-red">*</span>
               </span>
               <div class="col-sm-9 no-padding-lr">
-                <button type="button" class="btn btn-edit font-regular">
-                <span class=""><i class="fa fa-file-text color-light-gray2"></i></span>
-                Choose file</button>
-                <span class="color-light-gray2">Please choose file .pdf</span>
+                <label for="upload-file" class="btn-edit font-light">
+                    <i class="fa fa-file-text color-light-gray2"></i>
+                    <span class="">Choose file</span>
+                </label>
+                <input type="file" name="photo" id="upload-file" />
+                <span class="color-light-gray2 font-17 font-light">Please choose file .pdf</span>
               </div>
             </div>
 

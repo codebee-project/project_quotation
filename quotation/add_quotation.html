@@ -45,48 +45,48 @@
             <h5 class="centered font-sidebar">Taneeya</h5>
           <!-- nav-menu start -->
             <li class="sub-menu mt">
-                <a class="" href="javascript:;">
+                <a class="" href="dashboard.html">
                     <i class="fa fa-bar-chart-o"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a class="active" href="javascript:;" >
+                <a class="active" href="quotation_list.html" >
                     <i class="fa fa-file-text"></i>
                     <span>Quotation</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a class="" href="invoice_list.html">
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="company_list.html">
                     <i class="fa fa-building"></i>
                     <span>Company</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="contact_list.html" >
                     <i class="fa fa-address-book"></i>
                     <span>Contact</span>
                 </a>
             </li>
             <li class="sub-menu">
-              <a href="javascript:;">
+              <a href="management_user.html">
                   <i class="fa fa-users"></i>
                   <span>Management User</span>
               </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="javascript:;">
                     <i class="fa fa-cog"></i>
                     <span>Website Setting</span>
                 </a>
                 <ul class="sub" style="overflow: hidden; display: block;">
-                    <li><a href="add_quotation_type.html">Quotation Type</a></li>
+                    <li><a href="type_list.html">Quotation Type</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -110,17 +110,18 @@
 
         <div class="wrapper font-regular edit-quo-navigator">
           <div class="dis-inblock bg-white-gray">
-          <span>You are here : </span></div>
-          <span>Quotation > </span>
-          <span class="color-dark-red">Add Quotation</span>
-
-          <!-- /////////// -->
-        <div class="pd-header font-regular header-edit-quo no-padding">
-          <span>> Add Quotation</span>
-        </div>
+          	  <span>You are here : </span>
+          </div>
+              <span><a href="quotation_list.html" class="color-dark-gray-h">Quotation</a></span>
+              <i class="fa fa-angle-right"></i>
+          	  <span class="color-dark-red">Add Quotation</span>
+          <div class="mr-header font-regular header-edit-quo no-padding-lr">
+                <span><i class="fa fa-angle-right"></i> Add Quotation</span>
+          </div>
+          
         <div class="">
           <!-- start form add_quotation -->
-          <div class="col-md-12 no-padding">
+          <div class="col-md-12 no-padding font-18">
             <form class="form">
 
               <div class="form-group mr-form-profile col-md-12 no-padding">
@@ -144,7 +145,7 @@
                   <span class="color-dark-red">*</span>
                 </span>
                 <div class="col-sm-9 no-padding">
-                  <input type="text" class="form-control" id="ip_quoNo" placeholder="Please enter quotation no">
+                  <input type="text" class="form-control" id="ip_quoNo" placeholder="Please enter quotation number">
                 </div>
               </div>
 
@@ -158,6 +159,7 @@
                     	<span class="">Choose file</span>
                     </label>
                     <input type="file" name="photo" id="upload-file" />
+                    <span class="color-light-gray2 font-17 font-light">Please choose file .pdf</span>
                 </div>
               </div>
 
@@ -185,8 +187,8 @@
 
               <div class="form-group mr-form-profile col-md-12 no-padding">
                 <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding">Working Status</span>
-                <div class="col-sm-9 no-padding">
-                  <label class="radio-inline rdo-edit">
+                <div class="col-sm-9 no-padding font-17 font-light">
+                  <label class="radio-inline rdo-edit mr-l-redio">
                     <input type="radio" name="inlineRadioOptions" id="ip_success" value="success"> Success
                   </label>
                   <label class="radio-inline">

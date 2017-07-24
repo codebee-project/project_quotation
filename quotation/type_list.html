@@ -37,7 +37,7 @@
   </header>
       <!--header end-->
  
- <aside>
+  <aside>
       <div id="sidebar"  class="nav-collapse">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
@@ -57,7 +57,7 @@
                 </a>
             </li>
             <li class="sub-menu">
-                <a class="active" href="invoice_list.html">
+                <a class="" href="invoice_list.html">
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
@@ -81,12 +81,12 @@
               </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;">
+                <a href="javascript:;" class="active">
                     <i class="fa fa-cog"></i>
                     <span>Website Setting</span>
                 </a>
                 <ul class="sub" style="overflow: hidden; display: block;">
-                    <li><a href="add_quotation_type.html">Quotation Type</a></li>
+                    <li><a href="add_quotation_type.html"  class="active">Quotation Type</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -106,15 +106,23 @@
 
 	<!--view-quotation start-->
 	<section id="view-quotation">
-    	<div class="wrapper font-content-view-quo">
+    	<div class="wrapper font-content-view-quo edit-quo-navigator">
+            
+          <div class="dis-inblock bg-white-gray">
+          	  <span>You are here : </span>
+          </div>
+              <span>Website Setting</span>
+              <i class="fa fa-angle-right"></i>
+          	  <span class="color-dark-red">Quotation Type</span>
             
             <!-- header -->
-       		<div class=" font-regular header-edit-quo no-padding-lr">
-                <span><i class="fa fa-angle-right"></i> Invoice</span>
-          	</div>
+        	<div class="mr-header font-regular header-edit-quo no-padding-lr">
+                <i class="fa fa-angle-right"></i> 
+                <span>Quotation Type</span>
+            </div>
             
             <!-- search -->
-            <div class="col-md-12 mr-search no-padding-lr">
+            <div class="col-md-12 mr-search-type no-padding-lr">
             	<div class="col-md-10 no-padding-l">  
                     <div class="input-group date no-padding">
                       <input type="text" class="form-control input-datepicker" placeholder="Search...">
@@ -122,9 +130,9 @@
                     </div>
                 </div>
                 <div class="col-md-2 no-padding-r">
-                	<a href="add_invoice.html" type="button" id="search_quo" class="btn btn-add">
+                	<a href="#" type="button" id="search_quo" class="btn btn-add">
                     <i class="fa fa-plus-circle icon-plus"></i>
-                    Add Invoice
+                    Add Type
                     </a>
                 </div>
             </div>
@@ -135,7 +143,7 @@
                     <thead>
                         <tr class="bg-color-tr">
                             <th>No</th>
-                            <th>Invoice no</th>
+                            <th>Quotation type</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
@@ -143,83 +151,66 @@
                     <tbody>
                         <tr>
                             <td>01</td>
-                            <td>Inv-0001</td>
+                            <td>Website</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status"><a href="edit_invoice.html"><i class="fa fa-edit fa-2x"></i></a></td>
+                            <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>02</td>
-                            <td>Inv-0002</td>
+                            <td>Application</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>03</td>
-                            <td>Inv-0003</td>
+                            <td>Website</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>04</td>
-                            <td>Inv-0004</td>
+                            <td>Website</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>05</td>
-                            <td>Inv-0005</td>
+                            <td>Application</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>06</td>
-                            <td>Inv-0006</td>
+                            <td>Application</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>07</td>
-                            <td>Inv-0007</td>
+                            <td>Web/App</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>08</td>
-                            <td>Inv-0008</td>
+                            <td>Application</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>09</td>
-                            <td>Inv-0009</td>
+                            <td>Web/App</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x"></i></a></td>
                         </tr>
                         <tr>
                             <td>10</td>
-                            <td>Inv-0010</td>
+                            <td>Web/App</td>
                             <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
                             <td class="width-td-status"><a href="#"><i class="fa fa-edit fa-2x fa-2x"></i></a></td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            
-            <div class="col-md-12 no-padding-lr">
-            	<div class="col-md-6 no-padding-lr">
-                	<span>Showing 1 to 5 of 10 entries</span>
-                </div>
-                <div class="col-md-6 no-padding-lr next-right">
-                    <ul class="pagination pagination-sm no-mr-tb">
-                      <li><a href="#">Previous</a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">Next</a></li>
-                    </ul>
-                </div>
             </div>
             
         </div>
@@ -258,7 +249,6 @@
   <!-- this page -->
   <script type="text/javascript" src="assets/js/common-scripts-admin.js"></script>
   <!-- this page (datatable) -->
-  <script type="text/javascript" src="assets/js/jquery-1.12.4.js"></script>
   <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>

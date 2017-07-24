@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Edit company</title>
+  <title>Add user</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 
 <body>
 
-<section id="container" >
+<section id="container">
   <header class="header black-bg">
     <div class="sidebar-toggle-box">
       <div class="fa fa-bars tooltips color-white" data-placement="right" data-original-title="Toggle Navigation"></div>
@@ -43,7 +43,7 @@
             <h5 class="centered font-sidebar">Taneeya</h5>
           <!-- nav-menu start -->
             <li class="sub-menu mt">
-                <a class="" href="dashboard_superadmin.html">
+                <a class="" href="dashboard.html">
                     <i class="fa fa-bar-chart-o"></i>
                     <span>Dashboard</span>
                 </a>
@@ -55,25 +55,25 @@
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="invoice_list.html">
+                <a class="" href="invoice_list.html">
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="company_list.html" class="active">
+                <a href="company_list.html" >
                     <i class="fa fa-building"></i>
                     <span>Company</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="contact_list.html" >
                     <i class="fa fa-address-book"></i>
                     <span>Contact</span>
                 </a>
             </li>
             <li class="sub-menu">
-              <a href="management_user.html">
+              <a href="management_user.html"  class="active">
                   <i class="fa fa-users"></i>
                   <span>Management User</span>
               </a>
@@ -103,59 +103,84 @@
 
 <!-- add_quotation_type-content start -->
   <section id="main-content">
-    
     <section id="edit_profile">
-
         <div class="wrapper font-regular edit-quo-navigator">
           <div class="dis-inblock bg-white-gray">
           	  <span>You are here : </span>
           </div>
-              <span><a href="company_list.html" class="color-dark-gray-h">Company</a></span>
+              <span><a href="management_user.html" class="color-dark-gray-h">Management User</a></span>
               <i class="fa fa-angle-right"></i>
-          	  <span class="color-dark-red">Edit Company</span>
-          <div class="mr-header font-regular header-edit-quo no-padding-lr">
-                <span><i class="fa fa-angle-right"></i> Edit Company</span>
-          </div>
-          
-      <div class="">
+          	  <span class="color-dark-red">Add User</span>
+      <div class="mr-header font-regular header-edit-quo no-padding-lr">
+      		<span><i class="fa fa-angle-right"></i> Add User</span>
+      </div>
+      <div class="no-padding-lr">
         <!-- start form add_invoice -->
         <div class="col-md-12 no-padding-lr font-18">
           <form class="form">
 
             <div class="form-group mr-form-profile col-md-12 no-padding-lr">
-              <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Company Name
+              <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Name
                 <span class="color-dark-red">*</span>
               </span>
               <div class="col-sm-9 no-padding-lr">
-                <input type="text" class="form-control" id="ip_comName" placeholder="Please enter company name" value="codebee">
+                <input type="text" class="form-control" id="ip_userName" placeholder="Please enter name">
               </div>
             </div>
 
             <div class="form-group mr-form-profile col-md-12 no-padding-lr">
-              <span id="sp_ident" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Identity</span>
+              <span id="sp_ident" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Email address
+              	<span class="color-dark-red">*</span>
+              </span>
               <div class="col-sm-9 no-padding-lr">
-                <input type="text" class="form-control" id="ip_ident" placeholder="Please enter identity" value="Ide-02932029">
+                <input type="text" class="form-control" id="ip_userEmil" placeholder="Please enter email address">
               </div>
             </div>
 
 
             <div class="form-group mr-form-profile col-md-12 no-padding-lr">
-              <span id="sp_address" class="col-sm-3 control-label font-regular no-padding-lr">Address</span>
+              <span id="sp_address" class="col-sm-3 control-label font-regular no-padding-lr">Password
+              	<span class="color-dark-red">*</span>
+              </span>
               <div class="col-sm-9 no-padding-lr">
-                <textarea class="form-control" placeholder="Please enter company address" rows="3">แจ้งวัฒนะ</textarea>
+                <input type="password" class="form-control" id="ip_userEmil" placeholder="Please enter password">
               </div>
             </div>
-
+            
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_address" class="col-sm-3 control-label font-regular no-padding-lr">Confirm password
+              	<span class="color-dark-red">*</span>
+              </span>
+              <div class="col-sm-9 no-padding-lr">
+                <input type="password" class="form-control" id="ip_userEmil" placeholder="Please enter confirm password">
+              </div>
+            </div>
+            
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+              <span id="sp_address" class="col-sm-3 control-label font-regular no-padding-lr">Type</span>
+              <div class="col-sm-9 no-padding-lr font-17 font-light">
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> Super admin
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> Admin
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" checked> Member
+                </label>
+              </div>
+            </div>
+            
         <!-- end form add_invoice -->
         </form>
         <!-- start button add_quotation_type -->
           <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
-            <button type="button" class="btn btn-pass btn-quo-type">Save Change</button>
+            <button type="button" class="btn btn-pass btn-quo-type">Save</button>
           </div>
         <!-- end button add_quotation_type -->
-      </div>
-      </div>
-      </div>
+        </div>
+        </div>
+        </div>
 <!-- add_quotation_type-content end -->
     </section>
   <!--footer start-->

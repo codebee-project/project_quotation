@@ -466,7 +466,7 @@ svg text{
 /*------------------ view quotation -----------------------*/
 .font-h-view-quo{
 	font-family: 'promptregular' !important;
-	font-size: 20px;
+	font-size: 23px;
     color: #686868;
 	margin-top: 2%;
     margin-bottom: 1%;
@@ -556,7 +556,7 @@ td {
 /*----------------------------edit_profile-----------------------------*/
 
 .menu-header-profile{
-	font-size: 20px;
+	font-size: 23px;
 	color: #686868;
 	padding-bottom: 15px !important;
 }
@@ -585,7 +585,6 @@ td {
 	box-shadow: 0.5px 0.5px 2px 0px #989797;
 }
 .mr-img-file{
-	margin-top: 20px;
 	margin-bottom: 5px;
 }
 .btn-edit{
@@ -608,7 +607,7 @@ td {
 	margin-bottom: 5px;
 }
 .menu-header-pass{
-	font-size: 20px;
+	font-size: 23px;
 	color: #686868;
 	padding-bottom: 15px !important;
 	margin-top: 40px !important;
@@ -625,6 +624,9 @@ td {
     font-size: 20px !important;
 	border: #b22121 solid 1px !important;
 	box-shadow: 0.5px 0.5px 2px 0px #989797;
+}
+.mr-box-editpro{
+	margin-bottom:2%;
 }
 
 /* ---------------------------- edit quotation-------------------------------*/
@@ -673,6 +675,9 @@ td {
    position: absolute;
    z-index: -1;
 }
+.mr-l-redio{
+	margin-left:0;
+}
 
 /*-------------------------add_quo_type-------------------*/
 .btn-quo-type{
@@ -681,7 +686,7 @@ td {
 
 /*----------------------------add_contact---------------------------*/
 .control-input{
-	width: 95% !important;
+	width: 94% !important;
 }
 .control-icon-plus{
 	font-size: 20px !important;
@@ -707,7 +712,6 @@ td {
 
 /*------------ search --------------*/
 .mr-search{
-	margin-top: 2%;
     margin-bottom: 1%;
 }
 .SearchButton{
@@ -841,8 +845,30 @@ td {
 .width-td-status{
 	width:12%;
 }
+/*----------------------- type list -----------------------*/
+.mr-search-type{
+	margin-bottom:1%;
+}
 
+/*----------------------pagination--------------------------*/
+.next-right{
+	float: right !important;
+    text-align: right;
+}
+.no-mr-tb{
+	margin:0 !important;
+}
+.pagination{
+	border-radius:0px !important;
+	margin-top:1%;
+	
+}
 
+.pagination>li>a, .pagination>li>span{
+	border:0px !important;
+	font-size:17px !important;
+	color:#686868 !important;
+}
 /*--------------------------- navbar ------------------------*/
 
 .logo-navbar{

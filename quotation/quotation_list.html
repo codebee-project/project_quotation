@@ -38,45 +38,60 @@
   </header>
       <!--header end-->
  
-  <aside>
+ <aside>
       <div id="sidebar"  class="nav-collapse">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
-            <p class="centered"><a href="profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
+            <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
             <h5 class="centered font-sidebar">Taneeya</h5>
           <!-- nav-menu start -->
             <li class="sub-menu mt">
-                <a class="" href="dashboard_admin.html">
+                <a class="" href="dashboard.html">
                     <i class="fa fa-bar-chart-o"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" class="active">
+                <a class="active" href="quotation_list.html" >
                     <i class="fa fa-file-text"></i>
                     <span>Quotation</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a class="" href="invoice_list.html">
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="company_list.html">
                     <i class="fa fa-building"></i>
                     <span>Company</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="contact_list.html" >
                     <i class="fa fa-address-book"></i>
                     <span>Contact</span>
                 </a>
             </li>
             <li class="sub-menu">
-              <a href="javascript:;">
+              <a href="management_user.html">
+                  <i class="fa fa-users"></i>
+                  <span>Management User</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-cog"></i>
+                    <span>Website Setting</span>
+                </a>
+                <ul class="sub" style="overflow: hidden; display: block;">
+                    <li><a href="add_quotation_type.html">Quotation Type</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="login.html">
                   <i class="fa fa-sign-out"></i>
                   <span>Logout</span>
               </a>
@@ -95,10 +110,9 @@
     	<div class="wrapper font-content-view-quo">
             
             <!-- header -->
-        	<div class="col-md-12 font-regular no-padding-lr">
-                <i class="fa fa-angle-right"></i> 
-                <span>Quotation</span>
-            </div>
+        	<div class="font-regular header-edit-quo no-padding-lr">
+                <span><i class="fa fa-angle-right"></i> Quotation</span>
+          	</div>
             
             <!-- search -->
             <div class="col-md-12 mr-search no-padding-lr">
@@ -109,7 +123,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 no-padding-r">
-                    <a href="#" id="search_quo" class="btn btn-add">
+                    <a href="add_quotation.html" id="search_quo" class="btn btn-add">
                     	<i class="fa fa-plus-circle icon-plus"></i>Add quotation
                     </a>
                     
@@ -120,12 +134,12 @@
                 	<span class="font-regular">Description working status : </span>
                 </div>
                 <div class="col-md-9 mr-text-descrip-sum2 ">
-                    <img alt="success" src="assets/img/s-success.png" />
+                    <img alt="success" src="assets/img/sq-success.png" />
                     <span class="padding-text-descrip-sum2">Success</span>
-                    <img alt="success" src="assets/img/s-inprocess.png" />
+                    <img alt="success" src="assets/img/sq-inprocess.png" />
                     <span class="padding-text-descrip-sum2">Inprocess</span>
                     
-                    <img alt="success" src="assets/img/s-wait.png" />
+                    <img alt="success" src="assets/img/sq-wait.png" />
                     <span class="padding-text-descrip-sum2">Wait</span>
                 </div>
             </div>
@@ -224,6 +238,23 @@
                         
                     </tbody>
                 </table>
+            </div>
+            
+            <div class="col-md-12 no-padding-lr">
+            	<div class="col-md-6 no-padding-lr">
+                	<span>Showing 1 to 5 of 10 entries</span>
+                </div>
+                <div class="col-md-6 no-padding-lr next-right">
+                    <ul class="pagination pagination-sm no-mr-tb">
+                      <li><a href="#">Previous</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
             </div>
             
         </div>
