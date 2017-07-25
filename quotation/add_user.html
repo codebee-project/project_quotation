@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add user</title>
+  <title>CODEBEE</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <!-- Custom styles for this template -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -12,6 +13,7 @@
   <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/css/main_responsive.css" rel="stylesheet">
   
 </head>
 
@@ -36,7 +38,7 @@
       <!--header end-->
  
   <aside>
-      <div id="sidebar"  class="nav-collapse">
+      <div id="sidebar"  class="nav-collapse index-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
@@ -102,24 +104,26 @@
 <!-- main-content start -->
 
 <!-- add_quotation_type-content start -->
-  <section id="main-content">
-    <section id="edit_profile">
-        <div class="wrapper font-regular edit-quo-navigator">
-          <div class="dis-inblock bg-white-gray">
-          	  <span>You are here : </span>
-          </div>
-              <span><a href="management_user.html" class="color-dark-gray-h">Management User</a></span>
-              <i class="fa fa-angle-right"></i>
-          	  <span class="color-dark-red">Add User</span>
+<section id="main-content">
+  <section id="edit_profile">
+    <div class="wrapper font-regular edit-quo-navigator">
+      <div class="font-size-nav1">
+        <div class="dis-inblock bg-white-gray">
+      	  <span>You are here : </span>
+        </div>
+        <span><a href="management_user.html" class="color-dark-gray-h">Management User</a></span>
+        <i class="fa fa-angle-right"></i>
+    	  <span class="color-dark-red">Add User</span>
+      </div>
       <div class="mr-header font-regular header-edit-quo no-padding-lr">
-      		<span><i class="fa fa-angle-right"></i> Add User</span>
+  		  <span><i class="fa fa-angle-right"></i> Add User</span>
       </div>
       <div class="no-padding-lr">
         <!-- start form add_invoice -->
         <div class="col-md-12 no-padding-lr font-18">
           <form class="form">
 
-            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
               <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Name
                 <span class="color-dark-red">*</span>
               </span>
@@ -128,7 +132,7 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
               <span id="sp_ident" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Email address
               	<span class="color-dark-red">*</span>
               </span>
@@ -138,8 +142,8 @@
             </div>
 
 
-            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
-              <span id="sp_address" class="col-sm-3 control-label font-regular no-padding-lr">Password
+            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+              <span id="sp_address" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Password
               	<span class="color-dark-red">*</span>
               </span>
               <div class="col-sm-9 no-padding-lr">
@@ -147,8 +151,8 @@
               </div>
             </div>
             
-            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
-              <span id="sp_address" class="col-sm-3 control-label font-regular no-padding-lr">Confirm password
+            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+              <span id="sp_address" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Confirm password
               	<span class="color-dark-red">*</span>
               </span>
               <div class="col-sm-9 no-padding-lr">
@@ -156,44 +160,43 @@
               </div>
             </div>
             
-            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
               <span id="sp_address" class="col-sm-3 control-label font-regular no-padding-lr">Type</span>
               <div class="col-sm-9 no-padding-lr font-17 font-light">
-                <label class="radio-inline">
+                <label class="radio-inline add-radio">
                   <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> Super admin
                 </label>
-                <label class="radio-inline">
+                <label class="radio-inline add-radio">
                   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> Admin
                 </label>
-                <label class="radio-inline">
+                <label class="radio-inline add-radio">
                   <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" checked> Member
                 </label>
               </div>
             </div>
-            
+          <!-- start button add_quotation_type -->
+            <div class="col-md-offset-4 col-md-4 col-sm-8 col-sm-offset-2 text-center mr-btn-profile mr-bot-btn n-pad">
+              <button type="button" class="btn btn-pass btn-quo-type">Save</button>
+            </div>
+          <!-- end button add_quotation_type -->
         <!-- end form add_invoice -->
         </form>
-        <!-- start button add_quotation_type -->
-          <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
-            <button type="button" class="btn btn-pass btn-quo-type">Save</button>
-          </div>
-        <!-- end button add_quotation_type -->
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
 <!-- add_quotation_type-content end -->
     </section>
   <!--footer start-->
-  <div class="col-md-12 mr-footer no-padding">
-      <footer class="site-footer">
-          <div class="text-center">
-              2017&copy; codebee
-              <a href="edit_quotation.html#" class="go-top">
-                  <i class="fa fa-angle-up"></i>
-              </a>
-          </div>
-      </footer>
-  </div>
+    <div class="col-md-12 mr-footer no-padding-lr">
+        <footer class="site-footer">
+            <div class="text-right">
+                2017&copy; codebee
+                <a id="back-to-top" href="#" class="go-top text-center">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
   <!--footer end-->
 <!-- main-content end -->
   </section>

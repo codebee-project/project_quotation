@@ -689,7 +689,7 @@ td {
 	margin-left:0;
 }
 .mr-bot-btn{
-	margin-bottom: 5%;
+	margin-bottom: 6%;
 }
 
 /*-------------------------add_quo_type-------------------*/
@@ -740,6 +740,10 @@ td {
 	border: 1px solid #ccc;
 }
 
+/*--------------- add_contact_quotation -------------*/
+.btn-add-quo{
+	width: 90%;
+}
 
 /*----------- btn add ------------*/
 .btn-add{
@@ -895,6 +899,9 @@ td {
 	font-size: 16px;
 }
 
+textarea{
+	resize: vertical;
+}
 
 .bg-test{
 	background-color: #000;

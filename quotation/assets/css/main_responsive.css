@@ -70,6 +70,11 @@
     width: 100%;
 }
 
+/*radio add_user*/
+.add-radio{
+	font-size: 14px !important;
+}
+
 /*form all add*/
 .wrapper {
     padding-left: 20px !important;
@@ -84,6 +89,9 @@
 /*footer*/
 .mr-footer{
 	width: 100%;
+}
+.no-mr-tb{
+	margin-bottom: 4% !important;
 }
 
 }
@@ -362,6 +370,11 @@
 	width: 100%;
 }
 
+/*button*/
+.mr-bot-btn {
+    margin-bottom: 20%;
+}
+
 /*footer*/
 .mr-footer{
 	width: 100%;
@@ -461,6 +474,12 @@
     margin-bottom: 5%;
 }
 
+/*add_contact_quotation*/
+.btn-add-quo{
+	margin-top: 5%;
+	width: 100%;
+}
+
 /*-------------------------------- add_contact --------------------------------*/
 .control-input {
     width: 84.5% !important;
@@ -473,8 +492,16 @@
 
 /*form all add*/
 .wrapper {
+	margin-top: 26% !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
+}
+.font-size-nav1{
+	font-size: 11px;
+}
+.mr-header {
+    margin-top: 8% !important;
+    margin-bottom: 8%;
 }
 
 /*-----------------------form all genarate plus and close----------------------*/
@@ -482,10 +509,27 @@
 	width: 100%;
 }
 
+/*button*/
+.mr-bot-btn {
+    margin-bottom: 15%;
+}
+
 /*footer*/
 .mr-footer{
 	width: 100%;
 }
-
+.go-top{
+	margin-right: 5%;
+	margin-left: 5%;
 }
+
+/* pagination*/
+.pagination>li>a, .pagination>li>span{
+	font-size: 16px !important;
+}
+
+.no-mr-tb{
+	margin-bottom: 5% !important;
+}
+
 }
