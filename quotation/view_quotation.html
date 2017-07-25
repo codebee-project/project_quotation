@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>View quotation</title>
 	<link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="assets/css/main_responsive.css" rel="stylesheet">
     
     <!-- css this page (data table)-->
     <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
@@ -36,7 +39,7 @@
       <!--header end-->
  
  <aside>
-      <div id="sidebar"  class="nav-collapse">
+      <div id="sidebar"  class="nav-collapse index-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
@@ -113,7 +116,7 @@
             </div>
             
             <!-- header -->
-        	<div class="col-md-12 font-h-view-quo no-padding-lr">
+        	<div class="col-md-12 col-sm-12 font-h-view-quo no-padding-lr">
                 <i class="fa fa-angle-right"></i> 
                 <span>View Quotation</span>
             </div>
@@ -121,7 +124,7 @@
             <!--content-->
             
             <!--date-->
-            <div class="col-md-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
+            <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
                 <div class="col-md-3 no-padding-lr  font-regular">
                     <span>Date</span>
                 </div>
@@ -131,7 +134,7 @@
             </div>
             
             <!--quo no-->
-            <div class="col-md-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
+            <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
                 <div class="col-md-3 no-padding-lr  font-regular">
                     <span>Quotation no</span>
                 </div>
@@ -146,9 +149,7 @@
                     <span>Path file quotation</span>
                 </div>
                 <div class="col-md-9 no-padding-lr font-light color-dark-gray-h">
-                    <button type="file" class="btn btn-view-file">
-                        <span class="">View file</span>
-                    </button>
+                    <button type="file" class="btn btn-view-file">View file</button>
                 </div>
             </div>
             
@@ -500,7 +501,7 @@
         <footer class="site-footer">
             <div class="text-center">
                 2017&copy; codebee
-                <a href="view_quotation.html" class="go-top">
+                <a id="back-to-top" href="#" class="go-top">
                     <i class="fa fa-angle-up"></i>
                 </a>
             </div>
@@ -526,14 +527,13 @@
   <!-- this page -->
   <script type="text/javascript" src="assets/js/common-scripts.js"></script>
   <!-- this page (datatable) -->
-  <script type="text/javascript" src="assets/js/jquery-1.12.4.js"></script>
   <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>
   <script type="text/javascript" src="assets/js/responsive.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/datatable.js"></script>
-  
-  
 
+  <!--  -->
+  <script type="text/javascript" src="assets/js/backtotop.js"></script>
 
 </html>

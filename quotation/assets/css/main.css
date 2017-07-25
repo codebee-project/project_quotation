@@ -64,6 +64,9 @@ body{
 	display: inline-block !important;
 	padding:0.5%;
 }
+.dis-none{
+	display: none !important;
+}
 /*---------bg color-------*/
 .bg-white-gray{
 	background: #ebebeb;
@@ -685,6 +688,9 @@ td {
 .mr-l-redio{
 	margin-left:0;
 }
+.mr-bot-btn{
+	margin-bottom: 5%;
+}
 
 /*-------------------------add_quo_type-------------------*/
 .btn-quo-type{
@@ -893,6 +899,3 @@ td {
 .bg-test{
 	background-color: #000;
 }
-
-
-

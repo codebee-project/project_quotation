@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CODEBEE</title>
 	<link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="assets/css/main_responsive.css" rel="stylesheet">
     
     <!-- css this page (data table)-->
     <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
@@ -36,7 +39,7 @@
       <!--header end-->
  
   <aside>
-      <div id="sidebar"  class="nav-collapse">
+      <div id="sidebar"  class="nav-collapse index-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
@@ -204,6 +207,23 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="col-md-12 no-padding-lr">
+                <div class="col-md-6 no-padding-lr">
+                    <span>Showing 1 to 5 of 10 entries</span>
+                </div>
+                <div class="col-md-6 no-padding-lr next-right">
+                    <ul class="pagination pagination-sm no-mr-tb">
+                      <li><a href="#">Previous</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
             
         </div>
 	</section>
@@ -212,9 +232,9 @@
     <!--footer start-->
     <div class="col-md-12 mr-footer no-padding-lr">
         <footer class="site-footer">
-            <div class="text-center">
+            <div class="text-right">
                 2017&copy; codebee
-                <a href="view_quotation.html" class="go-top">
+                <a id="back-to-top" href="#" class="go-top text-center">
                     <i class="fa fa-angle-up"></i>
                 </a>
             </div>
@@ -240,14 +260,14 @@
   <!-- this page -->
   <script type="text/javascript" src="assets/js/common-scripts-admin.js"></script>
   <!-- this page (datatable) -->
-  <script type="text/javascript" src="assets/js/jquery-1.12.4.js"></script>
   <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>
   <script type="text/javascript" src="assets/js/responsive.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/datatable.js"></script>
   
-  
+  <!-- back to top -->
+  <script type="text/javascript" src="assets/js/backtotop.js"></script>
 
 
 </html>

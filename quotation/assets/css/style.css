@@ -812,6 +812,11 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     border-radius: 50%;
     -webkit-border-radius: 50%;
 }
+.mr-footer{
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+}
 
 
 

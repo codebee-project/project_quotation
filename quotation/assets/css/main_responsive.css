@@ -1,5 +1,5 @@
-/*iphone 5 or max width 320px*/
-@media screen and (min-width: 320px) and (max-width: 320px){
+/*iphone 5*/
+@media screen and (min-width: 320px) and (max-width: 374px){
 
 /*-------------------------------- login register and forgot password responsive --------------------------------*/
 .screen-center{
@@ -54,9 +54,20 @@
     font-size: 18px !important;
 }
 
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 /*-------------------------------- add_contact --------------------------------*/
 .control-input {
     width: 84.5% !important;
+}
+
+/*-------------------------------- add_quotation --------------------------------*/
+.btn-quo {
+    width: 100%;
 }
 
 /*form all add*/
@@ -70,8 +81,14 @@
 	width: 100%;
 }
 
+/*footer*/
+.mr-footer{
+	width: 100%;
 }
 
+}
+
+/*galaxy s5*/
 @media screen and (min-width: 360px) and (max-width: 360px){
 
 /*-------------------------------- login register and forgot password responsive --------------------------------*/
@@ -127,6 +144,12 @@
     font-size: 18px !important;
 }
 
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 /*-------------------------------- add_contact --------------------------------*/
 .control-input {
     width: 84.5% !important;
@@ -143,10 +166,15 @@
 	width: 100%;
 }
 
+/*footer*/
+.mr-footer{
+	width: 100%;
 }
 
-/*iphone 6 or min width 375px*/
-@media screen and (min-width: 375px) and (max-width: 375px) {
+}
+
+/*iphone 6*/
+@media screen and (min-width: 375px) and (max-width: 411px) {
 
 /*-------------------------------- login responsive --------------------------------*/
 .screen-center{
@@ -190,6 +218,12 @@
     font-size: 18px !important;
 }
 
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 /*-------------------------------- add_contact --------------------------------*/
 .control-input {
     width: 88.5% !important;
@@ -206,10 +240,15 @@
 	width: 100%;
 }
 
+/*footer*/
+.mr-footer{
+	width: 100%;
 }
 
-/*iphone 6plus or min width 375px*/
-@media screen and (min-width: 412px) and (max-width: 414px) {
+}
+
+/*iphone 6plus and nexus 5x,nexus 6p*/
+@media screen and (min-width: 412px) and (max-width: 767px) {
 
 /*-------------------------------- login responsive --------------------------------*/
 .screen-center{
@@ -252,6 +291,12 @@
     font-size: 18px !important;
 }
 
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 /*-------------------------------- add_contact --------------------------------*/
 .control-input {
     width: 89.5% !important;
@@ -268,10 +313,15 @@
 	width: 100%;
 }
 
+/*footer*/
+.mr-footer{
+	width: 100%;
 }
 
-/*iphone 6plus or min width 375px*/
-@media screen and (min-width: 768px) and (max-width: 768px) {
+}
+
+/*ipad*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
 /*-------------------------------- login responsive --------------------------------*/
 .screen-center{
@@ -290,6 +340,12 @@
     font-size: 18px !important;
 }
 
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 /*-------------------------------- add_contact --------------------------------*/
 .control-input {
     width: 88.5% !important;
@@ -306,9 +362,14 @@
 	width: 100%;
 }
 
+/*footer*/
+.mr-footer{
+	width: 100%;
 }
 
-/*iphone 6plus or min width 375px*/
+}
+
+/*ipad pro*/
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
 
 /*-------------------------------- login responsive --------------------------------*/
@@ -331,4 +392,100 @@
     font-size: 18px !important;
 }
 
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 93% !important;
+}
+
+}
+
+
+/*for mobile*/
+@media screen and (max-width: 767px){
+/*-------------------------------- login register and forgot password responsive --------------------------------*/
+.screen-center{
+    height: 568px;
+}
+.btn-login {
+    font-size: 15px !important;
+}
+.btn-fb{
+    font-size: 15px !important;
+}
+.form-control {
+    font-size: 15px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/*login*/
+
+.font-responsive{
+	font-size: 13px;
+}
+/*register*/
+.text-descrip {
+    font-size: 14px;
+}
+/*forgot-password*/
+.text-regis {
+    font-size: 29px;
+}
+.text-login {
+    font-size: 14px;
+}
+.btn-send-mail {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 84.5% !important;
+}
+
+/*-------------------------------- add_quotation --------------------------------*/
+.btn-quo {
+    width: 100%;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+/*footer*/
+.mr-footer{
+	width: 100%;
+}
+
+}
 }

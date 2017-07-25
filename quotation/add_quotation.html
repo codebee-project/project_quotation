@@ -9,11 +9,11 @@
 
   <!-- Custom styles for this template -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/main_responsive.css" rel="stylesheet">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/css/main_responsive.css" rel="stylesheet">
   
   <!-- datepicker -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.min.css">
@@ -40,7 +40,7 @@
       <!--header end-->
  
   <aside>
-      <div id="sidebar"  class="nav-collapse">
+      <div id="sidebar"  class="nav-collapse index-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
@@ -120,13 +120,11 @@
           <div class="mr-header font-regular header-edit-quo no-padding-lr">
                 <span><i class="fa fa-angle-right"></i> Add Quotation</span>
           </div>
-          
-        <div class="">
           <!-- start form add_quotation -->
           <div class="col-md-12 no-padding font-18">
             <form class="form">
 
-              <div class="form-group mr-form-profile col-md-12 no-padding">
+              <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding">
                 <span id="sp_date" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Date
                   <span class="color-dark-red">*</span>
                 </span>
@@ -142,7 +140,7 @@
                 </div>
               </div>
 
-              <div class="form-group mr-form-profile col-md-12 no-padding">
+              <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding">
                 <span id="sp_quoNo" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Quotation No
                   <span class="color-dark-red">*</span>
                 </span>
@@ -151,7 +149,7 @@
                 </div>
               </div>
 
-              <div class="form-group mr-form-profile col-md-12 no-padding">
+              <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding">
                 <span id="sp_quoFile" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Path File Quotation
                   <span class="color-dark-red">*</span>
                 </span>
@@ -160,12 +158,12 @@
                     	<i class="fa fa-file-text color-light-gray2"></i>
                     	<span class="">Choose file</span>
                     </label>
-                    <input type="file" name="photo" id="upload-file" />
-                    <span class="color-light-gray2 font-17 font-light">Please choose file .pdf</span>
+                    <input type="file" name="photo" class="dis-none" id="upload-file" />
+                    <span class="color-light-gray2 font-light font-17">Please choose file .pdf</span>
                 </div>
               </div>
 
-              <div class="form-group mr-form-profile col-md-12 no-padding">
+              <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding">
                 <span id="sp_quoType" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Quotation Type
                   <span class="color-dark-red">*</span>
                 </span>
@@ -178,7 +176,7 @@
                 </div>
               </div>
 
-              <div class="form-group mr-form-profile col-md-12 no-padding">
+              <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding">
                 <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit no-padding">Company Name
                   <span class="color-dark-red">*</span>
                 </span>
@@ -187,7 +185,7 @@
                 </div>
               </div>
 
-              <div class="form-group mr-form-profile col-md-12 no-padding">
+              <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding">
                 <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding">Working Status</span>
                 <div class="col-sm-9 no-padding font-17 font-light">
                   <label class="radio-inline rdo-edit mr-l-redio">
@@ -202,7 +200,7 @@
                 </div>
               </div>
 
-              <div class="form-group mr-form-profile col-md-12 no-padding">
+              <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding">
                 <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding">Description</span>
                 <div class="col-sm-9 no-padding">
                   <textarea class="form-control" placeholder="Enter description" rows="3"></textarea>
@@ -213,11 +211,10 @@
           </div>
           <!-- end form add_quotation -->
           <!-- start button add_quotation -->
-            <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+            <div class="col-md-offset-4 col-md-4 col-sm-8 col-sm-offset-2 text-center mr-btn-profile mr-bot-btn">
               <button type="button" class="btn btn-pass btn-quo">Save</button>
             </div>
           <!-- end button add_quotation -->
-        </div>
         </div>
 <!-- add_quotation-content end -->
     </section>
@@ -227,7 +224,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2017&copy; codebee
-              <a href="edit_quotation.html#" class="go-top">
+              <a id="back-to-top" href="#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
@@ -248,11 +245,15 @@
 
 
     <!--common script for all pages-->
-	<script src="assets/js/raphael-min.js"></script>
+    <script src="assets/js/raphael-min.js"></script>
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
     <script src="assets/js/bootstrap-datepicker.js"></script>
-    <script src="assets/js/bootstrap-datepicker.min.js"></script>  
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+
+    <!-- back to top -->
+    <script src="assets/js/backtotop.js"></script>
 
 </html>
