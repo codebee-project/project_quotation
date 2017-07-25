@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quotation list</title>
 	<link href="assets/css/main.css" rel="stylesheet">
@@ -10,6 +9,7 @@
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="assets/css/main_responsive.css" rel="stylesheet">
     
     <!-- css this page (data table)-->
     <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
@@ -117,32 +117,38 @@
           	</div>
             
             <!-- search -->
-            <div class="col-md-12 mr-search no-padding-lr">
-            	<div class="col-md-9 no-padding-l">  
+            <div class="col-md-12 col-xs-12 col-sm-12 mr-search no-padding-lr">
+            	<div class="col-md-9 col-xs-12 col-sm-9 no-padding-l no-pd-r">  
                     <div class="input-group date no-padding">
                       <input type="text" class="form-control input-datepicker" placeholder="Search...">
                       <span class="input-group-addon"><i class="fa fa-search"></i></span>
                     </div>
                 </div>
-                <div class="col-md-3 no-padding-r">
+                <div class="col-md-3 col-xs-12 col-sm-3 no-padding-r no-pd-l btn-add-quo">
                     <a href="add_quotation.html" id="search_quo" class="btn btn-add">
                     	<i class="fa fa-plus-circle icon-plus"></i>Add quotation
                     </a>
                     
                 </div>
             </div>
-            <div class="col-md-12 no-padding mr-c-viewquo">
-            	<div class="col-md-3 no-padding-lr">
-                	<span class="font-regular">Description working status : </span>
+            <div class="col-md-12 col-xs-12 col-sm-12 no-padding mr-c-viewquo font-size-descrip">
+            	<div class="col-md-3 col-xs-12 col-sm-4 no-padding-lr">
+                	<span class="font-regular">Description working status: </span>
                 </div>
-                <div class="col-md-9 mr-text-descrip-sum2 ">
-                    <img alt="success" src="assets/img/sq-success.png" />
-                    <span class="padding-text-descrip-sum2">Success</span>
-                    <img alt="success" src="assets/img/sq-inprocess.png" />
-                    <span class="padding-text-descrip-sum2">Inprocess</span>
+                <div class="col-md-9 col-xs-12 col-sm-8 mr-text-descrip-sum2 n-pad">
+                	<div class="col-md-3 col-xs-12 n-pad">
+                    	<img alt="success" src="assets/img/sq-success.png" />
+                    	<span class="padding-text-descrip-sum2">Success</span>
+                    </div>
+                    <div class="col-md-3 col-xs-12 n-pad">
+                    	<img alt="success" src="assets/img/sq-inprocess.png" />
+                        <span class="padding-text-descrip-sum2">Inprocess</span>
+                    </div>
+                    <div class="col-md-3 col-xs-12 n-pad">
+                    	<img alt="success" src="assets/img/sq-wait.png" />
+                    	<span class="padding-text-descrip-sum2">Wait</span>
+                    </div>
                     
-                    <img alt="success" src="assets/img/sq-wait.png" />
-                    <span class="padding-text-descrip-sum2">Wait</span>
                 </div>
             </div>
             
@@ -241,13 +247,13 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-md-12 no-padding-lr">
-            	<div class="col-md-6 no-padding-lr">
+            <div class="col-md-12 col-xs-12 col-sm-12 no-padding-lr mr-b-pagi">
+            	<div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr font-size-pagi">
                 	<span>Showing 1 to 5 of 10 entries</span>
                 </div>
-                <div class="col-md-6 no-padding-lr next-right">
+                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr next-right font-size-pagi">
                     <ul class="pagination pagination-sm no-mr-tb">
-                      <li><a href="#">Previous</a></li>
+                      <li><a href="#" class="no-pd-l">Previous</a></li>
                       <li><a href="#">1</a></li>
                       <li><a href="#">2</a></li>
                       <li><a href="#">3</a></li>
@@ -292,9 +298,8 @@
   
   
   <!-- this page -->
-  <script type="text/javascript" src="assets/js/common-scripts-admin.js"></script>
+  <script type="text/javascript" src="assets/js/common-scripts.js"></script>
   <!-- this page (datatable) -->
-  <script type="text/javascript" src="assets/js/jquery-1.12.4.js"></script>
   <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>

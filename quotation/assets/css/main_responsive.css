@@ -70,11 +70,6 @@
     width: 100%;
 }
 
-/*radio add_user*/
-.add-radio{
-	font-size: 14px !important;
-}
-
 /*form all add*/
 .wrapper {
     padding-left: 20px !important;
@@ -89,9 +84,6 @@
 /*footer*/
 .mr-footer{
 	width: 100%;
-}
-.no-mr-tb{
-	margin-bottom: 4% !important;
 }
 
 }
@@ -370,11 +362,6 @@
 	width: 100%;
 }
 
-/*button*/
-.mr-bot-btn {
-    margin-bottom: 20%;
-}
-
 /*footer*/
 .mr-footer{
 	width: 100%;
@@ -474,12 +461,6 @@
     margin-bottom: 5%;
 }
 
-/*add_contact_quotation*/
-.btn-add-quo{
-	margin-top: 5%;
-	width: 100%;
-}
-
 /*-------------------------------- add_contact --------------------------------*/
 .control-input {
     width: 84.5% !important;
@@ -492,16 +473,8 @@
 
 /*form all add*/
 .wrapper {
-	margin-top: 26% !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
-}
-.font-size-nav1{
-	font-size: 11px;
-}
-.mr-header {
-    margin-top: 8% !important;
-    margin-bottom: 8%;
 }
 
 /*-----------------------form all genarate plus and close----------------------*/
@@ -509,27 +482,178 @@
 	width: 100%;
 }
 
-/*button*/
-.mr-bot-btn {
-    margin-bottom: 15%;
-}
-
 /*footer*/
 .mr-footer{
 	width: 100%;
 }
-.go-top{
-	margin-right: 5%;
-	margin-left: 5%;
+
 }
 
-/* pagination*/
+@media screen and (max-width: 767px) {
+
+.wrapper{
+	margin-top:26%;
+}
+/*-------------------- pagination ------------------------*/
+.font-size-pagi{
+	font-size:14px;
+	text-align: center;
+}
 .pagination>li>a, .pagination>li>span{
-	font-size: 16px !important;
+	font-size:14px !important;
+}
+.next-right{
+	float: none !important;
+    text-align: center;
+}
+.mr-b-pagi{
+	margin-bottom: 5%;
 }
 
-.no-mr-tb{
-	margin-bottom: 5% !important;
+/*-------------------- btn add ------------------------*/
+.btn-add-quo.btn {
+	margin-bottom:0px !important;
+}
+.btn-add{
+	margin-top:3%;
+	margin-bottom:7%;
 }
 
+
+/*-----------------------dashboard----------------------*/
+.no-pd-r{
+	padding-right:0 !important;
+}
+.no-pd-l{
+	padding-left:0 !important;
+}
+.no-pd-lr{
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+.mr-t-btn{
+	margin-top: 10px;
+}
+.mr-l-box2{
+	margin-left: 23px;
+}
+.mr-l-box3{
+	margin-left: 10px;
+}
+.mr-t-panel{
+	margin-top: 8%;
+}
+.font-size-h{
+	font-size: 15px;
+}
+.mr-text-descrip-sum{
+	margin-bottom:3% !important;
+	font-size:14px;
+}
+.padding-text-descrip-sum {
+    margin-left: 3%;
+}
+.text-descrip-summary{
+	margin-top:0;
+}
+.mr-descrip-quarter{
+	margin-bottom:3%
+}
+svg text{
+    font-size:14px !important;
+}
+.mr-text-descrip-sum2 {
+	display: grid;
+    font-size: 14px;
+}
+
+/*----------------- edit quotation ---------------------*/
+.mr-header{
+	margin-top:8% !important;
+}
+.header-edit-quo{
+	margin-bottom:8% !important;
+}
+
+/*----------------- add quotation ---------------------*/
+.font-size-navi{
+	font-size:11px;
+}
+.mr-t-input{
+	margin-top:2%;
+}
+
+/*---------------- quotation list ---------------------*/
+
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+
+/*-------------------- dashboard ------------------------*/
+svg text{
+	font-size:17px !important;
+}
+.font-size-h{
+	font-size: 20px;
+}
+.mr-text-descrip-sum2 {
+	display: flex;
+    font-size: 17px;
+}
+.mr-text-descrip-sum{
+	font-size: 17px;
+}
+.no-pd-r-sm{
+	padding-right:0px !important;
+}
+.no-pd-l-sm{
+	padding-left:0px !important;
+}
+.bg-color-box1{
+	padding-left:16%;
+}
+.bg-color-box2{
+	padding-left:16%;
+}
+.bg-color-box3{
+	padding-left:16%;
+}
+.bg-color-box4{
+	padding-left:16%;
+}
+.mr-l-box2{
+	margin-left: 23px;
+}
+.mr-l-box3{
+	margin-left: 10px;
+}
+.text-descrip-summary{
+	margin-top:1%;
+}
+.mr-text-descrip-sum{
+	margin-bottom:5%;
+}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+.pd-l-ipad{
+	padding-left:0 !important;
+}
+.pd-r-ipad{
+	padding-right:0 !important;
+}
+.huge{
+	font-size:38px;
+}
+.text-descrip-summary{
+	padding-left: 0 !important;
+}
+
+/*------------------------ quotation list ----------------------*/
+.font-size-descrip{
+	font-size:13px;
+}
 }

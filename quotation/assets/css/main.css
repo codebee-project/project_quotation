@@ -328,6 +328,9 @@ svg text{
     font-size:18px !important;
 	color:#686868 !important;
 }
+svg{
+	width:100%;
+}
 
 /*-- end morris bar --*/
 
@@ -340,8 +343,6 @@ svg text{
 	margin-top: 5%;
     background-color: #f6f4f4;
 	box-shadow: 1px 1px 5px 0px #c6c5c5;
-	width:300px;
-	height:300px;
 }
 .panel-summary-donut {
 	margin-top: 5%;
@@ -349,11 +350,12 @@ svg text{
 	box-shadow: 1px 1px 5px 0px #c6c5c5;
 }
 #hero-donut{
-	width:300px;
-	height:300px;
+}
+.mr-descrip{
+	margin-top:8%;
 }
 .text-descrip-summary{
-	top:10%;  
+	margin-top:10%; 
 	height:auto;  
 	font-size: 17px;
 	font-family: 'promptlight' !important;
@@ -689,7 +691,7 @@ td {
 	margin-left:0;
 }
 .mr-bot-btn{
-	margin-bottom: 6%;
+	margin-bottom: 5%;
 }
 
 /*-------------------------add_quo_type-------------------*/
@@ -740,10 +742,6 @@ td {
 	border: 1px solid #ccc;
 }
 
-/*--------------- add_contact_quotation -------------*/
-.btn-add-quo{
-	width: 90%;
-}
 
 /*----------- btn add ------------*/
 .btn-add{
@@ -890,6 +888,9 @@ td {
 	font-size:17px !important;
 	color:#686868 !important;
 }
+.mr-b-pagi{
+	margin-bottom: 2%;
+}
 /*--------------------------- navbar ------------------------*/
 
 .logo-navbar{
@@ -899,9 +900,6 @@ td {
 	font-size: 16px;
 }
 
-textarea{
-	resize: vertical;
-}
 
 .bg-test{
 	background-color: #000;

@@ -11,6 +11,7 @@
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="assets/css/main_responsive.css" rel="stylesheet">
     
     <!-- css this page -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.min.css">
@@ -109,36 +110,41 @@
     <section id="edit_profile">
 
         <div class="wrapper font-regular edit-quo-navigator">
-          <div class="dis-inblock bg-white-gray">
-          	  <span>You are here : </span>
-          </div>
-              <span>Webstie Setting</span>
-              <i class="fa fa-angle-right"></i>
-              <a href="type_list.html" class="color-dark-gray-h">Quotation Type</a></span>
-              <i class="fa fa-angle-right"></i>
-          	  <span class="color-dark-red">Edit Quotation Type</span>
+        	<div class="font-size-navi">
+           	  <div class="dis-inblock bg-white-gray">
+                  <span>You are here : </span>
+              </div>
+                  <span>Webstie Setting</span>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="type_list.html" class="color-dark-gray-h">Quotation Type</a></span>
+                  <i class="fa fa-angle-right"></i>
+                  <span class="color-dark-red">Edit Quotation Type</span>
+            </div>
+          
           <div class="mr-header font-regular header-edit-quo no-padding-lr">
                 <span><i class="fa fa-angle-right"></i> Edit Quotation Type</span>
           </div>
         <!-- start form add_quotation_type -->
-        <div class="col-md-12 no-padding-lr font-18">
+        <div class="col-md-12 col-sm-12 no-padding-lr font-18">
           <form class="form">
 
-            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
               <span id="sp_quoType" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Quotation Type
                 <span class="color-dark-red">*</span>
               </span>
-              <div class="col-sm-9 no-padding-lr">
+              <div class="col-sm-9 no-padding-lr mr-t-input">
                 <input type="text" class="form-control" id="ip_quoType" placeholder="Please enter quotation type" value="Website">
               </div>
             </div>
+            
+            <div class="col-md-offset-4 col-sm-offset-2 col-sm-8 col-md-4 text-center mr-btn-profile n-pad">
+            	<button type="button" class="btn btn-pass btn-quo-type">Save change</button>
+          	</div>
 
         <!-- end form add_quotation_type -->
         </form>
         <!-- start button add_quotation_type -->
-          <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
-            <button type="button" class="btn btn-pass btn-quo-type">Save change</button>
-          </div>
+          
         <!-- end button add_quotation_type -->
       </div>
       </div>
@@ -150,7 +156,7 @@
       <footer class="site-footer">
           <div class="text-center">
               2017&copy; codebee
-              <a href="edit_quotation.html#" class="go-top">
+              <a href="#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>

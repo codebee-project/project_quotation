@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CODEBEE</title>
+  <title>Add company</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <!-- Custom styles for this template -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -13,7 +12,6 @@
   <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/style-responsive.css" rel="stylesheet">
-  <link href="assets/css/main_responsive.css" rel="stylesheet">
   
 </head>
 
@@ -38,7 +36,7 @@
       <!--header end-->
  
   <aside>
-      <div id="sidebar"  class="nav-collapse index-sidebar">
+      <div id="sidebar"  class="nav-collapse">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
@@ -108,16 +106,14 @@
     <section id="edit_profile">
     
         <div class="wrapper font-regular edit-quo-navigator">
-          <div class="font-size-nav1">
-            <div class="dis-inblock bg-white-gray">
+          <div class="dis-inblock bg-white-gray">
           	  <span>You are here : </span>
-            </div>
-            <span><a href="company_list.html" class="color-dark-gray-h">Company</a></span>
-            <i class="fa fa-angle-right"></i>
-        	  <span class="color-dark-red">Add Company</span>
           </div>
+              <span><a href="company_list.html" class="color-dark-gray-h">Company</a></span>
+              <i class="fa fa-angle-right"></i>
+          	  <span class="color-dark-red">Add Company</span>
           <div class="mr-header font-regular header-edit-quo no-padding-lr">
-            <span><i class="fa fa-angle-right"></i> Add Company</span>
+                <span><i class="fa fa-angle-right"></i> Add Company</span>
           </div>
       
       <div class="no-padding-lr">
@@ -125,7 +121,7 @@
         <div class="col-md-12 no-padding-lr font-18">
           <form class="form">
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Company Name
                 <span class="color-dark-red">*</span>
               </span>
@@ -134,7 +130,7 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_ident" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Identity</span>
               <div class="col-sm-9 no-padding-lr">
                 <input type="text" class="form-control" id="ip_ident" placeholder="Please enter identity">
@@ -142,7 +138,7 @@
             </div>
 
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_address" class="col-sm-3 control-label font-regular no-padding-lr">Address</span>
               <div class="col-sm-9 no-padding-lr">
                 <textarea class="form-control" placeholder="Please enter company address" rows="3"></textarea>
@@ -151,7 +147,7 @@
         <!-- end form add_invoice -->
         </form>
         <!-- start button add_quotation_type -->
-          <div class="col-md-offset-4 col-md-4 col-sm-8 col-sm-offset-2 text-center mr-btn-profile mr-bot-btn n-pad">
+          <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
             <button type="button" class="btn btn-pass btn-quo-type">Save</button>
           </div>
         <!-- end button add_quotation_type -->
@@ -161,16 +157,16 @@
 <!-- add_quotation_type-content end -->
     </section>
   <!--footer start-->
-    <div class="col-md-12 mr-footer no-padding-lr">
-        <footer class="site-footer">
-            <div class="text-right">
-                2017&copy; codebee
-                <a id="back-to-top" href="#" class="go-top text-center">
-                    <i class="fa fa-angle-up"></i>
-                </a>
-            </div>
-        </footer>
-    </div>
+  <div class="col-md-12 mr-footer no-padding">
+      <footer class="site-footer">
+          <div class="text-center">
+              2017&copy; codebee
+              <a href="edit_quotation.html#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+  </div>
   <!--footer end-->
 <!-- main-content end -->
   </section>
@@ -184,15 +180,13 @@
     <script src="assets/js/jquery.scrollTo.min.js"></script>
     <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 
+
     <!--common script for all pages-->
-    <script src="assets/js/raphael-min.js"></script>
+	<script src="assets/js/raphael-min.js"></script>
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
     <script src="assets/js/bootstrap-datepicker.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
-
-    <!-- back to top -->
-    <script src="assets/js/backtotop.js"></script>
 
 </html>

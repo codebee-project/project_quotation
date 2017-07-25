@@ -1,13 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard</title>
 	<link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="assets/css/main_responsive.css" rel="stylesheet">
     
     <!-- css this page -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.min.css">
@@ -41,7 +43,7 @@
             <h5 class="centered font-sidebar">Taneeya</h5>
           <!-- nav-menu start -->
             <li class="sub-menu mt">
-                <a class="active" href="#">
+                <a class="active" href="dashboard_superadmin.html">
                     <i class="fa fa-bar-chart-o"></i>
                     <span>Dashboard</span>
                 </a>
@@ -53,13 +55,13 @@
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="invoice_list.html" >
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="company_list.html" >
                     <i class="fa fa-building"></i>
                     <span>Company</span>
                 </a>
@@ -69,6 +71,21 @@
                     <i class="fa fa-address-book"></i>
                     <span>Contact</span>
                 </a>
+            </li>
+            <li class="sub-menu">
+              <a href="management_user.html">
+                  <i class="fa fa-users"></i>
+                  <span>Management User</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" >
+                    <i class="fa fa-cog"></i>
+                    <span>Website Setting</span>
+                </a>
+                <ul class="sub" style="overflow: hidden; display: block;">
+                    <li><a href="type_list.html">Quotation Type</a></li>
+                </ul>
             </li>
             <li class="sub-menu">
               <a href="javascript:;">
@@ -88,72 +105,72 @@
 
 <div class="wrapper font-header-dash">
     <section id="Date">
-    	<div class="col-md-12 mr-header-summary no-padding">
+    	<div class="col-md-12 font-regular no-padding-lr header-edit-quo">
             <i class="fa fa-angle-right"></i> 
             <span>Dashboard</span>
         </div>
-        <div class="col-md-12 no-padding mr-box-summary">
+        <div class="col-md-12 col-sm-12 no-padding mr-box-summary">
             <form>
-                <div class="col-md-10 no-padding-l">
+                <div class="col-md-10 col-sm-10 no-padding-l no-pd-r">
                     <div class="input-daterange input-group" id="datepicker">
                         <input type="text" class="input-sm form-control" name="start" />
                         <span class="input-group-addon">To</span>
                         <input type="text" class="input-sm form-control" name="end" />
                     </div>
                 </div>
-                <div class="col-md-2 no-padding-r">
-                    <button type="submit" class="btn btn-submit">Submit</button>
+                <div class="col-md-2 col-sm-2 no-padding-r no-pd-l">
+                    <button type="submit" class="btn btn-submit mr-t-btn">Submit</button>
                 </div>
             </form>
         </div>
     </section>
     
     <section id="total">
-    	<div class="col-md-12 text-color-summary no-padding mr-box-summary">
+    	<div class="col-md-12 col-sm-12 text-color-summary no-padding mr-box-summary">
         
         <!-- total quotation -->
-        	<div class="col-md-3 pd-box1">
+        	<div class="col-md-3 col-sm-6 pd-box1 no-pd-r">
             	<div class="bg-color-box1">
-                    <div class="col-md-3 top-icon-summary">
+                    <div class="col-md-3 top-icon-summary pd-l-ipad">
                         <i class="fa fa-file-text fa-3x icon-summary"></i>
                     </div>
-                    <div class="col-md-9 text-right">
+                    <div class="col-md-9 text-right pd-r-ipad">
                         <div class="small">Total Quotation</div><br/ >
                         <div class="huge">200</div>
                     </div>
                 </div>
         	</div>
         <!-- total invoice -->
-            <div class="col-md-3 pd-box2">
+            <div class="col-md-3 col-sm-6 pd-box2 no-pd-lr no-pd-r-sm">
             	<div class="bg-color-box2">
-                    <div class="col-md-3 top-icon-summary">
+                    <div class="col-md-3 top-icon-summary pd-l-ipad">
                         <i class="fa fa-file-text fa-3x icon-summary"></i>
                     </div>
-                    <div class="col-md-9 text-right">
+                    <div class="col-md-9 text-right mr-l-box2 pd-r-ipad">
                         <div class="small">Total Invoice</div><br/ >
                         <div class="huge">200</div>
                     </div>
                 </div>
         	</div>
         <!-- total contact -->
-            <div class="col-md-3 pd-box3">
+            <div class="col-md-3 col-sm-6 pd-box3 no-pd-lr no-pd-l-sm">
             	<div class="bg-color-box3">
-                    <div class="col-md-3 top-icon-summary">
+                    <div class="col-md-3 top-icon-summary pd-l-ipad">
                         <i class="fa fa-address-book fa-3x icon-summary"></i>
                     </div>
-                    <div class="col-md-9 text-right">
+                    <div class="col-md-9 text-right mr-l-box3 pd-r-ipad">
                         <div class="small">Total Contact</div><br/ >
                         <div class="huge">200</div>
                     </div>
                 </div>
         	</div>
         <!-- total company -->
-            <div class="col-md-3 pd-box4">
+            <div class="col-md-3 col-sm-6 pd-box4 no-pd-l">
             	<div class="bg-color-box4">
-                    <div class="col-md-3 top-icon-summary">
+                    <div class="col-md-3 top-icon-summary pd-l-ipad">
                         <i class="fa fa-building fa-3x icon-summary"></i>
                     </div>
-                    <div class="col-md-9 text-right">
+                    <div class="col-md-9 text-right pd-r-ipad">
                         <div class="small">Total Company</div><br/ >
                         <div class="huge">200</div>
                     </div>
@@ -164,61 +181,77 @@
 
 	<section id="Summary">
             <!-- morris start-->
-              <div class="col-lg-6 no-padding mr-box-summary">
-                <i class="fa fa-angle-right"></i>
-                <span>Summary quotation working status</span>
-                    <div class="panel-summary col-md-12">
-                        <div id="hero-donut" class="graph col-md-10 col-xs-12"></div>
-                        <div class="col-md-2 text-descrip-summary">
-                            <div class="col-md-12 mr-text-descrip-sum no-padding">
-                            	<img alt="success" src="assets/img/s-success.png" />
-                            	<span class="padding-text-descrip-sum">Success</span>
-                            </div> <br />
-                            <div class="col-md-12 mr-text-descrip-sum no-padding">
-                            	<img alt="success" src="assets/img/s-inprocess.png" />
-                            	<span class="padding-text-descrip-sum">Inprocess</span>
-                            </div> <br />
-                            <div class="col-md-12 mr-text-descrip-sum no-padding">
-                            	<img alt="success" src="assets/img/s-wait.png" />
-                            	<span class="padding-text-descrip-sum">Wait</span>
-                            </div>
-                        </div>
+            <div class="col-md-12 col-sm-12">
+                <div class="col-md-6 col-sm-12 no-padding mr-box-summary mr-t-panel">
+                    <i class="fa fa-angle-right"></i>
+                    <span class="font-size-h">Summary quotation working status</span>
+    
+                    <div class="content-panel panel-summary">
+                          <div class="panel-body">
+                                <div class="col-md-8 col-sm-8 no-pd-lr"> 
+                                        <div id="hero-donut" class="graph"></div>
+                                </div>
+                                
+                                <div class="text-descrip-summary col-md-4 col-sm-4 no-pd-lr">
+                                    <div class="col-md-12 mr-text-descrip-sum no-padding">
+                                        <img alt="success" src="assets/img/s-success.png" />
+                                        <span class="padding-text-descrip-sum">Success</span>
+                                    </div>
+                                    <div class="col-md-12 mr-text-descrip-sum no-padding">
+                                        <img alt="success" src="assets/img/s-inprocess.png" />
+                                        <span class="padding-text-descrip-sum">Inprocess</span>
+                                    </div>
+                                    <div class="col-md-12 mr-text-descrip-sum no-padding">
+                                        <img alt="success" src="assets/img/s-wait.png" />
+                                        <span class="padding-text-descrip-sum">Wait</span>
+                                    </div>
+                                </div>
+                          </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-sm-12">
+                </div>
+            
+            </div>
                 
-                <div class="col-lg-12 no-padding">
-                    <div class="content-panel">
-                        <i class="fa fa-angle-right"></i>
-                        <span>Quarter</span>
-                        <div class="panel-body">
-                            <div id="hero-bar"></div>
-                        </div>
+            <div class="col-md-12 col-sm-12 no-padding mr-t-panel">
+                <div class="content-panel">
+                    <span class="font-size-h"><i class="fa fa-angle-right"></i> Quarter</span>
+                    <div class="panel-body no-padding-lr">
+                      <div id="hero-bar" class="graph"></div>
                     </div>
                 </div>
-                <div class="col-md-12 no-padding">
-                    <div class="col-md-12 mr-text-descrip-sum2 ">
+            </div>
+            
+            <div class="col-md-12 col-sm-12 no-padding">
+                <div class="col-md-7 col-xs-12 col-sm-12 text-left mr-text-descrip-sum2 no-pd-lr">
+                    <div class="col-xs-12 col-sm-3 mr-descrip-quarter">
                         <img alt="success" src="assets/img/s-success.png" />
                         <span class="padding-text-descrip-sum2">Success</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 mr-descrip-quarter">
                         <img alt="success" src="assets/img/s-inprocess.png" />
                         <span class="padding-text-descrip-sum2">Inprocess</span>
-                        
+                    </div>
+                    <div class="col-xs-12 col-sm-3 mr-descrip-quarter">
                         <img alt="success" src="assets/img/s-wait.png" />
                         <span class="padding-text-descrip-sum2">Wait</span>
                     </div>
                 </div>
+            </div>
             <!-- morris end-->
     </section>
 </div>    
+
 </section><!-- /MORRIS CONTENT -->
 
 <!--main content end-->
-  
   
 <!--footer start-->
 <footer class="site-footer">
     <div class="text-center">
         2017&copy; codebee
-        <a href="edit_profile.html#" class="go-top">
+        <a href="#" id="back-to-top" class="go-top">
             <i class="fa fa-angle-up"></i>
         </a>
     </div>
@@ -238,6 +271,7 @@
 	<script src="assets/js/raphael-min.js"></script>
 	<script src="assets/js/morris-0.4.3.min.js"></script>
     <script src="assets/js/common-scripts.js"></script>
+    <script src="assets/js/backtotop.js"></script>
 
     <!--script for this page-->
     <script src="assets/js/morris-conf.js"></script>

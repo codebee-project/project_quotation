@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CODEBEE</title>
+  <title>Edit quotation</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   
 	<link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
-  <link href="assets/css/main_responsive.css" rel="stylesheet">
     
     <!-- css this page -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.min.css">
@@ -40,7 +38,7 @@
       <!--header end-->
  
  <aside>
-      <div id="sidebar"  class="nav-collapse index-sidebar">
+      <div id="sidebar"  class="nav-collapse">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
@@ -111,22 +109,21 @@
     <section id="edit_profile">
 
         <div class="wrapper font-regular edit-quo-navigator">
-        <div class="font-size-nav1">
-            <div class="dis-inblock bg-white-gray">
-            	<span>You are here : </span>
-            </div>
-            <span><a href="quotation_list.html" class="color-dark-gray-h">Quotation</a></span>
-            <i class="fa fa-angle-right"></i>
-        	  <span class="color-dark-red">Edit Quotation</span>
+          <div class="dis-inblock bg-white-gray">
+          	  <span>You are here : </span>
           </div>
+              <span><a href="quotation_list.html" class="color-dark-gray-h">Quotation</a></span>
+              <i class="fa fa-angle-right"></i>
+          	  <span class="color-dark-red">Edit Quotation</span>
+              
           <div class="mr-header font-regular header-edit-quo no-padding-lr">
-            <span><i class="fa fa-angle-right"></i> Edit Quotation</span>
+                <span><i class="fa fa-angle-right"></i> Edit Quotation</span>
           </div>
         <!-- start form edit_quotation -->
         <div class="col-md-12 no-padding-lr font-18">
           <form class="form">
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_date" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Date
                 <span class="color-dark-red">*</span>
               </span>
@@ -141,7 +138,7 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_quoNo" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Quotation No
                 <span class="color-dark-red">*</span>
               </span>
@@ -150,7 +147,7 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_quoFile" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Path File Quotation
                 <span class="color-dark-red">*</span>
               </span>
@@ -161,7 +158,7 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_quoType" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Quotation Type
                 <span class="color-dark-red">*</span>
               </span>
@@ -174,7 +171,7 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_comName" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Company Name
                 <span class="color-dark-red">*</span>
               </span>
@@ -183,7 +180,7 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding-lr">Working Status</span>
               <div class="col-sm-9 no-padding-lr">
                 <label class="radio-inline rdo-edit">
@@ -198,20 +195,21 @@
               </div>
             </div>
 
-            <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
+            <div class="form-group mr-form-profile col-md-12 no-padding-lr">
               <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding-lr">Description</span>
               <div class="col-sm-9 no-padding-lr">
                 <textarea class="form-control" placeholder="Enter description" rows="3"></textarea>
               </div>
             </div>
-          <!-- start button edit_quotation -->
-            <div class="col-md-offset-4 col-md-4 col-sm-8 col-sm-offset-2 text-center mr-btn-profile mr-bot-btn n-pad">
-              <button type="button" class="btn btn-pass btn-quo-type">Save change</button>
-            </div>
-          <!-- end button edit_quotation -->
+
           </form>
         </div>
         <!-- end form edit_quotation -->
+        <!-- start button edit_quotation -->
+          <div class="col-md-offset-4 col-md-4 text-center mr-btn-profile">
+            <button type="button" class="btn btn-pass btn-quo-type">Save change</button>
+          </div>
+        <!-- end button edit_quotation -->
       </div>
       </div>
 <!-- edit_quotation-content end -->
@@ -250,6 +248,5 @@
     <!--script for this page-->
     <script src="assets/js/bootstrap-datepicker.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
-    <script src></script>
 
 </html>
