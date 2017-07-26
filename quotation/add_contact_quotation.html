@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CODEBEE</title>
+<title>Add contact quotation</title>
 	<link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -42,41 +42,56 @@
       <div id="sidebar"  class="nav-collapse index-sidebar">
           <!-- sidebar menu start-->
           <ul class="sidebar-menu" id="nav-accordion">
-            <p class="centered"><a href="profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
+            <p class="centered"><a href="edit_profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
             <h5 class="centered font-sidebar">Taneeya</h5>
           <!-- nav-menu start -->
             <li class="sub-menu mt">
-                <a class="" href="dashboard_admin.html">
+                <a class="" href="dashboard.html">
                     <i class="fa fa-bar-chart-o"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" class="active">
+                <a class="" href="quotation_list.html" >
                     <i class="fa fa-file-text"></i>
                     <span>Quotation</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a class="" href="invoice_list.html">
                     <i class="fa fa-file-text"></i>
                     <span>Invoice</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="company_list.html">
                     <i class="fa fa-building"></i>
                     <span>Company</span>
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="contact_list.html" class="active">
                     <i class="fa fa-address-book"></i>
                     <span>Contact</span>
                 </a>
             </li>
             <li class="sub-menu">
-              <a href="javascript:;">
+              <a href="management_user.html">
+                  <i class="fa fa-users"></i>
+                  <span>Management User</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+                <a href="javascript:;" class="">
+                    <i class="fa fa-cog"></i>
+                    <span>Website Setting</span>
+                </a>
+                <ul class="sub" style="overflow: hidden; display: block;">
+                    <li><a href="type_list.html" class="">Quotation Type</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="login.html">
                   <i class="fa fa-sign-out"></i>
                   <span>Logout</span>
               </a>
@@ -210,13 +225,13 @@
                 </table>
             </div>
 
-            <div class="col-md-12 col-sm-12 col-xs-12 no-padding-lr">
-                <div class="col-md-6 col-sm-6 col-xs-12 no-padding-lr">
-                    <span>Showing 1 to 5 of 10 entries</span>
+            <div class="col-md-12 col-xs-12 col-sm-12 no-padding-lr mr-b-pagi add-in-quo">
+            	<div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr font-size-pagi">
+                	<span>Showing 1 to 5 of 10 entries</span>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 no-padding-lr next-right">
+                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr next-right font-size-pagi">
                     <ul class="pagination pagination-sm no-mr-tb">
-                      <li><a href="#">Previous</a></li>
+                      <li><a href="#" class="no-pd-l">Previous</a></li>
                       <li><a href="#">1</a></li>
                       <li><a href="#">2</a></li>
                       <li><a href="#">3</a></li>
@@ -260,7 +275,7 @@
   
   
   <!-- this page -->
-  <script type="text/javascript" src="assets/js/common-scripts-admin.js"></script>
+  <script type="text/javascript" src="assets/js/common-scripts.js"></script>
   <!-- this page (datatable) -->
   <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
