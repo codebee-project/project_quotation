@@ -524,6 +524,9 @@ svg{
 	border: #959595 solid 1px !important;
 	box-shadow: 0.5px 0.5px 1px 0px #989797;
 }
+.mr-foot-view{
+    margin-bottom: 1%;
+}
 
 /*data table*/
 table.dataTable thead th {
@@ -574,6 +577,15 @@ td {
 
 /*----------------------------edit_profile-----------------------------*/
 
+.wrapper-edit {
+    display: inline-block;
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    width: 100%;
+}
 .menu-header-profile{
 	font-size: 23px;
 	color: #686868;
@@ -645,7 +657,7 @@ td {
 	box-shadow: 0.5px 0.5px 2px 0px #989797;
 }
 .mr-box-editpro{
-	margin-bottom:2%;
+	margin-bottom:6%;
 }
 
 /* ---------------------------- edit quotation-------------------------------*/
@@ -658,7 +670,7 @@ td {
 .edit-quo-navigator{
 	font-size: 14px;
 	color: #686868;
-	padding-bottom: 15px !important;
+	padding-bottom: 15px !important;f
 }
 .mr-header{
 	margin-top: 2% !important;
@@ -900,8 +912,32 @@ td {
 	color:#686868 !important;
 }
 .mr-b-pagi{
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
+
+/*btn using file input*/
+.btn-file{
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
 /*--------------------------- navbar ------------------------*/
 
 .logo-navbar{
@@ -917,87 +953,4 @@ textarea{
 
 .bg-test{
 	background-color: #000;
-}
-
-
-/*--------------------- test toggle ------------------------*/
-$toggleSwitch-bg-checked: #81859d;
-$toggleSwitch-bg-unchecked: #BBBBBB;
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 70px;
-  height: 30px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {display:none;}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 25px;
-  width: 25px;
-  left: 4px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.switch-on, .switch-off {
-  position: absolute;
-  font-size: 14px;
-  color: white;
-}
-
-.switch-on {
-  left: 8px;
-  top: 6px;
-  display: none;
-}
-
-.switch-off {
-  right: 8px;
-  top: 6px;
-}
-
-input:checked {
-  & + .slider {
-    background-color: $toggleSwitch-bg-checked;
-  }
-  & + .slider:before {
-    -webkit-transform: translateX(38px);
-    -ms-transform: translateX(38px);
-    transform: translateX(38px);
-  }
-  & ~ .switch-on {
-    display: block;
-  }
-  & ~ .switch-off {
-    display: none;
-  }
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }

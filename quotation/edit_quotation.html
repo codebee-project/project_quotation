@@ -155,9 +155,8 @@
                 <span class="color-dark-red">*</span>
               </span>
               <div class="col-sm-9 no-padding-lr">
-                <button type="button" class="btn btn-edit font-regular">
-                <span class=""><i class="fa fa-file-text color-light-gray2"></i></span>
-                Choose file</button>
+                <input type="file" name="photo" class="dis-none" id="upload-file" accept="application/pdf" />
+                <span class="color-light-gray2 font-light font-17 font-form-des">Please choose file .pdf</span>
               </div>
             </div>
 
@@ -185,7 +184,7 @@
 
             <div class="form-group mr-form-profile col-md-12 col-sm-12 no-padding-lr">
               <span id="sp_newPass" class="col-sm-3 control-label font-regular no-padding-lr">Working Status</span>
-              <div class="col-sm-9 no-padding-lr">
+              <div class="col-sm-9 no-padding-lr font-17 font-light">
                 <label class="radio-inline rdo-edit">
                   <input type="radio" name="inlineRadioOptions" id="ip_success" value="success" checked> Success
                 </label>
@@ -218,16 +217,16 @@
     </section>
 
   <!--footer start-->
-  <div class="col-md-12 mr-footer no-padding">
-      <footer class="site-footer">
-          <div class="text-center">
-              2017&copy; codebee
-              <a href="edit_quotation.html#" class="go-top">
-                  <i class="fa fa-angle-up"></i>
-              </a>
-          </div>
-      </footer>
-  </div>
+    <div class="col-md-12 mr-footer no-padding-lr">
+        <footer class="site-footer">
+            <div class="text-right">
+                2017&copy; codebee
+                <a id="back-to-top" href="#" class="go-top text-center">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
   <!--footer end-->
 <!-- main-content end -->
 
@@ -244,12 +243,20 @@
 
 
     <!--common script for all pages-->
-	<script src="assets/js/raphael-min.js"></script>
+    <script src="assets/js/raphael-min.js"></script>
     <script src="assets/js/common-scripts.js"></script>
 
     <!--script for this page-->
     <script src="assets/js/bootstrap-datepicker.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
-    <script src></script>
+    <script src="assets/js/datepicker.js"></script>
+
+    <!-- for input file -->
+    <script src="assets/js/bootstrap-filestyle.min.js"></script>
+    <script src="assets/js/inputfile.js"></script>
+
+    <!-- back to top -->
+    <script src="assets/js/backtotop.js"></script>
+
 
 </html>

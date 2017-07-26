@@ -139,13 +139,15 @@
               <span id="sp_invFile" class="col-sm-3 control-label font-regular sp-quo-edit no-padding-lr">Path File Invoice
                 <span class="color-dark-red">*</span>
               </span>
-              <div class="col-sm-9 no-padding-lr">
+              <div class="col-sm-9 no-padding-lr"><!-- 
                 <label for="upload-file" class="btn-edit font-light">
                     <i class="fa fa-file-text color-light-gray2"></i>
                     <span class="">Choose file</span>
                 </label>
                 <input type="file" name="photo" class="dis-none" id="upload-file" />
-                <span class="color-light-gray2 font-17 font-light">Please choose file .pdf</span>
+                <span class="color-light-gray2 font-17 font-light">Please choose file .pdf</span> -->
+                <input type="file" name="photo" class="dis-none" id="upload-file" accept="application/pdf" />
+                <span class="color-light-gray2 font-light font-17 font-form-des">Please choose file .pdf</span>
               </div>
             </div>
           <!-- start button add_quotation_type -->
@@ -186,8 +188,12 @@
 
 
     <!--common script for all pages-->
-	<script src="assets/js/raphael-min.js"></script>
+	  <script src="assets/js/raphael-min.js"></script>
     <script src="assets/js/common-scripts.js"></script>
+
+    <!-- for input file -->
+    <script src="assets/js/bootstrap-filestyle.min.js"></script>
+    <script src="assets/js/inputfile.js"></script>
 
     <!--script for this page-->
     <script src="assets/js/bootstrap-datepicker.js"></script>
