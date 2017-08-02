@@ -21,19 +21,21 @@
 @media (max-width: 768px) {
 
     .header {
-        position: absolute;
+        position: fixed;
     }
 
     /*sidebar*/
 
     #sidebar {
         height: auto;
-        overflow: hidden;
-        position: absolute;
+        overflow: auto;
+		overflow-y: auto;
+        position: fixed;
         width: 100%;
         z-index: 1001;
+		outline: none;
+		display: block;
     }
-
 
     /* body container */
     #main-content {

@@ -797,28 +797,5 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     margin-left: -180px;
 }
 
-/*footer*/
-.site-footer {
-    background: #d8322b;
-    color: #fff;
-    padding: 10px 0;
-}
-.go-top {
-    margin-right: 1%;
-    margin-left: 1%;
-    float: right;
-    background-color: #fff;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-}
-.mr-footer{
-    position: fixed !important;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
 
 

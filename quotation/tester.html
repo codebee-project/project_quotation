@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h2>Toggle Switch</h2>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider"></span>
+</label><br><br>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+
+
+
+<button onclick="check()">Check Checkbox</button>
+<button onclick="uncheck()">Uncheck Checkbox</button>
+</body>
+
+  <script src="assets/js/jquery.js"></script>
+<script>
+function check() {
+    document.getElementById("myCheck").checked = true;
+}
+
+function uncheck() {
+    document.getElementById("myCheck").checked = false;
+}
+function validate() {
+if (myCheck.checked == 1){
+  alert("status active") ;
+} else {
+  alert("status unactive")
+}
+}
+</script>
+</html> 

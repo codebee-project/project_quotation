@@ -18,88 +18,34 @@
 </head>
 
 <body>
-<section id="container" >
-  <header class="header black-bg">
-    <div class="sidebar-toggle-box">
-      <div class="fa fa-bars tooltips color-white" data-placement="right" data-original-title="Toggle Navigation"></div>
-    </div>
-    <!--logo start-->
-    <a href="index.html" class="logo"><b><img src="assets/img/logo_navbar.png" class="logo-navbar"></b></a>
-    <div class="top-menu">
+<nav class="navbar navbar-default" style="background-color: #d8322b; border-color: #d8322b; padding-top: 2px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" style="margin-left: 10px; margin-right: 10px; float:left; border-color: transparent;" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+        <div class="fa fa-bars tooltips color-white" style="font-size: 20px;" data-placement="right" data-original-title="Toggle Navigation"></div>
+
+      </button>
+      <a href="#" class="logo" style="cursor: pointer; margin-top: 10px;"><b><img src="assets/img/logo_navbar.png" class="logo-navbar"></b></a>
       <ul class="nav pull-right top-menu">
         <li>
-          <a class="EN active" href="#">EN</a>
-          <a class="TH" href="#">TH</a>
+          <a class="EN active" href="#" style="margin-top: 11px;">EN</a>
+          <a class="TH" href="#" style="margin-top: 11px; margin-right: 10px;">TH</a>
         </li>
       </ul>
     </div>
-  </header>
-      <!--header end-->
- 
-  <aside>
-      <div id="sidebar"  class="nav-collapse index-sidebar">
-          <!-- sidebar menu start-->
-          <ul class="sidebar-menu" id="nav-accordion">
-            <p class="centered"><a href="profile.html"><img src="assets/img/imize.jpg" class="img-circle" width="80"></a></p>
-            <h5 class="centered font-sidebar">Taneeya</h5>
-          <!-- nav-menu start -->
-            <li class="sub-menu mt">
-                <a class="active" href="dashboard.html">
-                    <i class="fa fa-bar-chart-o"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
-            <li class="sub-menu">
-                <a href="quotation_list.html" >
-                    <i class="fa fa-file-text"></i>
-                    <span>Quotation</span>
-                </a>
-            </li>
-            <li class="sub-menu">
-                <a href="invoice_list.html" >
-                    <i class="fa fa-file-text"></i>
-                    <span>Invoice</span>
-                </a>
-            </li>
-            <li class="sub-menu">
-                <a href="company_list.html" >
-                    <i class="fa fa-building"></i>
-                    <span>Company</span>
-                </a>
-            </li>
-            <li class="sub-menu">
-                <a href="contact_list.html" >
-                    <i class="fa fa-address-book"></i>
-                    <span>Contact</span>
-                </a>
-            </li>
-            <li class="sub-menu">
-              <a href="management_user.html">
-                  <i class="fa fa-users"></i>
-                  <span>Management User</span>
-              </a>
-            </li>
-            <li class="sub-menu">
-                <a href="javascript:;" >
-                    <i class="fa fa-cog"></i>
-                    <span>Website Setting</span>
-                </a>
-                <ul class="sub" style="overflow: hidden; display: block;">
-                    <li><a href="type_list.html">Quotation Type</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu">
-              <a href="login.html">
-                  <i class="fa fa-sign-out"></i>
-                  <span>Logout</span>
-              </a>
-            </li>
-          </ul>
-            <!-- nav-menu end -->
-          <!-- sidebar menu end-->
-      </div>
-  </aside>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #282828;">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><i class="fa fa-bar-chart-o" style="margin-right: 10px;"></i><span>Dashboard</span><span class="sr-only">(current)</span></a></li>
+        <li><a href="#"><i class="fa fa-file-text" style="margin-right: 10px;"></i><span>Quotation</span></a></li>
+        <li><a href="invoice_list.html" ><i class="fa fa-file-text" style="margin-right: 10px;"></i><span>Invoice</span></a></li>
+    </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 <!--main content start-->
 <section id="main-content">
@@ -273,6 +219,7 @@
     <!--common script for all pages-->
     <script src="assets/js/raphael-min.js"></script>
     <script src="assets/js/morris-0.4.3.min.js"></script>
+    <script src="assets/js/common-scripts-admin.js"></script>
     <script src="assets/js/backtotop.js"></script>
 
     <!--script for this page-->

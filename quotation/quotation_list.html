@@ -156,7 +156,7 @@
             <div class="col-md-12 col-xs-12 color-dark-gray font-size-table no-padding-lr">
             	<table id="quotation_list" class="table table-striped" cellspacing="0" width="100%">
                     <thead>
-                        <tr class="bg-color-tr">
+                        <tr id="tr0" class="bg-color-tr">
                             <th class="th-font-size">No</th>
                             <th class="th-font-size">Date</th>
                             <th class="th-font-size">Quo no</th>
@@ -171,7 +171,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="tr-color-suc">
+                        <tr id="tr1" class="tr-color-suc">
                             <td class="td-font-size">01</td>
                             <td class="td-font-size">01/01/2560</td>
                             <td class="td-font-size">Quo-0001</td>
@@ -181,7 +181,12 @@
                             <td class="td-font-size">John@gmail.com</td>
                             <td class="td-font-size">02-0000012</td>
                             <td class="td-font-size">Inv-0001</td>
-                            <td class="td-font-size"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                            <td class="td-font-size">
+                                <label class="switch">
+                                  <input id="c1" type="checkbox" onclick="validate(this)">
+                                  <span class="slider round"></span>
+                                </label>
+                            </td>
                             <td class="td-font-size width-td-status">
                             	<a href="#" class="btn btn-view font-light">View</a>
                                 <a href="#" class="btn btn-edit-quo font-light">Edit</a>
@@ -189,7 +194,7 @@
                                 <a href="#" class="btn btn-add-inv font-light">Add Invoice</a>
                             </td>
                         </tr>
-                        <tr class="tr-color-in">
+                        <tr id="tr2" class="tr-color-in">
                             <td class="td-font-size">02</td>
                             <td class="td-font-size">01/01/2560</td>
                             <td class="td-font-size">Quo-0002</td>
@@ -199,7 +204,12 @@
                             <td class="td-font-size">John@gmail.com</td>
                             <td class="td-font-size">02-0000012</td>
                             <td class="td-font-size">Inv-0002</td>
-                            <td class="td-font-size"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                            <td class="td-font-size">
+                                <label class="switch">
+                                  <input id="c2" type="checkbox" onclick="validate(this)">
+                                  <span class="slider round"></span>
+                                </label>
+                            </td>
                             <td class="td-font-size width-td-status">
                             	<a href="#" class="btn btn-view font-light">View</a>
                                 <a href="#" class="btn btn-edit-quo font-light">Edit</a>
@@ -207,7 +217,7 @@
                                 <a href="#" class="btn btn-add-inv font-light">Add Invoice</a>
                             </td>
                         </tr>
-                        <tr class="tr-color-wa">
+                        <tr id="tr3" class="tr-color-wa">
                             <td class="td-font-size">03</td>
                             <td class="td-font-size">01/01/2560</td>
                             <td class="td-font-size">Quo-0003</td>
@@ -217,7 +227,12 @@
                             <td class="td-font-size">John@gmail.com</td>
                             <td class="td-font-size">02-0000012</td>
                             <td class="td-font-size">Inv-0003</td>
-                            <td class="td-font-size"><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                            <td class="td-font-size">
+                                <label class="switch">
+                                  <input id="c3" type="checkbox" onclick="validate(this)">
+                                  <span class="slider round"></span>
+                                </label>
+                            </td>
                             <td class="td-font-size width-td-status">
                             	<a href="#" class="btn btn-view font-light">View</a>
                                 <a href="#" class="btn btn-edit-quo font-light">Edit</a>
@@ -225,7 +240,7 @@
                                 <a href="#" class="btn btn-add-inv font-light">Add Invoice</a>
                             </td>
                         </tr>
-                        <tr class="tr-color-off">
+                        <tr id="tr4" class="">
                             <td class="td-font-size">04</td>
                             <td class="td-font-size">01/01/2560</td>
                             <td class="td-font-size">Quo-0004</td>
@@ -235,7 +250,12 @@
                             <td class="td-font-size">John@gmail.com</td>
                             <td class="td-font-size">02-0000012</td>
                             <td class="td-font-size">Inv-0004</td>
-                            <td class="td-font-size"><input type="checkbox" id="status" data-toggle="toggle" data-size="mini"></td>
+                            <td class="td-font-size">
+                                <label class="switch">
+                                  <input id="c4" type="checkbox" onclick="validate(this,'tr4')">
+                                  <span class="slider round"></span>
+                                </label>
+                            </td>
                             <td class="td-font-size width-td-status" >
                             	<a href="#" class="btn btn-view font-light">View</a>
                                 <a href="#" class="btn btn-edit-quo font-light">Edit</a>
@@ -295,9 +315,6 @@
   <script type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
   <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
-  
-  <!-- toggle on/off -->
-  <script type="text/javascript" src="assets/js/bootstrap-toggle.min.js"></script>
   <!-- this page -->
   <script type="text/javascript" src="assets/js/common-scripts.js"></script>
   <!-- this page (datatable) -->
@@ -306,10 +323,25 @@
   <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>
   <script type="text/javascript" src="assets/js/responsive.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/datatable.js"></script>
-  
-  
-
   <!-- back to top -->
   <script type="text/javascript" src="assets/js/backtotop.js"></script>
+    <script>
+	function validate(chk,trk) {
+		  var id = "#"+chk.id;
+		  var trd = "#"+trk;
+		if ($id.checked == 1){
+		//alert("status active") ;
+		$("trd").removeClass("bg-test");
+    console.log('area element tr 1 = ' + trd);
+		} else {
+		//alert("status unactive")
+		$("trd").addClass("bg-test");
+    console.log('area element tr 2 = ' + trd);
+		}
+    console.log('area element id = ' + id);
+    console.log('area element tr = ' + trd);
+	}
+	</script>
+
 
 </html>
