@@ -24,6 +24,7 @@
 body{
 	font-family:'promptlight' !important;
 	height:100%;
+    margin: 0px !important;
 }
 .bg{
 	background:url(../img/bg.png) no-repeat center center fixed;
@@ -92,6 +93,10 @@ body{
 	color: #b22121;
 }
 
+.a-hover a:hover {
+	color: #b22121 !important;
+}
+
 
 /*---------------------user input box icon-------------------*/
 /* enable absolute positioning */
@@ -118,28 +123,53 @@ i{
 
 /*------------------- screen-center ---------------------*/
 .screen-center{
-    height: 660px;
+    /*height: 660px;*/
     display: flex;
     align-items: center;
 }
+
 /*------------------- login ---------------------*/
-.n-pad{
+.row-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100vh;
 }
-.font-responsive{
+#outer-center {
+    display: -webkit-flex;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 }
 .box-login{
-    overflow: hidden;
-	margin:auto;
-	background-color:#FFF;
-	border-radius: 2px;
-	box-shadow: 0 0 9px 0px #3a3939;
+    background-color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 0 9px 0px #3a3939;
+    padding: 15px;
 }
+
 .mr-box-input{
 	margin-top:10%;
 	margin-bottom:10%;
 }
 .mr-logo{
 	margin-bottom: 10%;
+	margin-top: 10%;
 }
 .mr-text-login{
 	margin-bottom: 5%;
@@ -201,20 +231,22 @@ a .text-forgot{
 }
 .text-or{
 	color: #959595;
-    margin-top: 3%;
     margin-bottom: 3%;
     font-size: 17px;
 }
 .mr-bot-text-regis{
-	margin-bottom: 10%;
+	margin-bottom: 5%;
+}
+.mr-form{
+	margin-bottom: 2%;
 }
 /*----------------------- register -------------------*/
 .box-regis{
-    overflow: hidden;
-	margin:auto;
-	background-color:#FFF;
-	border-radius: 2px;
-	box-shadow: 0 0 9px 0px #3a3939;
+	position: relative !important;
+	background-color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 0 9px 0px #3a3939;
+    padding: 15px;
 }
 .mr-box-input-regis{
 	margin-top:5%;
@@ -230,7 +262,7 @@ a .text-forgot{
 .icon-camera{
 	position: absolute;
     bottom: 0;
-    left: 52%;
+    left: 56%;
 }
 label {
    cursor: pointer;
@@ -241,6 +273,7 @@ label {
    opacity: 0;
    position: absolute;
    z-index: -1;
+   width: 100px;
 }
 .mr-bot-text-signin{
 	margin-bottom: 5%;
@@ -252,8 +285,7 @@ label {
 /*---------------------- forgot pass -------------------------------------------*/
 
 .box-forgot{
-	overflow: hidden;
-	margin:auto;
+	position: relative !important;
 	background-color:#FFF;
 	border-radius: 2px;
 	box-shadow: 0 0 9px 0px #3a3939;
@@ -659,6 +691,9 @@ td {
 .mr-box-editpro{
 	margin-bottom:6%;
 }
+.mr-t-changepass{
+	margin-top: 2%;
+}
 
 /* ---------------------------- edit quotation-------------------------------*/
 
@@ -838,6 +873,20 @@ td {
 	border: #24394e solid 1px !important;
 	margin-bottom:2% !important;
 }
+.btn-add-doc{
+	background-color:#882539;
+	color:#fff;
+	width:100%;
+	border: #882539 solid 1px !important;
+	margin-bottom:2% !important;
+}
+.btn-add-doc:hover{
+	background-color:#fff;
+	color:#882539 !important;
+	width:100%;
+	border: #882539 solid 1px !important;
+	margin-bottom:2% !important;
+}
 .btn-add-con{
 	background-color:#019062;
 	color:#fff;
@@ -914,13 +963,18 @@ td {
 .mr-b-pagi{
 	margin-bottom: 1%;
 }
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover{
+	z-index: 1 !important;
+    background-color: #bdbaba !important;
+    border-color: #bdbaba !important;
+}
 
-/*btn using file input*/
+/*------------------btn using file input------------------*/
 .btn-file{
 	display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.42857143;
     text-align: center;
@@ -936,6 +990,7 @@ td {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 2px;
+    color: #686868 !important;
 }
 
 /*--------------------------- navbar ------------------------*/
@@ -1014,49 +1069,15 @@ input:checked + .slider:before {
   border-radius: 14%;
 }
 
-/*/////////////////////////////////////////////////////////////////*/
-.onoffswitch {
-    position: relative; width: 90px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+
+/*----------------------- test switch ------------------*/
+.test-sw-off{
+	background-color: #000;
+	width: 20px;
+	height: 20px;
 }
-.onoffswitch-checkbox {
-    display: none;
-}
-.onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #999999; border-radius: 20px;
-}
-.onoffswitch-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-    content: "ON";
-    padding-left: 10px;
-    background-color: #34A7C1; color: #FFFFFF;
-}
-.onoffswitch-inner:after {
-    content: "OFF";
-    padding-right: 10px;
-    background-color: #EEEEEE; color: #999999;
-    text-align: right;
-}
-.onoffswitch-switch {
-    display: block; width: 18px; margin: 6px;
-    background: #FFFFFF;
-    position: absolute; top: 0; bottom: 0;
-    right: 56px;
-    border: 2px solid #999999; border-radius: 20px;
-    transition: all 0.3s ease-in 0s; 
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
+.test-sw-on{
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
 }

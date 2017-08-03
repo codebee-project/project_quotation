@@ -1,0 +1,803 @@
+/*767*/
+@media screen and (min-width: 320px) and (max-width: 374px){
+
+/*-------------------------------- login register and forgot password responsive --------------------------------*/
+.screen-center{
+    /*height: 568px;*/
+}
+.btn-login {
+    font-size: 15px !important;
+}
+.btn-fb{
+    font-size: 15px !important;
+}
+.form-control {
+    font-size: 15px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/*login*/
+
+.font-responsive{
+	font-size: 13px;
+}
+/*register*/
+.text-descrip {
+    font-size: 14px;
+}
+
+/*forgot-password*/
+.text-regis {
+    font-size: 29px;
+}
+.btn-send-mail {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+.mr-box-editpro{
+	margin-bottom: 20%;
+}
+
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 84.5% !important;
+}
+
+/*-------------------------------- add_quotation --------------------------------*/
+.btn-quo {
+    width: 100%;
+}
+
+/*radio add_user*/
+.add-radio{
+	font-size: 14px !important;
+}
+
+/*form all add*/
+.wrapper {
+	margin-top: 26%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+/*footer*/
+.mr-footer{
+	width: 100%;
+}
+.no-mr-tb{
+	margin-bottom: 1% !important;
+}
+
+}
+
+/*galaxy s5*/
+@media screen and (min-width: 360px) and (max-width: 360px){
+
+/*-------------------------------- login register and forgot password responsive --------------------------------*/
+.screen-center{
+    /*height: 568px;*/
+}
+.btn-login {
+    font-size: 15px !important;
+}
+.btn-fb{
+    font-size: 15px !important;
+}
+.form-control {
+    font-size: 15px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/*login*/
+
+.font-responsive{
+	font-size: 13px;
+}
+/*register*/
+.text-descrip {
+    font-size: 14px;
+}
+/*forgot-password*/
+.text-regis {
+    font-size: 29px;
+}
+.btn-send-mail {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 84.5% !important;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+/*footer*/
+.mr-footer{
+	width: 100%;
+}
+
+/* ------------------------- pagination -------------------------------------*/
+.add-in-quo.mr-b-pagi{
+	margin-bottom: 2%;
+}
+.mr-b-pagi{
+	margin-bottom: 2%;
+}
+
+}
+
+/*iphone 6*/
+@media screen and (min-width: 375px) and (max-width: 411px) {
+
+/*-------------------------------- login responsive --------------------------------*/
+.screen-center{
+    /*height: 667px;*/
+}
+.btn-login {
+    font-size: 17px !important;
+}
+.btn-fb{
+    font-size: 17px !important;
+}
+.form-control {
+    font-size: 17px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.font-responsive{
+	font-size: 15px !important;
+}
+
+
+/*forgot-password*/
+.text-regis {
+    font-size: 35px;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+.mr-box-editpro{
+	margin-bottom: 19%;
+}
+
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 88.5% !important;
+}
+
+/*form all add*/
+.wrapper {
+	margin-top: 23%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+/*footer*/
+.mr-footer{
+	width: 100%;
+}
+
+
+.mr-b-pagi{
+	margin-bottom: 4%;
+}
+
+}
+
+/*iphone 6plus and nexus 5x,nexus 6p*/
+@media screen and (min-width: 412px) and (max-width: 767px) {
+
+
+/*-------------------------------- login responsive --------------------------------*/
+.screen-center{
+    /*height: 736px;*/
+}
+.btn-login {
+    font-size: 18px !important;
+}
+.btn-fb{
+    font-size: 18px !important;
+}
+.form-control {
+    font-size: 18px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.font-responsive{
+	font-size: 16px !important;
+}
+
+/*forgot-password*/
+.text-regis {
+    font-size: 40px;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+.mr-box-editpro{
+	margin-bottom: 22%;
+}
+
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 89.5% !important;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+/*footer*/
+.mr-footer{
+	width: 100%;
+}
+
+.mr-b-pagi{
+	margin-bottom: 4%;
+}
+
+
+}
+
+/*ipad*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+/*-------------------------------- login responsive --------------------------------*/
+.screen-center{
+    /*height: 1024px;*/
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 88.5% !important;
+}
+
+/*-------------------- dashboard ------------------------*/
+svg text{
+	font-size:17px !important;
+}
+.font-size-h{
+	font-size: 20px;
+}
+.mr-text-descrip-sum2 {
+	display: flex;
+    font-size: 17px;
+}
+.mr-text-descrip-sum{
+	font-size: 17px;
+}
+.no-pd-r-sm{
+	padding-right:0px !important;
+}
+.no-pd-l-sm{
+	padding-left:0px !important;
+}
+.bg-color-box1{
+	padding-left:16%;
+}
+.bg-color-box2{
+	padding-left:16%;
+}
+.bg-color-box3{
+	padding-left:16%;
+}
+.bg-color-box4{
+	padding-left:16%;
+}
+.mr-l-box2{
+	margin-left: 23px;
+}
+.mr-l-box3{
+	margin-left: 10px;
+}
+.text-descrip-summary{
+	margin-top:1%;
+}
+.mr-text-descrip-sum{
+	margin-bottom:5%;
+}
+
+/*---------- header ----------------*/
+
+.mr-header {
+    margin-top: 3% !important;
+    margin-bottom: 2%;
+}
+
+/*form all add*/
+.wrapper {
+	margin-top:11%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+
+/*button*/
+.mr-bot-btn {
+    margin-bottom: 20%;
+}
+
+/*footer*/
+.mr-footer{
+	width: 100%;
+}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+/*----------------dashboard-----------------*/
+.pd-l-ipad{
+	padding-left:0 !important;
+}
+.pd-r-ipad{
+	padding-right:0 !important;
+}
+.huge{
+	font-size:38px;
+}
+.text-descrip-summary{
+	padding-left: 0 !important;
+}
+
+/*-------------------------------- login responsive --------------------------------*/
+.screen-center{
+    /*height: 1366px;*/
+}
+
+/*------------------------ quotation list ----------------------*/
+.font-size-descrip{
+	font-size:13px;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 93% !important;
+}
+
+/*-------------------------------- btn add ------------------------------------*/
+.btn-add{
+    font-size: 14px !important;
+    padding-top: 3% !important;
+    padding-bottom: 4% !important;
+}
+.btn-add:hover{
+    font-size: 14px !important;
+    padding-top: 3% !important;
+    padding-bottom: 4% !important;
+}
+
+/*----------- pagination -----------------------*/
+.font-size-pagi{
+	font-size:17px !important;
+}
+
+.mr-header {
+    margin-top: 3% !important;
+    margin-bottom: 2%;
+}
+
+}
+
+
+/*for mobile*/
+@media screen and (max-width: 767px){
+/*.bg{
+	background: url(../img/bg.png) center center fixed;
+	background-size: 100%;
+}*/
+/*-------------------------------- login register and forgot password responsive --------------------------------*/
+.screen-center{
+}
+.btn-login {
+    font-size: 15px !important;
+}
+.btn-fb{
+    font-size: 15px !important;
+}
+.form-control {
+    font-size: 15px !important;
+}
+.n-pad{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/*----------- login -------------*/
+
+.font-responsive{
+	font-size: 10px;
+}
+.box-login{
+	padding-bottom: 7%;
+    padding-top: 7%;
+}
+/* ----------- register ------------*/
+.text-descrip {
+    font-size: 14px;
+}
+.img-regis{
+	width: 60px;
+    height: 60px;
+}
+.mr-box-input-forgot{
+	margin-top: 0px;
+}
+.mr-bot-text-regis{
+	margin-bottom: 0px;
+}
+.fa-2x {
+    font-size: 1.5em !important;
+}
+.icon-camera {
+    bottom: 3px !important;
+    left: 53% !important;
+}
+.re-size-logo{
+	width: 75%;
+}
+.box-regis{
+	padding-bottom: 7%;
+    padding-top: 7%;
+}
+/*------------- forgot-password -------------*/
+.text-forgot{
+    font-size: 28px;
+}
+.text-login {
+    font-size: 11px;
+}
+.btn-send-mail {
+    font-size: 18px !important;
+}
+
+.mr-box{
+	margin-top: 5%;
+    margin-bottom: 5%;
+}
+.box-forgot{
+	padding-bottom: 7%;
+    padding-top: 7%;
+}
+
+/*-------------------------------- edit_profile ---------------------------------*/
+.pd-box{
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.btn-quo-type {
+    width: 100%;
+}
+.f-edit-profile{
+	font-size: 14px;
+}
+.btn-profile {
+    font-size: 18px !important;
+}
+.box-profile{
+	padding-top: 9%;
+    padding-bottom: 9%;
+}
+.mr-t-changepass{
+	margin-top: 6%;
+}
+/*-------------------------------- view_quotation -----------------------------*/
+.mr-c-viewquo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*add_contact_quotation*/
+.btn-add-quo{
+	width: 100%;
+}
+
+/*-------------------------------- add_contact --------------------------------*/
+.control-input {
+    width: 84.5% !important;
+}
+
+/*-------------------------------- add_quotation --------------------------------*/
+.btn-quo {
+    width: 100%;
+}
+
+/*form all add*/
+.wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.wrapper-edit{
+	margin-top: 10% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.font-size-nav1{
+	font-size: 11px;
+}
+.mr-header {
+    margin-top: 8% !important;
+    margin-bottom: 8%;
+}
+
+/*-----------------------form all genarate plus and close----------------------*/
+.w-input{
+	width: 100%;
+}
+/*button*/
+.mr-bot-btn {
+    margin-bottom: 15%;
+}
+/*footer*/
+.mr-footer{
+	width: 100%;
+}
+.go-top{
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.font-form-des{
+	font-size: 15px;
+}
+
+/*-------------------- pagination ------------------------*/
+.font-size-pagi{
+	font-size:14px;
+	text-align: center;
+}
+.pagination>li>a, .pagination>li>span{
+	font-size:14px !important;
+}
+.next-right{
+	float: none !important;
+    text-align: center;
+}
+
+.mr-b-type{
+    margin-bottom: 12%;
+}
+
+
+/*-------------------- btn add ------------------------*/
+.btn-add-quo.btn {
+	margin-top:2%;
+}
+.btn-add{
+	margin-top:3%;
+	margin-bottom:7%;
+}
+
+
+
+/*-----------------------dashboard----------------------*/
+.no-pd-r{
+	padding-right:0 !important;
+}
+.no-pd-l{
+	padding-left:0 !important;
+}
+.no-pd-lr{
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+.mr-t-btn{
+	margin-top: 10px;
+}
+.mr-l-box2{
+	margin-left: 23px;
+}
+.mr-l-box3{
+	margin-left: 10px;
+}
+.mr-t-panel{
+	margin-top: 8%;
+}
+.font-size-h{
+	font-size: 15px;
+}
+.mr-text-descrip-sum{
+	margin-bottom:3% !important;
+	font-size:14px;
+}
+.padding-text-descrip-sum {
+    margin-left: 3%;
+}
+.text-descrip-summary{
+	margin-top:0;
+}
+.mr-descrip-quarter{
+	margin-bottom:3%
+}
+svg text{
+    font-size:14px !important;
+}
+.mr-text-descrip-sum2 {
+	display: grid;
+    font-size: 14px;
+}
+.mr-b-das{
+	margin-bottom: 7%;
+}
+
+/*----------------- header ---------------------*/
+.mr-header{
+	margin-top:6% !important;
+}
+.header-edit-quo{
+	margin-bottom:6% !important;
+}
+
+
+/*----------------- add quotation ---------------------*/
+.font-size-navi{
+	font-size:11px;
+}
+.mr-t-input{
+	margin-top:2%;
+}
+
+/*------------------ navi ------------------------------*/
+.font-navi-view-quo{
+	font-size:11px;
+}
+
+.mr-t-des{
+	margin-top: 0px !important;
+}
+
+.mr-b-report{
+	margin-bottom: 0px;
+}
+
+}

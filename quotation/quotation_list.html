@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <title>CODEBEE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quotation list</title>
-	<link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style-responsive.css" rel="stylesheet">
-    <link href="assets/css/main_responsive.css" rel="stylesheet">
-    
-    <!-- css this page (data table)-->
-    <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/rowGroup.bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/responsive.bootstrap.min.css" rel="stylesheet">
-    
-    <!-- toggle on/off -->
-    <link href="assets/css/bootstrap-toggle.min.css" rel="stylesheet">
+  
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/css/main_responsive.css" rel="stylesheet">
+
+  <!-- css this page (data table)-->
+  <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/rowGroup.bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/responsive.bootstrap.min.css" rel="stylesheet">
+
+  <!-- toggle on/off -->
+  <link href="assets/css/bootstrap-toggle.min.css" rel="stylesheet">
     
 </head>
 
@@ -103,205 +105,213 @@
           <!-- sidebar menu end-->
       </div>
   </aside>
+</section>
+
 
 <!-- main-content start -->
 <section id="main-content">
 
-	<!--view-quotation start-->
-	<section id="view-quotation">
-    	<div class="wrapper font-content-view-quo">
+  <div class="wrapper font-content-view-quo">
             
-            <!-- header -->
-        	<div class="font-regular header-edit-quo no-padding-lr">
-                <span><i class="fa fa-angle-right"></i> Quotation</span>
-          	</div>
-            
-            <!-- search -->
-            <div class="col-md-12 col-xs-12 col-sm-12 mr-search no-padding-lr">
-            	<div class="col-md-9 col-xs-12 col-sm-9 no-padding-l no-pd-r">  
-                    <div class="input-group date no-padding">
-                      <input type="text" class="form-control input-datepicker" placeholder="Search...">
-                      <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 col-sm-3 no-padding-r no-pd-l btn-add-quo">
-                    <a href="add_quotation.html" id="search_quo" class="btn btn-add">
-                    	<i class="fa fa-plus-circle icon-plus"></i>Add quotation
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="col-md-12 col-xs-12 col-sm-12 no-padding mr-c-viewquo mr-t-des font-size-descrip">
-            	<div class="col-md-3 col-xs-12 col-sm-4 no-padding-lr">
-                	<span class="font-regular">Description working status: </span>
-                </div>
-                <div class="col-md-9 col-xs-12 col-sm-8 mr-text-descrip-sum2 n-pad">
-                	<div class="col-md-3 col-xs-12 n-pad">
-                    	<img alt="success" src="assets/img/sq-success.png" />
-                    	<span class="padding-text-descrip-sum2">Success</span>
-                    </div>
-                    <div class="col-md-3 col-xs-12 n-pad">
-                    	<img alt="success" src="assets/img/sq-inprocess.png" />
-                        <span class="padding-text-descrip-sum2">Inprocess</span>
-                    </div>
-                    <div class="col-md-3 col-xs-12 n-pad">
-                    	<img alt="success" src="assets/img/sq-wait.png" />
-                    	<span class="padding-text-descrip-sum2">Wait</span>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <!--table quotation list-->
-            <div class="col-md-12 col-xs-12 color-dark-gray font-size-table no-padding-lr">
-            	<table id="quotation_list" class="table table-striped" cellspacing="0" width="100%">
-                    <thead>
-                        <tr id="tr0" class="bg-color-tr">
-                            <th class="th-font-size">No</th>
-                            <th class="th-font-size">Date</th>
-                            <th class="th-font-size">Quo no</th>
-                            <th class="th-font-size">Type</th>
-                            <th class="th-font-size">Company</th>
-                            <th class="th-font-size">Contact</th>
-                            <th class="th-font-size">Email</th>
-                            <th class="th-font-size">Telephone</th>
-                            <th class="th-font-size">Inv no</th>
-                            <th class="th-font-size">Status</th>
-                            <th class="th-font-size">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="tr1" class="tr-color-suc">
-                            <td class="td-font-size">01</td>
-                            <td class="td-font-size">01/01/2560</td>
-                            <td class="td-font-size">Quo-0001</td>
-                            <td class="td-font-size">Website</td>
-                            <td class="td-font-size">The Walk</td>
-                            <td class="td-font-size">John</td>
-                            <td class="td-font-size">John@gmail.com</td>
-                            <td class="td-font-size">02-0000012</td>
-                            <td class="td-font-size">Inv-0001</td>
-                            <td class="td-font-size">
-                                <label class="switch">
-                                  <input id="c1" type="checkbox" onclick="validate(this)">
-                                  <span class="slider round"></span>
-                                </label>
-                            </td>
-                            <td class="td-font-size width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                                <a href="#" class="btn btn-edit-quo font-light">Edit</a>
-                                <a href="#" class="btn btn-add-con font-light">Add contact</a>
-                                <a href="#" class="btn btn-add-inv font-light">Add Invoice</a>
-                            </td>
-                        </tr>
-                        <tr id="tr2" class="tr-color-in">
-                            <td class="td-font-size">02</td>
-                            <td class="td-font-size">01/01/2560</td>
-                            <td class="td-font-size">Quo-0002</td>
-                            <td class="td-font-size">Website</td>
-                            <td class="td-font-size">The Walk</td>
-                            <td class="td-font-size">John</td>
-                            <td class="td-font-size">John@gmail.com</td>
-                            <td class="td-font-size">02-0000012</td>
-                            <td class="td-font-size">Inv-0002</td>
-                            <td class="td-font-size">
-                                <label class="switch">
-                                  <input id="c2" type="checkbox" onclick="validate(this)">
-                                  <span class="slider round"></span>
-                                </label>
-                            </td>
-                            <td class="td-font-size width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                                <a href="#" class="btn btn-edit-quo font-light">Edit</a>
-                                <a href="#" class="btn btn-add-con font-light">Add contact</a>
-                                <a href="#" class="btn btn-add-inv font-light">Add Invoice</a>
-                            </td>
-                        </tr>
-                        <tr id="tr3" class="tr-color-wa">
-                            <td class="td-font-size">03</td>
-                            <td class="td-font-size">01/01/2560</td>
-                            <td class="td-font-size">Quo-0003</td>
-                            <td class="td-font-size">Website</td>
-                            <td class="td-font-size">The Walk</td>
-                            <td class="td-font-size">John</td>
-                            <td class="td-font-size">John@gmail.com</td>
-                            <td class="td-font-size">02-0000012</td>
-                            <td class="td-font-size">Inv-0003</td>
-                            <td class="td-font-size">
-                                <label class="switch">
-                                  <input id="c3" type="checkbox" onclick="validate(this)">
-                                  <span class="slider round"></span>
-                                </label>
-                            </td>
-                            <td class="td-font-size width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                                <a href="#" class="btn btn-edit-quo font-light">Edit</a>
-                                <a href="#" class="btn btn-add-con font-light">Add contact</a>
-                                <a href="#" class="btn btn-add-inv font-light">Add Invoice</a>
-                            </td>
-                        </tr>
-                        <tr id="tr4" class="">
-                            <td class="td-font-size">04</td>
-                            <td class="td-font-size">01/01/2560</td>
-                            <td class="td-font-size">Quo-0004</td>
-                            <td class="td-font-size">Website</td>
-                            <td class="td-font-size">The Walk</td>
-                            <td class="td-font-size">John</td>
-                            <td class="td-font-size">John@gmail.com</td>
-                            <td class="td-font-size">02-0000012</td>
-                            <td class="td-font-size">Inv-0004</td>
-                            <td class="td-font-size">
-                                <label class="switch">
-                                  <input id="c4" type="checkbox" onclick="validate(this,'tr4')">
-                                  <span class="slider round"></span>
-                                </label>
-                            </td>
-                            <td class="td-font-size width-td-status" >
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                                <a href="#" class="btn btn-edit-quo font-light">Edit</a>
-                                <a href="#" class="btn btn-add-con font-light">Add contact</a>
-                                <a href="#" class="btn btn-add-inv font-light">Add Invoice</a>
-                            </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-12 col-xs-12 col-sm-12 no-padding-lr mr-b-pagi">
-            	<div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr font-size-pagi font-17">
-                	<span>Showing 1 to 5 of 10 entries</span>
-                </div>
-                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr next-right font-size-pagi">
-                    <ul class="pagination pagination-sm no-mr-tb">
-                      <li><a href="#" class="no-pd-l">Previous</a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">Next</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-	</section>
-    <!--view-quotation end-->
-
-    <!--footer start-->
-    <div class="col-md-12 mr-footer no-padding-lr">
-        <footer class="site-footer">
-            <div class="text-right">
-                2017&copy; codebee
-                <a id="back-to-top" href="#" class="go-top text-center">
-                    <i class="fa fa-angle-up"></i>
-                </a>
-            </div>
-        </footer>
+    <!-- header -->
+    <div class="font-regular header-edit-quo no-padding-lr">
+        <span><i class="fa fa-angle-right"></i> Quotation</span>
     </div>
-    <!--footer end-->
-  
-<!-- main-content end -->
+            
+    <!-- search -->
+    <div class="col-md-12 col-xs-12 col-sm-12 mr-search no-padding-lr">
+      <div class="col-md-9 col-xs-12 col-sm-9 no-padding-l no-pd-r">  
+        <div class="input-group date no-padding">
+          <input type="text" class="form-control input-datepicker" placeholder="Search...">
+          <span class="input-group-addon"><i class="fa fa-search"></i></span>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-xs-12 col-sm-3 no-padding-r no-pd-l btn-add-quo">
+        <a href="add_quotation.html" id="search_quo" class="btn btn-add">
+          <i class="fa fa-plus-circle icon-plus"></i>Add quotation
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-12 col-xs-12 col-sm-12 color-dark-gray-h no-padding mr-c-viewquo mr-t-des font-size-descrip">
+      <div class="col-md-3 col-xs-12 col-sm-4  no-padding-lr">
+        <span class="font-regular">Description working status: </span>
+      </div>
+      <div class="col-md-9 col-xs-12 col-sm-8 mr-text-descrip-sum2 n-pad">
+        <div class="col-md-3 col-xs-12 n-pad">
+          <img alt="success" src="assets/img/sq-success.png" />
+          <span class="padding-text-descrip-sum2">Success</span>
+        </div>
+      <div class="col-md-3 col-xs-12 n-pad">
+        <img alt="success" src="assets/img/sq-inprocess.png" />
+        <span class="padding-text-descrip-sum2">Inprocess</span>
+      </div>
+      <div class="col-md-3 col-xs-12 n-pad">
+        <img alt="success" src="assets/img/sq-wait.png" />
+        <span class="padding-text-descrip-sum2">Wait</span>
+      </div>
+
+      </div>
+    </div>
+            
+    <!--table-->
+    <div class="col-md-12 col-xs-12 color-dark-gray font-size-table no-padding-lr">
+    	<table id="quotation_list" class="table table-striped" cellspacing="0" width="100%">
+            <thead>
+                <tr class="bg-color-tr">
+                    <th class="th-font-size">No</th>
+                    <th class="th-font-size">Date</th>
+                    <th class="th-font-size">Quo no</th>
+                    <th class="th-font-size">Type</th>
+                    <th class="th-font-size">Company</th>
+                    <th class="th-font-size">Contact</th>
+                    <th class="th-font-size">Email</th>
+                    <th class="th-font-size">Telephone</th>
+                    <th class="th-font-size">Inv no</th>
+                    <th class="th-font-size">Status</th>
+                    <th class="th-font-size">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr-color-suc">
+                    <td class="td-font-size">01</td>
+                    <td class="td-font-size">01/01/2560</td>
+                    <td class="td-font-size">Quo-0001</td>
+                    <td class="td-font-size">Website</td>
+                    <td class="td-font-size">The Walk</td>
+                    <td class="td-font-size">John</td>
+                    <td class="td-font-size">John@gmail.com</td>
+                    <td class="td-font-size">02-0000012</td>
+                    <td class="td-font-size">Inv-0001</td>
+                    <td class="td-font-size">
+                      <label class="switch">
+                        <input id="" type="checkbox" checked onclick="">
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td class="td-font-size width-td-status">
+                    	<a href="view_quotation.html" class="btn btn-view font-light">View</a>
+                        <a href="edit_quotation.html" class="btn btn-edit-quo font-light">Edit</a>
+                        <a href="add_doc_quotation.html" class="btn btn-add-doc font-light">Add Document</a>
+                        <a href="add_invoice_quotation.html" class="btn btn-add-con font-light">Add Invoice</a>
+                        <a href="add_contact_quotation.html" class="btn btn-add-inv font-light">Add Contact</a>
+                    </td>
+                </tr>
+                <tr class="tr-color-in">
+                    <td class="td-font-size">02</td>
+                    <td class="td-font-size">01/01/2560</td>
+                    <td class="td-font-size">Quo-0002</td>
+                    <td class="td-font-size">Website</td>
+                    <td class="td-font-size">The Walk</td>
+                    <td class="td-font-size">John</td>
+                    <td class="td-font-size">John@gmail.com</td>
+                    <td class="td-font-size">02-0000012</td>
+                    <td class="td-font-size">Inv-0002</td>
+                    <td class="td-font-size">
+                      <label class="switch">
+                        <input id="" type="checkbox" checked onclick="">
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td class="td-font-size width-td-status">
+                    	<a href="#" class="btn btn-view font-light">View</a>
+                        <a href="#" class="btn btn-edit-quo font-light">Edit</a>
+                        <a href="add_doc_quotation.html" class="btn btn-add-doc font-light">Add Document</a>
+                        <a href="add_invoice_quotation.html" class="btn btn-add-con font-light">Add Invoice</a>
+                        <a href="add_contact_quotation.html" class="btn btn-add-inv font-light">Add Contact</a>
+                    </td>
+                </tr>
+                <tr class="tr-color-wa">
+                    <td class="td-font-size">03</td>
+                    <td class="td-font-size">01/01/2560</td>
+                    <td class="td-font-size">Quo-0003</td>
+                    <td class="td-font-size">Website</td>
+                    <td class="td-font-size">The Walk</td>
+                    <td class="td-font-size">John</td>
+                    <td class="td-font-size">John@gmail.com</td>
+                    <td class="td-font-size">02-0000012</td>
+                    <td class="td-font-size">Inv-0003</td>
+                    <td class="td-font-size">
+                      <label class="switch">
+                        <input type="checkbox" checked onclick="">
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td class="td-font-size width-td-status">
+                    	<a href="#" class="btn btn-view font-light">View</a>
+                        <a href="#" class="btn btn-edit-quo font-light">Edit</a>
+                        <a href="add_doc_quotation.html" class="btn btn-add-doc font-light">Add Document</a>
+                        <a href="add_invoice_quotation.html" class="btn btn-add-con font-light">Add Invoice</a>
+                        <a href="add_contact_quotation.html" class="btn btn-add-inv font-light">Add Contact</a>
+                    </td>
+                </tr>
+                <tr id="t1" class="tr-color-off">
+                    <td class="td-font-size">04</td>
+                    <td class="td-font-size">01/01/2560</td>
+                    <td class="td-font-size">Quo-0004</td>
+                    <td class="td-font-size">Website</td>
+                    <td class="td-font-size">The Walk</td>
+                    <td class="td-font-size">John</td>
+                    <td class="td-font-size">John@gmail.com</td>
+                    <td class="td-font-size">02-0000012</td>
+                    <td class="td-font-size">Inv-0004</td>
+                    <td class="td-font-size">
+                      <label class="switch">
+                        <input id="checkbox1" type="checkbox" onclick="">
+                        <span class="slider round"></span>
+                      </label>
+                    </td>
+                    <td class="td-font-size width-td-status" >
+                    	<a href="#" class="btn btn-view font-light">View</a>
+                        <a href="#" class="btn btn-edit-quo font-light">Edit</a>
+                        <a href="add_doc_quotation.html" class="btn btn-add-doc font-light">Add Document</a>
+                        <a href="add_invoice_quotation.html" class="btn btn-add-con font-light">Add Invoice</a>
+                        <a href="add_contact_quotation.html" class="btn btn-add-inv font-light">Add Contact</a>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <!-- end table -->
+
+    <!-- pagination -->
+    <div class="col-md-12 col-xs-12 col-sm-12 no-padding-lr mr-b-pagi">
+    	<div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr font-size-pagi color-dark-gray-h font-17">
+        	<span>Showing 1 to 5 of 10 entries</span>
+        </div>
+        <div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr next-right font-size-pagi">
+            <ul class="pagination pagination-sm no-mr-tb">
+              <li><a href="#" class="no-pd-l">Previous</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+        </div>
+    </div>
+            
+  </div>
+
+<!-- main-content end -->  
+</section>
+
+<section id="footer">
+  <!--footer start-->
+  <div class="col-md-12 mr-footer no-padding-lr">
+      <footer class="site-footer">
+          <div class="text-right">
+              2017&copy; codebee
+              <a id="back-to-top" href="#" class="go-top text-center">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+  </div>
+  <!--footer end-->
 </section>
 
 </body>
@@ -315,6 +325,9 @@
   <script type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
   <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
   <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
+  
+  <!-- toggle on/off -->
+  <script type="text/javascript" src="assets/js/bootstrap-toggle.min.js"></script>
   <!-- this page -->
   <script type="text/javascript" src="assets/js/common-scripts.js"></script>
   <!-- this page (datatable) -->
@@ -322,26 +335,9 @@
   <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>
   <script type="text/javascript" src="assets/js/responsive.bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/datatable.js"></script>
+  <script type="text/javascript" src="assets/js/init_datatable.js"></script>
+
   <!-- back to top -->
   <script type="text/javascript" src="assets/js/backtotop.js"></script>
-    <script>
-	function validate(chk,trk) {
-		  var id = "#"+chk.id;
-		  var trd = "#"+trk;
-		if ($id.checked == 1){
-		//alert("status active") ;
-		$("trd").removeClass("bg-test");
-    console.log('area element tr 1 = ' + trd);
-		} else {
-		//alert("status unactive")
-		$("trd").addClass("bg-test");
-    console.log('area element tr 2 = ' + trd);
-		}
-    console.log('area element id = ' + id);
-    console.log('area element tr = ' + trd);
-	}
-	</script>
-
 
 </html>

@@ -1,0 +1,40 @@
+/* ---------------------------------------- CSS FOR CHANGE BOOTBOX ALERT ONLY ----------------------------------------------- */
+/* -------------------------------------------- BOX ALERT AND MODAL ALERT -------------------------------------------- */
+/* ------------------------------------------ FOR RESPONSIVE AND ALL BROWSER ------------------------------------------ */
+
+.btn-con{
+	background-color: #d8322b;
+	color: #fff;
+	border-color: #d8322b;
+    border: #d8322b solid 1px !important;
+	width: 50px;
+	border-radius: 2px;
+}
+.btn-con:hover, .btn-con:focus{
+	background-color: #6b0000;
+	color: #fff !important;
+	border-color: #6b0000;
+    border: #6b0000 solid 1px !important;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+.btn-can{
+	background-color: #6f6f6f;
+	color: #fff;
+	border-color: #6f6f6f;
+    border: #6f6f6f solid 1px !important;
+	width: 50px;
+	border-radius: 2px;
+}
+.btn-can:hover, .btn-can:focus{
+	background-color: #404040;
+	color: #fff !important;
+	border-color: #404040;
+    border: #404040 solid 1px !important;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}

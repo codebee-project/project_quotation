@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <title>CODEBEE</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Management user</title>
-	<link href="assets/css/main.css" rel="stylesheet">
+    
+    <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
     <link href="assets/css/main_responsive.css" rel="stylesheet">
-    
+
     <!-- css this page (data table)-->
     <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/rowGroup.bootstrap.min.css" rel="stylesheet">
@@ -102,185 +104,188 @@
           <!-- sidebar menu end-->
       </div>
   </aside>
+</section>
 
 <!-- main-content start -->
 <section id="main-content">
 
-	<!--view-quotation start-->
-	<section id="view-quotation">
-    	<div class="wrapper font-content-view-quo">
+    <div class="wrapper font-content-view-quo">
             
-            <!-- header -->
-        	<div class="font-regular header-edit-quo no-padding-lr">
-                <span><i class="fa fa-angle-right"></i> Management User</span>
-          	</div>
-            
-            <!-- search -->
-            <div class="col-md-12 col-sm-12 mr-search no-padding-lr">
-            	<div class="col-md-9 col-sm-8 no-padding-l no-pd-r">  
-                    <div class="input-group date no-padding">
-                      <input type="text" class="form-control input-datepicker" placeholder="Search...">
-                      <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4 no-padding-r no-pd-l">
-                	<a href="add_user.html" type="button" id="search_quo" class="btn btn-add">
-                    <i class="fa fa-plus-circle icon-plus"></i>
-                    Management User
-                    </a>
+        <!-- header -->
+    	<div class="font-regular header-edit-quo no-padding-lr">
+            <span><i class="fa fa-angle-right"></i> Management User</span>
+      	</div>
+        
+        <!-- search -->
+        <div class="col-md-12 col-sm-12 mr-search no-padding-lr">
+        	<div class="col-md-10 col-sm-9 no-padding-l no-pd-r">  
+                <div class="input-group date no-padding">
+                  <input type="text" class="form-control input-datepicker" placeholder="Search...">
+                  <span class="input-group-addon"><i class="fa fa-search"></i></span>
                 </div>
             </div>
-            
-            <!--table invoice list-->
-            <div class="col-md-12 col-sm-12 color-dark-gray font-size-table no-padding-lr">
-            	<table id="manage_list" class="table table-striped" cellspacing="0" width="100%">
-                    <thead>
-                        <tr class="bg-color-tr">
-                            <th>No</th>
-                            <th>Email address</th>
-                            <th>Password</th>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td>john@gmail.com</td>
-                            <td>1234</td>
-                            <td>John</td>
-                            <td>Admin</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="view_user.html" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>smith@gmail.com</td>
-                            <td>5678</td>
-                            <td>Smith</td>
-                            <td>Member</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>john@gmail.com</td>
-                            <td>1234</td>
-                            <td>John</td>
-                            <td>Admin</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>04</td>
-                            <td>smith@gmail.com</td>
-                            <td>5678</td>
-                            <td>Smith</td>
-                            <td>Member</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>05</td>
-                            <td>john@gmail.com</td>
-                            <td>1234</td>
-                            <td>John</td>
-                            <td>Admin</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>06</td>
-                            <td>smith@gmail.com</td>
-                            <td>5678</td>
-                            <td>Smith</td>
-                            <td>Member</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>07</td>
-                            <td>john@gmail.com</td>
-                            <td>1234</td>
-                            <td>John</td>
-                            <td>Admin</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>08</td>
-                            <td>smith@gmail.com</td>
-                            <td>5678</td>
-                            <td>Smith</td>
-                            <td>Member</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>09</td>
-                            <td>john@gmail.com</td>
-                            <td>1234</td>
-                            <td>John</td>
-                            <td>Admin</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>smith@gmail.com</td>
-                            <td>5678</td>
-                            <td>Smith</td>
-                            <td>Member</td>
-                            <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
-                            <td class="width-td-status">
-                            	<a href="#" class="btn btn-view font-light">View</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-md-2 col-sm-3 no-padding-r no-pd-l">
+            	<a href="add_user.html" type="button" id="search_quo" class="btn btn-add">
+                <i class="fa fa-plus-circle icon-plus"></i>
+                Add User
+                </a>
             </div>
-            
-            <div class="col-md-12 col-xs-12 col-sm-12 no-padding-lr mr-b-pagi">
-            	<div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr font-size-pagi font-17">
-                	<span>Showing 1 to 5 of 10 entries</span>
-                </div>
-                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr next-right font-size-pagi">
-                    <ul class="pagination pagination-sm no-mr-tb">
-                      <li><a href="#" class="no-pd-l">Previous</a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">Next</a></li>
-                    </ul>
-                </div>
-            </div>
-            
         </div>
-	</section>
-    <!--view-quotation end-->
+            
+        <!--table-->
+        <div class="col-md-12 col-sm-12 color-dark-gray font-size-table no-padding-lr">
+        	<table id="manage_list" class="table table-striped" cellspacing="0" width="100%">
+                <thead>
+                    <tr class="bg-color-tr">
+                        <th>No</th>
+                        <th>Email address</th>
+                        <th>Password</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>john@gmail.com</td>
+                        <td>1234</td>
+                        <td>John</td>
+                        <td>Admin</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="view_user.html" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>smith@gmail.com</td>
+                        <td>5678</td>
+                        <td>Smith</td>
+                        <td>Member</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>john@gmail.com</td>
+                        <td>1234</td>
+                        <td>John</td>
+                        <td>Admin</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>smith@gmail.com</td>
+                        <td>5678</td>
+                        <td>Smith</td>
+                        <td>Member</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>john@gmail.com</td>
+                        <td>1234</td>
+                        <td>John</td>
+                        <td>Admin</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>smith@gmail.com</td>
+                        <td>5678</td>
+                        <td>Smith</td>
+                        <td>Member</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>07</td>
+                        <td>john@gmail.com</td>
+                        <td>1234</td>
+                        <td>John</td>
+                        <td>Admin</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>08</td>
+                        <td>smith@gmail.com</td>
+                        <td>5678</td>
+                        <td>Smith</td>
+                        <td>Member</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>09</td>
+                        <td>john@gmail.com</td>
+                        <td>1234</td>
+                        <td>John</td>
+                        <td>Admin</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>smith@gmail.com</td>
+                        <td>5678</td>
+                        <td>Smith</td>
+                        <td>Member</td>
+                        <td><input type="checkbox" checked data-toggle="toggle" data-size="mini"></td>
+                        <td class="width-td-status">
+                        	<a href="#" class="btn btn-view font-light">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end table -->
+        
+        <!-- pagination -->
+        <div class="col-md-12 col-xs-12 col-sm-12 no-padding-lr mr-b-pagi">
+        	<div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr font-size-pagi color-dark-gray-h font-17">
+            	<span>Showing 1 to 5 of 10 entries</span>
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr next-right font-size-pagi">
+                <ul class="pagination pagination-sm no-mr-tb">
+                  <li><a href="#" class="no-pd-l">Previous</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+            </div>
+        </div>
+            
+    </div>
 
+<!-- main-content end -->
+</section>
+
+<section id="footer">
     <!--footer start-->
     <div class="col-md-12 mr-footer no-padding-lr">
         <footer class="site-footer">
@@ -293,10 +298,8 @@
         </footer>
     </div>
     <!--footer end-->
-  
-<!-- main-content end -->
 </section>
-
+    
 </body>
 
   <!-- js placed at the end of the document so the pages load faster -->
@@ -317,7 +320,7 @@
   <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>
   <script type="text/javascript" src="assets/js/responsive.bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/datatable.js"></script>
+  <script type="text/javascript" src="assets/js/init_datatable.js"></script>
   <!-- toggle on/off -->
   <script type="text/javascript" src="assets/js/bootstrap-toggle.min.js"></script>
   <!-- back to top -->

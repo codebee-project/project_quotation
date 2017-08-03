@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Add invoice quotation</title>
-	<link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style-responsive.css" rel="stylesheet">
-    <link href="assets/css/main_responsive.css" rel="stylesheet">
-    
-    <!-- css this page (data table)-->
-    <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/rowGroup.bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/responsive.bootstrap.min.css" rel="stylesheet">
+
+  <title>CODEBEE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/css/main_responsive.css" rel="stylesheet">
+
+  <!-- css this page (data table)-->
+  <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/rowGroup.bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/responsive.bootstrap.min.css" rel="stylesheet">
     
 </head>
 
@@ -101,135 +103,138 @@
           <!-- sidebar menu end-->
       </div>
   </aside>
+</section>
 
 <!-- main-content start -->
 <section id="main-content">
 
-	<!--view-quotation start-->
-	<section id="view-quotation">
-    	<div class="wrapper font-content-view-quo">
-        	<!--navigation-->
-        	<div class="col-md-12 font-navi-view-quo no-padding-lr">
-                <div class="dis-inblock bg-white-gray"><span>You are here : </span></div>
-                <a href="#"><span class="color-dark-gray-h">Quotation</span></a>
-                <i class="fa fa-angle-right"></i>
-                <a href="#"><span class="color-dark-red">Add Invoice</span></a>
-            </div>
+  <div class="wrapper font-content-view-quo">
+  	<!--navigation-->
+  	<div class="col-md-12 font-navi-view-quo no-padding-lr">
+      <div class="dis-inblock bg-white-gray"><span>You are here : </span></div>
+      <span class="a-hover">
+        <a href="quotation_list.html" class="color-dark-gray-h">Quotation</a>
+      </span>
+      <i class="fa fa-angle-right"></i>
+      <a href="#"><span class="color-dark-red">Add Invoice</span></a>
+    </div>
+      
+      <!-- header -->
+  	<div class="mr-header col-md-12 font-h-view-quo no-padding-lr">
+      <i class="fa fa-angle-right"></i> 
+      <span>Add Invoice</span>
+    </div>
             
-            <!-- header -->
-        	<div class="mr-header col-md-12 font-h-view-quo no-padding-lr">
-                <i class="fa fa-angle-right"></i> 
-                <span>Add Invoice</span>
-            </div>
-            
-            <!--content-->
-            
-            <!--date-->
-            <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
-                <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
-                    <span>Date</span>
-                </div>
-                <div class="col-md-9 col-sm-9 no-padding-lr font-light font-17">
-                    <span>01/01/2560</span>
-                </div>
-            </div>
-            
-            <!--quo no-->
-            <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
-                <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
-                    <span>Quotation no</span>
-                </div>
-                <div class="col-md-9 col-sm-9 no-padding-lr font-light font-17">
-                    <span>Quo-0050</span>
-                </div>
-            </div>
-            
-            <!--path file quotation-->
-            <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
-                <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
-                    <span>Path file quotation</span>
-                </div>
-                <div class="col-md-9 col-sm-9 no-padding-lr font-light color-dark-gray-h">
-                    <button type="file" class="btn-file btn-default font-17">View file</button>
-                </div>
-            </div>
-
-            <!--company name-->
-            <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
-                <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
-                    <span>Company name</span>
-                </div>
-                <div class="col-md-9 col-sm-9 no-padding-lr font-light font-17">
-                    <span>The walk</span>
-                </div>
-            </div>
-            
-            <!--add invoice-->
-            <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
-                <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
-                    <span>Invoice no</span>
-                </div>
-                <div class="col-md-7 col-sm-7 no-padding-lr font-light">
-                    <input type="text" class="form-control" name="contact" placeholder="Please enter invoice number">
-                </div>
-                <div class="col-md-2 col-sm-2 text-center no-padding-lr">
-                <button type="button" class="btn btn-pass btn-add-quo">Add</button>
-                </div>
-            </div>
-
-            <!--Report view-->
-            
-            <div class="col-md-12 col-sm-12 color-dark-gray font-size-table no-padding-lr">
-            	<table id="report" class="table table-striped" cellspacing="0" width="100%">
-                    <thead>
-                        <tr class="bg-color-tr">
-                            <th>No</th>
-                            <th>Invoice no</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td>Inv-0001</td>
-                            <td><a href="#"><i class="fa fa-trash fa-2x"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>Inv-0002</td>
-                            <td><a href="#"><i class="fa fa-trash fa-2x"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>Inv-0003</td>
-                            <td><a href="#"><i class="fa fa-trash fa-2x"></i></a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <div class="col-md-12 col-xs-12 col-sm-12 no-padding-lr mr-b-pagi">
-            	<div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr font-size-pagi font-17">
-                	<span>Showing 1 to 5 of 10 entries</span>
-                </div>
-                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr next-right font-size-pagi">
-                    <ul class="pagination pagination-sm no-mr-tb">
-                      <li><a href="#" class="no-pd-l">Previous</a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">Next</a></li>
-                    </ul>
-                </div>
-            </div>
-            
+    <!--content-->
+    
+    <!--date-->
+    <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
+        <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
+            <span>Date :</span>
         </div>
-	</section>
-    <!--view-quotation end-->
+        <div class="col-md-9 col-sm-9 no-padding-lr font-light font-17">
+            <span>01/01/2560</span>
+        </div>
+    </div>
+    
+    <!--quo no-->
+    <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
+        <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
+            <span>Quotation no :</span>
+        </div>
+        <div class="col-md-9 col-sm-9 no-padding-lr font-light font-17">
+            <span>Quo-0050</span>
+        </div>
+    </div>
+    
+    <!--path file quotation-->
+    <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
+        <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
+            <span>Path file quotation :</span>
+        </div>
+        <div class="col-md-9 col-sm-9 no-padding-lr font-light color-dark-gray-h">
+            <button type="file" class="btn-file btn-default font-17">View file</button>
+        </div>
+    </div>
 
-    <!--footer start-->
+    <!--company name-->
+    <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
+        <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
+            <span>Company name :</span>
+        </div>
+        <div class="col-md-9 col-sm-9 no-padding-lr font-light font-17">
+            <span>The walk</span>
+        </div>
+    </div>
+    
+    <!--add invoice-->
+    <div class="col-md-12 col-sm-12 color-dark-gray-h mr-c-viewquo no-padding-lr"> 
+        <div class="col-md-3 col-sm-3 no-padding-lr  font-regular">
+            <span>Invoice no :</span>
+        </div>
+        <div class="col-md-7 col-sm-7 no-padding-lr font-light">
+            <input type="text" class="form-control" name="contact" placeholder="Please enter invoice number">
+        </div>
+        <div class="col-md-2 col-sm-2 text-center no-padding-lr">
+            <button type="button" class="btn btn-pass btn-add-quo">Add</button>
+        </div>
+    </div>
+
+    <!--teble-->
+    
+    <div class="col-md-12 col-sm-12 color-dark-gray font-size-table no-padding-lr">
+    	<table id="add_invoice_quo" class="table table-striped" cellspacing="0" width="100%">
+            <thead>
+                <tr class="bg-color-tr">
+                    <th>No</th>
+                    <th>Invoice no</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Inv-0001</td>
+                    <td><a href="#"><i class="fa fa-trash fa-2x"></i></a></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Inv-0002</td>
+                    <td><a href="#"><i class="fa fa-trash fa-2x"></i></a></td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Inv-0003</td>
+                    <td><a href="#"><i class="fa fa-trash fa-2x"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- end table -->
+            
+    <div class="col-md-12 col-xs-12 col-sm-12 no-padding-lr mr-b-pagi">
+    	<div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr font-size-pagi color-dark-gray-h font-17">
+        	<span>Showing 1 to 5 of 10 entries</span>
+        </div>
+        <div class="col-md-6 col-xs-12 col-sm-6 no-padding-lr next-right font-size-pagi">
+            <ul class="pagination pagination-sm no-mr-tb">
+              <li><a href="#" class="no-pd-l">Previous</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+        </div>
+    </div>
+            
+  </div>
+<!-- main-content end -->
+</section>
+
+<section id="footer">
+<!--footer start-->
     <div class="col-md-12 mr-footer no-padding-lr">
         <footer class="site-footer">
             <div class="text-right">
@@ -240,9 +245,7 @@
             </div>
         </footer>
     </div>
-    <!--footer end-->
-  
-<!-- main-content end -->
+<!--footer end-->
 </section>
 
 </body>
@@ -264,7 +267,7 @@
   <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/dataTables.responsive.min.js"></script>
   <script type="text/javascript" src="assets/js/responsive.bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/datatable.js"></script>
+  <script type="text/javascript" src="assets/js/init_datatable.js"></script>
   
   <!-- back to top -->
   <script type="text/javascript" src="assets/js/backtotop.js"></script>

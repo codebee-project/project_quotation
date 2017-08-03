@@ -3,7 +3,7 @@
 
 /*-------------------------------- login register and forgot password responsive --------------------------------*/
 .screen-center{
-    height: 568px;
+    /*height: 568px;*/
 }
 .btn-login {
     font-size: 15px !important;
@@ -54,7 +54,7 @@
     font-size: 18px !important;
 }
 .mr-box-editpro{
-	margin-bottom: 24%;
+	margin-bottom: 20%;
 }
 
 /*-------------------------------- view_quotation -----------------------------*/
@@ -105,7 +105,7 @@
 
 /*-------------------------------- login register and forgot password responsive --------------------------------*/
 .screen-center{
-    height: 568px;
+    /*height: 568px;*/
 }
 .btn-login {
     font-size: 15px !important;
@@ -198,7 +198,7 @@
 
 /*-------------------------------- login responsive --------------------------------*/
 .screen-center{
-    height: 667px;
+    /*height: 667px;*/
 }
 .btn-login {
     font-size: 17px !important;
@@ -279,9 +279,10 @@
 /*iphone 6plus and nexus 5x,nexus 6p*/
 @media screen and (min-width: 412px) and (max-width: 767px) {
 
+
 /*-------------------------------- login responsive --------------------------------*/
 .screen-center{
-    height: 736px;
+    /*height: 736px;*/
 }
 .btn-login {
     font-size: 18px !important;
@@ -362,7 +363,7 @@
 
 /*-------------------------------- login responsive --------------------------------*/
 .screen-center{
-    height: 1024px;
+    /*height: 1024px;*/
 }
 
 /*-------------------------------- edit_profile ---------------------------------*/
@@ -482,7 +483,7 @@ svg text{
 
 /*-------------------------------- login responsive --------------------------------*/
 .screen-center{
-    height: 1366px;
+    /*height: 1366px;*/
 }
 
 /*------------------------ quotation list ----------------------*/
@@ -537,6 +538,10 @@ svg text{
 
 /*for mobile*/
 @media screen and (max-width: 767px){
+/*.bg{
+	background: url(../img/bg.png) center center fixed;
+	background-size: 100%;
+}*/
 /*-------------------------------- login register and forgot password responsive --------------------------------*/
 .screen-center{
 }
@@ -557,7 +562,12 @@ svg text{
 /*login*/
 
 .font-responsive{
-	font-size: 13px;
+	font-size: 10px;
+}
+.box-login{
+	margin-right: 5%;
+	margin-left: 5%;
+	left: 0px !important;
 }
 /*register*/
 .text-descrip {
@@ -566,6 +576,12 @@ svg text{
 .img-regis{
 	width: 60px;
     height: 60px;
+}
+.mr-box-input-forgot{
+	margin-top: 0px;
+}
+.mr-bot-text-regis{
+	margin-bottom: 0px;
 }
 /*forgot-password*/
 .text-regis {
@@ -576,6 +592,18 @@ svg text{
 }
 .btn-send-mail {
     font-size: 18px !important;
+}
+.re-size{
+	width: 75%;
+}
+
+
+/*for safari*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Safari 5+ ONLY */
+    ::i-block-chrome, .mr-top-sfr {
+	    top: 75px !important;
+    }
 }
 
 /*-------------------------------- edit_profile ---------------------------------*/
@@ -592,7 +620,13 @@ svg text{
 .btn-profile {
     font-size: 18px !important;
 }
-
+.box-profile{
+	padding-top: 9%;
+    padding-bottom: 9%;
+}
+.mr-t-changepass{
+	margin-top: 6%;
+}
 /*-------------------------------- view_quotation -----------------------------*/
 .mr-c-viewquo {
     margin-top: 5%;
