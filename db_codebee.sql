@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 03, 2017 at 09:54 AM
+-- Generation Time: Aug 10, 2017 at 09:31 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `codebee`
+-- Database: `db_codebee`
 --
 
 -- --------------------------------------------------------
@@ -34,6 +34,13 @@ CREATE TABLE `cb_company` (
   `comp_status` int(50) NOT NULL,
   `comp_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `cb_company`
+--
+
+INSERT INTO `cb_company` (`comp_id`, `comp_identity`, `comp_name`, `comp_address`, `comp_status`, `comp_timestamp`) VALUES
+(1, '', 'asdasd', '', 0, '2017-08-10 08:46:25');
 
 -- --------------------------------------------------------
 
@@ -101,10 +108,12 @@ CREATE TABLE `cb_invoice` (
 
 CREATE TABLE `cb_member` (
   `member_id` int(11) NOT NULL,
+  `member_uid` varchar(200) NOT NULL,
   `member_email` varchar(150) NOT NULL,
-  `member_password` varchar(100) NOT NULL,
+  `member_password` varchar(200) NOT NULL,
   `member_name` varchar(100) NOT NULL,
   `member_type` varchar(50) NOT NULL,
+  `member_image` varchar(200) NOT NULL,
   `member_status` varchar(50) NOT NULL,
   `member_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -113,9 +122,15 @@ CREATE TABLE `cb_member` (
 -- Dumping data for table `cb_member`
 --
 
-INSERT INTO `cb_member` (`member_id`, `member_email`, `member_password`, `member_name`, `member_type`, `member_status`, `member_timestamp`) VALUES
-(1, 'admin_ss@gmail.com', 'admin_ss', 'ss', 'superadmin', 'active', '2017-06-28 02:50:47'),
-(2, 'admin_ize@gmail.com', 'admin_ize', 'ize', 'admin', 'active', '2017-06-28 02:52:33');
+INSERT INTO `cb_member` (`member_id`, `member_uid`, `member_email`, `member_password`, `member_name`, `member_type`, `member_image`, `member_status`, `member_timestamp`) VALUES
+(1, '0', 'admin_ss@gmail.com', 'admin_ss', 'ss', 'superadmin', '', 'active', '2017-06-28 02:50:47'),
+(2, '0', 'admin_ize@gmail.com', 'admin_ize', 'ize', 'superadmin', '', 'active', '2017-06-28 02:52:33'),
+(3, '0', 'admin@a', 'admin', 'admin', 'admin', '', 'active', '2017-08-07 08:21:38'),
+(4, '0', '2elation.z@gmail.com', 'admin', 'sarawut', 'admin', '', 'active', '2017-08-08 02:31:54'),
+(5, '0', 'sacha@gmail.com', 'sacha', 'sacha', 'superadmin', 'uploads/fd9825d504e5184ff54fe58cae2f4623.jpg', 'active', '2017-08-08 03:35:19'),
+(6, '0', 'nisha.ns@gmail.com', 'nisha', 'nisha', 'member', 'uploads/6838081e69588abb8b6d74cb98395364.jpg', 'unactive', '2017-08-08 06:04:06'),
+(13, '1614231051921348', 'iamizeland@gmail.com', '', 'Taneeya Natepomarat', 'superadmin', 'http://graph.facebook.com/1614231051921348/picture?type=normal', 'active', '2017-08-10 07:32:56'),
+(14, '10209668579207055', '2elation.z@gmail.com', '', 'Sarawut Ekakool', 'superadmin', 'http://graph.facebook.com/10209668579207055/picture?type=normal', 'active', '2017-08-10 07:35:43');
 
 -- --------------------------------------------------------
 
@@ -321,7 +336,7 @@ ALTER TABLE `cd_document`
 -- AUTO_INCREMENT for table `cb_company`
 --
 ALTER TABLE `cb_company`
-  MODIFY `comp_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `comp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `cb_contact`
 --
@@ -341,7 +356,7 @@ ALTER TABLE `cb_invoice`
 -- AUTO_INCREMENT for table `cb_member`
 --
 ALTER TABLE `cb_member`
-  MODIFY `member_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `member_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `cb_quotation`
 --

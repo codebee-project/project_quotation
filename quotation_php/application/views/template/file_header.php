@@ -1,5 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+<?php
+    $type = $this->session->userdata('type');
+    if($type == "" || $type == null){
+        $message = "Can not go to page please login agian.";
+        $this->session->set_flashdata('msg',$message);
+        redirect('home');
+    }
+?>
 <head>
 	<!-- meta tag -->
     <meta charset="utf-8">
@@ -28,8 +36,16 @@
 <body>
 <!-- start attribute for change page php -->
 <?php
-    $url_edit_pro = base_url('home/view_edit_profile');
+    $url_edit_pro = base_url('home/edit_profile');
     $url_dash = base_url('home/view_dash/');
+	$active_dash = $this->router->class;
+	$active_quo = $this->router->class;
+	$active_doc = $this->router->class;
+	$active_inv = $this->router->class;
+	$active_com = $this->router->class;
+	$active_con = $this->router->class;
+	$active_manage = $this->router->class;
+	$active_type = $this->router->class;
 ?>
 <!-- end attribute for change page php -->
 
@@ -56,7 +72,15 @@
 </div>
 </div>
 <!-- end header -->
-
+<?php
+    $name = $this->session->userdata('name');
+    $image = $this->session->userdata('image');
+    if ($image == base_url("") || $image == null){
+        $image = base_url("assets/img/profile.png");
+    } else {
+        $image = $this->session->userdata('image');
+    }
+?>
 <!-- start togglebar/sidebar -->
 <div id="toggle-bar" class="toggled-no-transition">
 <div id="sidebar-wrapper" class="control-sidebar">
@@ -64,62 +88,143 @@
         <li class="control-edit-pic">
             <p class="text-center">
                 <a class="control-pic-a" href="edit_profile.html">
-                    <img src="<?php echo base_url("assets/img/pic_1.jpg");?>" class="img-circle control-pic-user" width="80">
+                    <img src="<?php echo $image; ?>" class="img-circle control-pic-user" width="80">
                 </a>
             </p>
-            <h5 class="text-center font-sidebar color-white">Taneeya</h5>
+            <h5 class="text-center font-sidebar color-white"><?php echo $name ?></h5>
         </li>
         <li>
-            <a class="active" href="<?php echo base_url("dashboard.html"); ?>" >
+            <a class="
+            <?php
+                if ($active_dash == "Dashboard") {
+                    echo "active";
+                }else{
+                    echo "";
+                }
+            ?>"
+                href="<?php echo base_url("Dashboard/view_dash"); ?>" >
                 <i class="fa fa-bar-chart-o"></i>
                 <span>Dashboard</span>
             </a>
         </li>
         <li>
-            <a href="<?php echo base_url("quotation_list.html"); ?>" >
+            <a class="
+            <?php
+                if ($active_quo == "Quotation") {
+                    echo "active";
+                }else{
+                    echo "";
+                }
+            ?>"
+             href="<?php echo base_url("Quotation/view_quotation_list"); ?>" >
                 <i class="fa fa-file-text"></i>
                 <span>Quotation</span>
             </a>
         </li>
         <li>
-            <a href="<?php echo base_url("document_list.html"); ?>" >
+            <a class="
+            <?php 
+				if ($active_doc == "Document"){
+					echo "active";
+				}else{
+					echo "";
+				}
+			?>"
+            href="<?php echo base_url("Document/view_document_list"); ?>" >
                 <i class="fa fa-file-text"></i>
                 <span>Document</span>
             </a>
         </li>
         <li>
-            <a href="<?php echo base_url("invoice_list.html"); ?>" >
+            <a class="
+            <?php
+				if($active_inv == "Invoice"){
+					echo "active";
+				}else{
+					echo "";
+				}
+			?>"
+            href="<?php echo base_url("Invoice/view_invoice_list"); ?>" >
                 <i class="fa fa-file-text"></i>
                 <span>Invoice</span>
             </a>
         </li>
         <li>
-            <a href="<?php echo base_url("company_list.html"); ?>" >
+            <a class="
+          	<?php 
+				if($active_com == "Company"){
+					echo "active";
+				}else{
+					echo "";
+				}
+			?>"
+            href="<?php echo base_url("Company/view_company_list"); ?>" >
                 <i class="fa fa-building"></i>
                 <span>Company</span>
             </a>
         </li>
         <li>
-            <a href="<?php echo base_url("contact_list.html"); ?>" >
+            <a class="
+            <?php 
+				if($active_con == "Contact"){
+					echo "active";
+				}else{
+					echo "";
+				}
+			?>"
+            href="<?php echo base_url("Contact/view_contact_list"); ?>" >
                 <i class="fa fa-address-book"></i>
                 <span>Contact</span>
             </a>
         </li>
+    <?php 
+        $type = $this->session->userdata('type');
+        if($type == "superadmin"){
+    ?>
         <li>
-            <a href="<?php echo base_url("management_user.html"); ?>" >
+            <a class="
+            <?php 
+				if($active_manage == "Management_user"){
+					echo "active";
+				}else{
+					echo "";
+				}
+			?>"
+            id="manage_user" href="<?php echo base_url("Management_user/view_manage_user"); ?>" >
                 <i class="fa fa-users"></i>
                 <span>Management User</span>
             </a>
         </li>
         <li>
-            <a href="#" data-toggle="collapse" data-target="#submenu-1">
+            <a class="
+           	<?php 
+				if($active_type == "Quotation_type"){
+					echo "active";
+				}else{
+					echo "";
+				}
+			?>"
+            id="web_setting" href="#" data-toggle="collapse" data-target="#submenu-1">
                 <i class="fa fa-cog"></i>
                 <span>Website Setting</span>
             </a>
-            <ul id="submenu-1" class="collapse no-pad-lr">
-                <li class="lh-0"><a class="control-sub-a" href="<?php echo base_url("type_list.html"); ?>" >Quotation Type</a></li>
+            <ul id="submenu-1" class="collapse <?php if($active_type == "Quotation_type") {echo "in";}else{echo "";}; ?> no-pad-lr">
+                <li class="lh-0">
+                	<a class="control-sub-a 
+                    <?php 
+						if($active_type == "Quotation_type"){
+							echo "active";
+						}else{
+							echo "";
+						}
+					?>"
+                    href="<?php echo base_url("Quotation_type/view_type_list"); ?>" >Quotation Type</a>
+                </li>
             </ul>
         </li>
+    <?php 
+        }
+    ?>
         <li>
             <a id="logout" href="#">
                 <i class="fa fa-sign-out"></i>
@@ -130,5 +235,6 @@
 </div>
 </div>
 <!-- end togglebar/sidebar -->
+
 
 

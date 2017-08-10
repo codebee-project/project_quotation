@@ -1,7 +1,7 @@
 <?php $this->load->view('template/file_header_member.php'); ?>
 <!-- start call url -->
 <?php
-  $login = base_url('home/index');
+  $login = base_url('home');
 ?>
 <!-- end call url -->
 
@@ -17,11 +17,14 @@
           </div>
 
           <div class="col-md-12 mr-form-input-forgot n-pad">
-              <form>
+              <?php 
+                $attributes = array('class' => 'form_horizontal',"method" => 'post', 'id' => 'myform');
+                echo form_open_multipart('member/send_email', $attributes);
+              ?> <!-- form -->
               <!-- email user -->
                   <div class="mr-email-forgot inner-addon left-addon">
                     <i class="fa fa-user fa-lg"></i>      
-                    <input type="text" class="form-control" placeholder="Enter your email address" />
+                    <input type="email" id="for_email" name="for_email" class="form-control" placeholder="Enter your email address" />
                   </div>
               <!-- forgot -->
                   <div class="form-group text-l">

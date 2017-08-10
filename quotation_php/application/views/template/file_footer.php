@@ -28,13 +28,23 @@
     <script type="text/javascript" src="<?php echo base_url("assets/js/dataTables.responsive.min.js"); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/responsive.bootstrap.min.js"); ?>"></script>
     <script type="text/javascript" src="<?php echo base_url("assets/js/init_datatable.js"); ?>"></script>
+    <!-- script for validate -->
+    <script type="text/javascript" src="<?php echo base_url("assets/js/jquery.validate.min.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("assets/js/init_validate.js"); ?>"></script>
+    <!-- script  genauto -->
+    <script src="<?php echo base_url("assets/js/genauto.js"); ?>"></script>
     <!-- script switch toggle on/off -->
     <script type="text/javascript" src="<?php echo base_url("assets/js/init_switch.js"); ?>"></script>
+    <!-- script input file -->
+    <script src="<?php echo base_url("assets/js/bootstrap-filestyle.min.js"); ?>"></script>
+    <script src="<?php echo base_url("assets/js/inputfile.js"); ?>"></script>
     <!-- script for button back to top (footer) -->
     <script src="<?php echo base_url("assets/js/backtotop.js"); ?>"></script>
+
     <script>
         $(document).ready(function() {
             tem_logout();
+            check_ready();
         });
 
         var base_url = "<?php echo base_url(); ?>";
@@ -55,13 +65,35 @@
                 },
             callback: function (result) { //callback for event confirm or cancel
                 if(result == true){
-                    window.location.href = "<?php echo base_url('html/register.html') ?>";
+                    window.location.href = "<?php echo base_url('home/logout'); ?>";
                 }else {
-
+                    
                 }
             }
             });
         });
+        }
+
+        function check_ready() {
+            var message = '<?php if(isset($alert)){ echo $alert;}; ?>';
+            if(message != "" && message != null){
+                bootbox.confirm({
+                    title: "codebee",
+                    message: message,
+                    buttons: {                    
+                        confirm: { //button confirm
+                            label: 'Yes',
+                            className: 'dis-none'
+                        },
+                        cancel: { //button cancel
+                            label: 'OK',
+                            className: 'btn-can'
+                        }
+                    },
+                    callback: function (result) { //callback for event confirm or cancel
+                    }
+                });
+            }
         }
     </script>
     

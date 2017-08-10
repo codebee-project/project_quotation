@@ -32,21 +32,26 @@ class Home extends CI_Controller {
 	}
 	/* start member */
 	public function index() {
+		$this->PAGE['alert'] = $this->session->flashdata('msg');
 		$this->load->view("member/login",$this->PAGE);
 	}
 	public function view_register() {
+		$this->PAGE['alert'] = $this->session->flashdata('msg');
 		$this->load->view("member/register",$this->PAGE);
 	}
 	public function view_forgot() {
+		$this->PAGE['alert'] = $this->session->flashdata('msg');
 		$this->load->view("member/forgot",$this->PAGE);
 	}
 	public function view_edit_profile() {
+		$this->PAGE['alert'] = $this->session->flashdata('msg');
 		$this->load->view("view_edit_profile",$this->PAGE);
 	}
 	/* end member */
 
 	/* start main menu */
 	public function view_dash() {
+		$this->PAGE['alert'] = $this->session->flashdata('msg');	
 		$this->load->view("dashboard",$this->PAGE);
 	}
 	public function view_quotation_list() {
@@ -62,13 +67,27 @@ class Home extends CI_Controller {
 		$this->load->view("company_list",$this->PAGE);
 	}
 	public function view_contact_list() {
-		$this->load->view("view_contact_list",$this->PAGE);
+		$this->load->view("contact_list",$this->PAGE);
 	}
 	public function view_manage_user() {
-		$this->load->view("management_user",$this->PAGE);
+		$type = $this->session->userdata('type');
+    	if($type == "superadmin"){
+			$this->load->view("management_user",$this->PAGE);
+		} else {
+			$message = "You not superadmin !!";
+			$this->session->set_flashdata('msg',$message);
+			redirect('home');
+		}
 	}
-	public function view_quotation_type() {
-		$this->load->view("quotation_type",$this->PAGE);
+	public function view_type_list() {
+		$type = $this->session->userdata('type');
+    	if($type == "superadmin"){
+			$this->load->view("type_list",$this->PAGE);
+		} else {
+			$message = "You not superadmin !!";
+			$this->session->set_flashdata('msg',$message);
+			redirect('home');
+		}
 	}
 	/* end main menu */
 
@@ -96,8 +115,40 @@ class Home extends CI_Controller {
 	/* end sub quotation */
 
 	/* start sub document */
-	public function view_add_document() {
-		$this->load->view("add_document",$this->PAGE);
+	public function add_document(){
+		$this->input->post('upload_fileDoc');
+		
+		$check_image_path = (isset($_FILES['upload_fileDoc']))?$_FILES['upload_fileDoc']:"";
+		$check_name = ($check_image_path)?$check_image_path['name']:"";
+		
+		$filePath = './uploads/';
+		$config['upload_path'] = $filePath;
+		$config['allowed_types'] = 'pdf|doc';
+		$config['overwrite'] = true;
+		$config['encrypt_name'] = TRUE;
+		
+		$this->upload->initialize($config);
+
+		if($check_name && ($check_name[0]) != null){
+			
+			if(! $this->upload->do_upload('upload_fileDoc')) {
+				$error = $this->upload->display_errors(); 
+				echo 'unsuccess';
+				exit();
+			} else { 
+				$file_info = $this->upload->data();
+				$file_doc = ('uploads/'.$file_info['file_name']);
+			}
+		}
+		
+		$data = array(
+			'doc_name' => $this->input->post('ip_docName'),
+			'doc_file' => $file_doc
+		);
+		
+		$this->db->insert('cb_document', $data);
+		echo 'success';
+		
 	}
 	public function view_edit_document() {
 		$this->load->view("edit_document",$this->PAGE);
@@ -114,8 +165,16 @@ class Home extends CI_Controller {
 	/* end sub invoice */
 
 	/* start sub company */
-	public function view_add_company() {
-		$this->load->view("add_company",$this->PAGE);
+	public function add_company(){
+		$data = array(
+			'comp_identity' => $this->input->post('ip_ident'),
+			'comp_name' => $this->input->post('ip_comName'),
+			'comp_address' => $this->input->post('ip_comAddress'),
+			'comp_status' => 'active'
+		);
+		
+		$this->db->insert('cb_company', $data);
+		echo 'success';
 	}
 	public function view_edit_company() {
 		$this->load->view("edit_company",$this->PAGE);
@@ -133,19 +192,54 @@ class Home extends CI_Controller {
 
 	/* start sub management user */
 	public function view_add_user() {
-		$this->load->view("add_user",$this->PAGE);
+		$type = $this->session->userdata('type');
+    	if($type == "superadmin"){
+			$this->load->view("add_user",$this->PAGE);
+		} else {
+			$message = "You not superadmin !!";
+			$this->session->set_flashdata('msg',$message);
+			redirect('home');
+		}
 	}
 	public function view_user() {
-		$this->load->view("view_user",$this->PAGE); //edit user (superadmin)
+		$type = $this->session->userdata('type');
+    	if($type == "superadmin"){
+			$this->load->view("view_user",$this->PAGE); //edit user (superadmin)
+		} else {
+			$message = "You not superadmin !!";
+			$this->session->set_flashdata('msg',$message);
+			redirect('home');
+		}
 	}
 	/* end sub management user */
 
 	/* start sub management user */
 	public function view_add_type() {
-		$this->load->view("add_quotation_type",$this->PAGE);
+		$type = $this->session->userdata('type');
+    	if($type == "superadmin"){
+			$this->load->view("add_quotation_type",$this->PAGE);
+		} else {
+			$message = "You not superadmin !!";
+			$this->session->set_flashdata('msg',$message);
+			redirect('home');
+		}
 	}
 	public function view_edit_type() {
-		$this->load->view("edit_quotation_type",$this->PAGE);
+		$type = $this->session->userdata('type');
+    	if($type == "superadmin"){
+			$this->load->view("edit_quotation_type",$this->PAGE);
+		} else {
+			$message = "You not superadmin !!";
+			$this->session->set_flashdata('msg',$message);
+			redirect('home');
+		}
+	}
+
+	public function logout() {
+		$this->session->unset_userdata('type');
+		$this->session->unset_userdata('name');
+		$this->session->unset_userdata('image');
+		redirect('home');
 	}
 	/* end sub management user */
 

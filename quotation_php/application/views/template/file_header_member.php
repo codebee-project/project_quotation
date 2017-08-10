@@ -1,5 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+<?php
+    $type = $this->session->userdata('type');
+    if($type != "" || $type != null){
+        $message = "Can not go to page please logout.";
+        $this->session->set_flashdata('msg',$message);
+        redirect('home/view_dash');
+    }
+?>
 <head>
 	<!-- meta tag -->
     <meta charset="utf-8">
@@ -8,7 +16,7 @@
     <!-- title -->
     <title>codebee</title>
     <!-- link css -->
-    <link href="<?php echo base_url('assets/css/bootstrap.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet">
     <link href="<?php echo base_url("assets/font-awesome/css/font-awesome.css"); ?>" rel="stylesheet" />
     <!-- link for content css -->
     <link href="<?php echo base_url("assets/css/main.css"); ?>" rel="stylesheet">

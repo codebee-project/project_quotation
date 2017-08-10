@@ -95,7 +95,22 @@ body{
 .a-hover a:hover {
 	color: #b22121 !important;
 }
-
+.validation{
+	font-family:'promptlight' !important;
+	font-weight:normal !important;
+	color: #b22121;
+	cursor:initial !important;
+	font-size:16px !important;
+	border-color: #b22121;
+	margin: 0;
+}
+.flex{
+	display: flex;
+    align-items: flex-start;
+}
+.btn-default{
+	border-color: #ccc !important;
+}
 
 /*---------------------user input box icon-------------------*/
 /* enable absolute positioning */
@@ -103,13 +118,13 @@ i{
 	color:#7f7f7f;
 }
 .inner-addon {
-  position: relative;
+	position: relative;
 }
 /* style glyph */
 .inner-addon .fa {
-  position: absolute;
-  padding: 10px;
-  pointer-events: none;
+	position: absolute;
+	padding: 10px;
+	pointer-events: none;
 }
 /* align glyph */
 .left-addon .fa  { left:  0px;}
@@ -135,7 +150,8 @@ i{
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    height: 100vh;
+    /*height: -webkit-fill-available;*/
+    height:100vh;
 }
 #outer-center {
     display: -webkit-flex;
